@@ -922,4 +922,29 @@ body {
       }
     }
   }
+  .hamkorliklar-section {
+    width: 100%;
+    height: 241px;
+    background-color: #f9fafb;
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      .hamkorliklar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        img {
+          width: 188px;
+          padding-top: 40px;
+        }
+      }
+      h2{
+        font-size: 33px;
+        font-weight: 700;
+        margin-top: 50px;
+        padding-top: 40px;
+      }
+    }
+  }
 }
