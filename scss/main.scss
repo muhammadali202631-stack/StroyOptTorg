@@ -104,8 +104,9 @@ body {
           width: 16px;
           height: 14px;
           display: flex;
+          align-items: center;
           flex-direction: column;
-          justify-content: space-between;
+          gap: 8px;
           span {
             display: block;
             width: 16px;

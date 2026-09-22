@@ -106,8 +106,9 @@ body .navbar .logo .catalog-btn .catalog-menu {
   width: 16px;
   height: 14px;
   display: flex;
+  align-items: center;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 8px;
 }
 body .navbar .logo .catalog-btn .catalog-menu span {
   display: block;
