@@ -211,5 +211,250 @@ body .navbar .logo .navbar-actions .yurakcha {
 body .navbar .logo .navbar-actions .korzinka {
   min-width: 52px;
 }
+body .stroyopttorg-section .stroyopttorg-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+body .stroyopttorg-section .stroyopttorg-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 400;
+  font-size: 15px;
+}
+body .stroyopttorg-section .stroyopttorg-text p {
+  cursor: pointer;
+  color: #2C333D;
+}
+body .stroyopttorg-section .stroyopttorg-text h5 {
+  color: #91969D;
+}
+body .stroyopttorg-section .stroyopttorg-text span {
+  cursor: pointer;
+  color: #91969D;
+}
+body .personal-section .personal-container {
+  max-width: 1400px;
+  margin: 30px auto;
+}
+body .personal-section .personal-container h1 {
+  color: #2C333D;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48px;
+}
+body .account-page {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  color: #1F1E31;
+  background: #ffffff;
+  padding: 24px 0;
+}
+body .account-page .container {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+body .account-page .container .page-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+body .account-page .container .layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+body .account-page .container .layout .sidebar {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+}
+body .account-page .container .layout .sidebar .sidebar__item {
+  display: flex;
+  align-items: center;
+  padding: 14px 16px;
+  color: #2C333D;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid #EDF0F2;
+  background-color: #ffffff;
+  box-shadow: 1px 10px 20px rgba(23, 27, 32, 0.0705882353);
+}
+body .account-page .container .layout .sidebar .sidebar__item .icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+body .account-page .container .layout .sidebar .sidebar__item .badge {
+  margin-left: auto;
+}
+body .account-page .container .layout .sidebar .sidebar__item--active {
+  background: #011120;
+  color: #ffffff;
+  font-weight: 600;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body .account-page .container .layout .content {
+  flex: 1;
+  min-width: 0;
+}
+body .account-page .container .layout .content .greeting {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 24px;
+}
+body .account-page .container .layout .content .action-cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+body .account-page .container .layout .content .action-cards .action-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 24px 12px;
+  border: 1px solid #EDF0F2;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+body .account-page .container .layout .content .action-cards .action-card .icon img {
+  width: 30px;
+  display: inline-block;
+}
+body .account-page .container .layout .content .action-cards .action-card .action-card__label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #1F1E31;
+  text-align: center;
+}
+body .account-page .container .layout .content .action-cards .action-card .badge--card {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+body .account-page .container .layout .content .action-cards .action-card:hover {
+  border-color: #1a56ff;
+}
+body .account-page .container .layout .content .action-cards .action-card--active {
+  background: #1a56ff;
+  border-color: #1a56ff;
+}
+body .account-page .container .layout .content .action-cards .action-card--active .action-card__label {
+  color: #ffffff;
+}
+body .account-page .container .layout .content .section-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 16px;
+}
+body .account-page .container .layout .content .orders {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #EDF0F2;
+  border-radius: 15px;
+}
+body .account-page .container .layout .content .orders .orders__row {
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr 1fr 1fr 60px;
+  align-items: center;
+  border: 1px solid #EDF0F2;
+}
+body .account-page .container .layout .content .orders .orders__row .orders__cell {
+  padding: 18px 16px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+body .account-page .container .layout .content .orders .orders__row .orders__cell .status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+body .account-page .container .layout .content .orders .orders__row .orders__cell .status::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+body .account-page .container .layout .content .orders .orders__row .orders__cell .status--processing {
+  background: transparent;
+  color: #FF6915;
+  border: 1px solid #FF6915;
+}
+body .account-page .container .layout .content .orders .orders__row .orders__cell .status--processing::before {
+  background: #FF6915;
+}
+body .account-page .container .layout .content .orders .orders__row .orders__cell .status--done {
+  background: transparent;
+  color: #11A342;
+  border: 1px solid #11A342;
+}
+body .account-page .container .layout .content .orders .orders__row .orders__cell .status--done::before {
+  background: #11A342;
+}
+body .account-page .container .layout .content .orders .orders__row .orders__cell .status--cancelled {
+  background: transparent;
+  color: #E52B0E;
+  border: 1px solid #E52B0E;
+}
+body .account-page .container .layout .content .orders .orders__row .orders__cell .status--cancelled::before {
+  background: #E52B0E;
+}
+body .account-page .container .layout .content .orders .orders__row .orders__cell .row-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+body .account-page .container .layout .content .orders .orders__row .orders__cell .row-btn .icon {
+  width: 18px;
+  height: 18px;
+}
+body .account-page .container .layout .content .orders .orders__row:last-child {
+  border-bottom: none;
+}
+body .account-page .container .layout .content .orders .orders__row--head .orders__cell {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1F1E31;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 12px 16px;
+}
+body .account-page .container .layout .content .price {
+  color: #003B73;
+  font-weight: 600;
+}
+body .badge {
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 50%;
+  background: #E52B0E;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=Personal_Account.css.map */
