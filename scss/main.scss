@@ -381,7 +381,7 @@ body {
       width: 100%;
       max-width: 1400px;
       margin: 0 auto;
-      padding: 38px 20px 0;
+      padding: 60px 0 ;
       .reklama-card {
         width: 100%;
         display: grid;
@@ -389,21 +389,22 @@ body {
         gap: 15px;
         .card,
         .card1 {
-          height: 155px;
+            width: 162.3px;
+          height: 175px;
           border-radius: 12px;
           display: flex;
           flex-direction: column;
           align-items: center;
-          justify-content: space-between;
-          padding: 16px 10px 20px;
+          justify-content: center;
+          gap: 1rem;
+          padding: 0 25px ;
           cursor: pointer;
           p {
-            margin: 0;
-            font-size: 13px;
-            font-weight: 400;
+            font-size: 15px;
+            font-weight: 500;
             line-height: 16px;
             text-align: center;
-            color: #292d32;
+            color: #3b3c3f;
           }
         }
         .card {
