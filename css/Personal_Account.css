@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+body .header {
+  width: 100%;
+  height: 50px;
+}
+body .header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+body .header .container .header-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+body .header .container .header-text .text1 {
+  display: flex;
+  gap: 20px;
+}
+body .header .container .header-text .text1 p {
+  cursor: pointer;
+  font-size: 12px;
+  color: #6c6f71;
+  padding: 5px 0 0 0;
+}
+body .header .container .header-text .text2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 5px 0 0 0;
+}
+body .header .container .header-text .text2 p {
+  cursor: pointer;
+  font-size: 13px;
+  color: #6c6f71;
+}
+body .header .container .header-text .text2 h2 {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600px;
+}
+body .header .container .header-text .text2 button {
+  cursor: pointer;
+  width: 130px;
+  height: 30px;
+  background-color: #f2f5fc;
+  color: #2a5e8d;
+  border: none;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+body .header .chiziq {
+  width: 100%;
+  height: 1.3px;
+  background-color: #ebeef0;
+  margin-top: 5px;
+}
+body .navbar {
+  width: 100%;
+  height: 82px;
+  background-color: #ffffff;
+}
+body .navbar .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+body .navbar .logo {
+  display: flex;
+  align-items: center;
+}
+body .navbar .logo .main-logo {
+  width: 178px;
+  min-width: 178px;
+  display: flex;
+  align-items: center;
+  margin-right: 28px;
+}
+body .navbar .logo .main-logo img {
+  width: 174px;
+  height: auto;
+  display: block;
+}
+body .navbar .logo .catalog-btn {
+  width: 125px;
+  min-width: 125px;
+  height: 43px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  background-color: #1976d2;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 30px;
+}
+body .navbar .logo .catalog-btn .catalog-menu {
+  width: 16px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+body .navbar .logo .catalog-btn .catalog-menu span {
+  display: block;
+  width: 16px;
+  height: 1.5px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+body .navbar .logo .search-box {
+  height: 43px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border: 3px solid #1976d2;
+  border-radius: 7px;
+  overflow: hidden;
+  background-color: #ffffff;
+  margin-right: 42px;
+}
+body .navbar .logo .search-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 14px;
+  color: #777777;
+  font-size: 12px;
+  font-weight: 400;
+}
+body .navbar .logo .search-box .search-btn {
+  width: 48px;
+  min-width: 48px;
+  height: 43px;
+  margin-right: -1px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1976d2;
+  color: #ffffff;
+  cursor: pointer;
+}
+body .navbar .logo .search-box .search-btn svg {
+  width: 18px;
+  height: 18px;
+}
+body .navbar .logo .navbar-actions {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 26px;
+}
+body .navbar .logo .navbar-actions .nav-action {
+  height: 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+body .navbar .logo .navbar-actions .nav-action .icon-box {
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .navbar .logo .navbar-actions .nav-action .icon-box img {
+  display: block;
+  max-width: 30px;
+  max-height: 27px;
+}
+body .navbar .logo .navbar-actions .nav-action p {
+  margin: 4px 0 0;
+  color: #767676;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14px;
+}
+body .navbar .logo .navbar-actions .tabrik {
+  min-width: 53px;
+}
+body .navbar .logo .navbar-actions .user {
+  min-width: 44px;
+}
+body .navbar .logo .navbar-actions .rating {
+  min-width: 62px;
+}
+body .navbar .logo .navbar-actions .yurakcha {
+  min-width: 65px;
+}
+body .navbar .logo .navbar-actions .korzinka {
+  min-width: 52px;
+}
+
+/*# sourceMappingURL=Personal_Account.css.map */
