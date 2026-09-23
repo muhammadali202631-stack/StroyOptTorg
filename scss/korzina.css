@@ -81,6 +81,10 @@ body .navbar .logo {
   display: flex;
   align-items: center;
 }
+body .navbar .logo .korzinka p a {
+  text-decoration: none;
+  color: #777777;
+}
 body .navbar .logo .main-logo {
   width: 178px;
   min-width: 178px;
@@ -288,8 +292,9 @@ body .towars .container .price h2 .info {
 }
 body .total {
   position: absolute;
+  width: 370px;
   top: 65%;
-  right: 17%;
+  right: 14%;
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -306,7 +311,51 @@ body .total .container h1 {
 body .total .container .promokode {
   display: flex;
   justify-content: space-between;
+  padding: 10px 0;
 }
-body .total .container .promokode .dot_line {
-  border: 2px dotted;
+body .total .container .promokode p {
+  font-size: 15px;
+  font-weight: 400;
+}
+body .total .container .promokode h3 {
+  color: #4D6159;
+}
+body .total .container .promokode h2 {
+  color: #003B73;
+}
+body .total .container .promokode .summa {
+  font-weight: 600;
+}
+body .total .container .promo_box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+body .total .container .promo_box input {
+  cursor: pointer;
+  border-radius: 8px;
+  outline: none;
+  padding: 15px 20px;
+  border: 1px solid #EBEEF0;
+  font-size: 15px;
+  color: #EBEEF0;
+}
+body .total .container .promo_box button {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 15px 20px;
+  background-color: #F6F8FB;
+  border: none;
+  color: #117FE3;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+body .total .container button {
+  cursor: pointer;
+  border: none;
+  padding: 15px 85px;
+  background-color: #186FD4;
+  color: white;
+  border-radius: 8px;
 }/*# sourceMappingURL=korzina.css.map */
