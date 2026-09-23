@@ -456,5 +456,27 @@ body .badge {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  body .header {
+    display: none;
+  }
+  body .navbar {
+    display: none;
+  }
+  body .stroyopttorg-section {
+    padding: 20px 10px 0 10px;
+  }
+  body .personal-section .personal-container h1 {
+    padding-left: 10px;
+    font-size: 38px;
+  }
+  body .account-page .container .layout .sidebar {
+    display: none;
+  }
+  body .account-page .container .layout .content {
+    margin-top: -40px;
+    margin-left: -10px;
+  }
+}
 
 /*# sourceMappingURL=Personal_Account.css.map */

@@ -549,4 +549,45 @@ body {
         align-items: center;
         justify-content: center;
     }
+
+    @media screen and (max-width:768px) {
+        .header {
+            display: none;
+        }
+
+        .navbar {
+            display: none;
+        }
+
+        .stroyopttorg-section {
+            padding: 20px 10px 0 10px;
+        }
+
+        .personal-section {
+            .personal-container {
+                h1 {
+                    padding-left: 10px;
+                    font-size: 38px;
+                }
+            }
+        }
+
+        .account-page {
+            .container {
+                .layout {
+                    .sidebar {
+                        display: none;
+                    }
+
+                    .content {
+                        margin-top: -40px;
+                        margin-left: -10px;
+                    }
+                }
+            }
+        }
+
+
+
+    }
 }
