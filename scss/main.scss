@@ -939,11 +939,143 @@ body {
           padding-top: 40px;
         }
       }
-      h2{
+      h2 {
         font-size: 33px;
         font-weight: 700;
         margin-top: 50px;
         padding-top: 40px;
+      }
+    }
+  }
+  .offers-section {
+    width: 100%;
+    height: 700px;
+    background: #fff;
+    .container {
+      max-width: 1400px;
+      margin: auto;
+      padding: 60px 0 0 0 ;
+    }
+    .offers-title {
+      margin-bottom: 27px;
+      font-size: 30px;
+      color: #292f38;
+    }
+    .offers-tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 45px;
+      button {
+        height: 43px;
+        padding: 0 20px;
+        border: 1px solid #e7eaee;
+        border-radius: 5px;
+        background: #fff;
+        color: #5f646a;
+        cursor: pointer;
+        &.active {
+          background: #f5f8fc;
+          color: #1682ee;
+        }
+      }
+    }
+    .offers-products {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 42px;
+    }
+    .offer-card {
+      position: relative;
+      .product-badge {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 7px;
+        border-radius: 4px;
+        background: #fff;
+        font-size: 11px;
+      }
+      .sale-badge {
+        border: 1px solid #ff1744;
+        color: #ff1744;
+      }
+      .new-badge {
+        border: 1px solid #17a96b;
+        color: #17a96b;
+      }
+      .offer-image {
+        height: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 100%;
+          max-width: 220px;
+          height: 210px;
+          object-fit: contain;
+        }
+      }
+      .article {
+        margin: 18px 0;
+        color: #adb2b7;
+        font-size: 11px;
+      }
+      h3 {
+        min-height: 50px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 23px;
+        font-weight: 500;
+      }
+      .price {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        margin-bottom: 9px;
+        del {
+          color: #aaa;
+          font-size: 12px;
+        }
+        strong {
+          color: #1767a9;
+          font-size: 18px;
+        }
+        span {
+          padding: 5px 6px;
+          border-radius: 3px;
+          background: #17a36a;
+          color: #fff;
+          font-size: 9px;
+        }
+      }
+      .offer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .buy-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          height: 39px;
+          padding: 0 17px;
+          border: 0;
+          border-radius: 5px;
+          background: #177be4;
+          color: #fff;
+          cursor: pointer;
+        }
+        .actions {
+          display: flex;
+          gap: 9px;
+          .action-btn {
+            width: 38px;
+            height: 38px;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            background: #fff;
+            cursor: pointer;
+          }
+        }
       }
     }
   }

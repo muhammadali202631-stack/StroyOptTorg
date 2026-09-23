@@ -819,5 +819,137 @@ body .hamkorliklar-section .container h2 {
   margin-top: 50px;
   padding-top: 40px;
 }
+body .offers-section {
+  width: 100%;
+  height: 700px;
+  background: #fff;
+}
+body .offers-section .container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 60px 0 0 0;
+}
+body .offers-section .offers-title {
+  margin-bottom: 27px;
+  font-size: 30px;
+  color: #292f38;
+}
+body .offers-section .offers-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 45px;
+}
+body .offers-section .offers-tabs button {
+  height: 43px;
+  padding: 0 20px;
+  border: 1px solid #e7eaee;
+  border-radius: 5px;
+  background: #fff;
+  color: #5f646a;
+  cursor: pointer;
+}
+body .offers-section .offers-tabs button.active {
+  background: #f5f8fc;
+  color: #1682ee;
+}
+body .offers-section .offers-products {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 42px;
+}
+body .offers-section .offer-card {
+  position: relative;
+}
+body .offers-section .offer-card .product-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 7px;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 11px;
+}
+body .offers-section .offer-card .sale-badge {
+  border: 1px solid #ff1744;
+  color: #ff1744;
+}
+body .offers-section .offer-card .new-badge {
+  border: 1px solid #17a96b;
+  color: #17a96b;
+}
+body .offers-section .offer-card .offer-image {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .offers-section .offer-card .offer-image img {
+  width: 100%;
+  max-width: 220px;
+  height: 210px;
+  object-fit: contain;
+}
+body .offers-section .offer-card .article {
+  margin: 18px 0;
+  color: #adb2b7;
+  font-size: 11px;
+}
+body .offers-section .offer-card h3 {
+  min-height: 50px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 500;
+}
+body .offers-section .offer-card .price {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 9px;
+}
+body .offers-section .offer-card .price del {
+  color: #aaa;
+  font-size: 12px;
+}
+body .offers-section .offer-card .price strong {
+  color: #1767a9;
+  font-size: 18px;
+}
+body .offers-section .offer-card .price span {
+  padding: 5px 6px;
+  border-radius: 3px;
+  background: #17a36a;
+  color: #fff;
+  font-size: 9px;
+}
+body .offers-section .offer-card .offer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .offers-section .offer-card .offer-bottom .buy-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 39px;
+  padding: 0 17px;
+  border: 0;
+  border-radius: 5px;
+  background: #177be4;
+  color: #fff;
+  cursor: pointer;
+}
+body .offers-section .offer-card .offer-bottom .actions {
+  display: flex;
+  gap: 9px;
+}
+body .offers-section .offer-card .offer-bottom .actions .action-btn {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */
