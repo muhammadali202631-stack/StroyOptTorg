@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/katalog.css">
 </head>
+
 <body>
-    
-     <header class="header">
+
+    <header class="header">
         <div class="container">
             <div class="header-text">
                 <div class="text1">
@@ -100,5 +102,940 @@
         </div>
     </nav>
 
+    <main class="catalog-main">
+        <div class="container">
+
+            <!-- BREADCRUMB -->
+            <div class="breadcrumb">
+                <span>Стройоптторг</span>
+                <span>/</span>
+                <span>Электроинструмент</span>
+            </div>
+
+            <div class="catalog-title">
+                <h1>Электроинструмент</h1>
+                <span>3 457 товаров</span>
+            </div>
+
+            <div class="catalog-layout">
+
+                <!-- LEFT FILTER -->
+                <aside class="filter">
+
+                    <div class="filter-block">
+                        <h3>Цена, ₽</h3>
+
+                        <div class="price-inputs">
+                            <input type="text" placeholder="от 3 000">
+                            <input type="text" placeholder="до 52 500">
+                        </div>
+
+                        <div class="range-line">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="filter-block">
+                        <h3>Тип товара</h3>
+
+                        <label>
+                            <input type="checkbox" checked>
+                            <span>Набор</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>Стойка</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>Адаптер</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>Держатель</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>Фильтр</span>
+                        </label>
+
+                        <a href="#">Показать все</a>
+                    </div>
+
+                    <div class="filter-block">
+                        <h3>Бренд</h3>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>STAYER</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>HOMEPROFEE</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>РЕСАНТА</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox" checked>
+                            <span>MAKITA</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>HUNTER</span>
+                        </label>
+
+                        <a href="#">Показать все</a>
+                    </div>
+
+                    <div class="filter-block">
+                        <h3>Материал</h3>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>Латунь</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>Медь</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>Металл</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>Металл, пластик</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>Бумага</span>
+                        </label>
+
+                        <a href="#">Показать все</a>
+                    </div>
+
+                    <div class="filter-select">
+                        <h3>Цвет</h3>
+                        <span>⌄</span>
+                    </div>
+
+                    <div class="filter-select">
+                        <h3>Длина, мм</h3>
+                        <span>⌄</span>
+                    </div>
+
+                    <div class="filter-select">
+                        <h3>Ширина, мм</h3>
+                        <span>⌄</span>
+                    </div>
+
+                    <div class="filter-select">
+                        <h3>Высота, мм</h3>
+                        <span>⌄</span>
+                    </div>
+
+                </aside>
+
+
+                <!-- RIGHT PRODUCTS -->
+                <section class="products-side">
+
+                    <div class="product-top">
+
+                        <div class="sort">
+                            <span>Сортировка:</span>
+
+                            <select>
+                                <option>Цена по убыванию</option>
+                                <option>Цена по возрастанию</option>
+                                <option>По популярности</option>
+                            </select>
+                        </div>
+
+                        <div class="show-count">
+                            <span>Показывать по:</span>
+
+                            <button>9</button>
+                            <button>12</button>
+                            <button class="active">18</button>
+                            <button>24</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="selected-filters">
+                        <button>Набор <span>×</span></button>
+                        <button>MAKITA <span>×</span></button>
+                        <button>от 3 000 до 52 500 ₽ <span>×</span></button>
+                        <button class="clear-filter">Очистить все <span>×</span></button>
+                    </div>
+
+
+                    <!-- PRODUCTS GRID -->
+                    <div class="products-grid">
+
+                        <!-- CARD 1 -->
+                        <div class="product-card">
+                            <span class="hit-badge">ХИТ</span>
+
+                            <div class="product-img">
+                                <img src="../assets/img/Rectangle 22.png" alt="product">
+                            </div>
+
+                            <p class="article">Артикул: XJ89YHGO</p>
+
+                            <h3>
+                                Перфоратор универсальный Wander X645-46 GF 1450W
+                            </h3>
+
+                            <div class="price-row">
+                                <del>15 999 ₽</del>
+                                <strong>12 789 ₽</strong>
+                                <span class="discount">-15%</span>
+                            </div>
+
+                            <div class="card-bottom">
+
+                                <button class="buy-btn">
+                                    <span>
+                                        <img src="../assets/svg/Frame 38.svg" alt="">
+                                    </span>
+                                    Купить
+                                </button>
+
+                                <div class="card-icons">
+
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (2).svg" alt="">
+                                    </button>
+
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (1).svg" alt="">
+                                    </button>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- CARD 2 -->
+                        <div class="product-card">
+
+                            <div class="product-img">
+                                <img src="../assets/img/Rectangle 22.png" alt="product">
+                            </div>
+
+                            <p class="article">Артикул: XJ89YHGO</p>
+
+                            <h3>Смеситель Faris G-120 для раковины</h3>
+
+                            <div class="price-row">
+                                <strong>1 789 ₽</strong>
+                            </div>
+
+                            <div class="card-bottom">
+
+                                <button class="buy-btn">
+                                    <span>
+                                        <img src="../assets/svg/Frame 38.svg" alt="">
+                                    </span>
+                                    Купить
+                                </button>
+
+                                <div class="card-icons">
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (2).svg" alt="">
+                                    </button>
+
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (1).svg" alt="">
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- CARD 3 -->
+                        <div class="product-card">
+                            <span class="hit-badge">ХИТ</span>
+
+                            <div class="product-img">
+                                <img src="../assets/img/Rectangle 22.png" alt="product">
+                            </div>
+
+                            <p class="article">Артикул: XJ89YHGO</p>
+
+                            <h3>Триммерная леска «Спираль-100»</h3>
+
+                            <div class="price-row">
+                                <del>312 ₽</del>
+                                <strong>260 ₽</strong>
+                                <span class="discount">-10%</span>
+                            </div>
+
+                            <div class="card-bottom">
+
+                                <button class="buy-btn">
+                                    <span>
+                                        <img src="../assets/svg/Frame 38.svg" alt="">
+                                    </span>
+                                    Купить
+                                </button>
+
+                                <div class="card-icons">
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (2).svg" alt="">
+                                    </button>
+
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (1).svg" alt="">
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- CARD 4 -->
+                        <div class="product-card">
+
+                            <div class="product-img">
+                                <img src="../assets/img/Rectangle 22.png" alt="product">
+                            </div>
+
+                            <p class="article">Артикул: XJ89YHGO</p>
+
+                            <h3>Унитаз подвесной Aragio с двойным сливом</h3>
+
+                            <div class="price-row">
+                                <del>15 999 ₽</del>
+                                <strong>12 789 ₽</strong>
+                                <span class="discount">-12%</span>
+                            </div>
+
+                            <div class="card-bottom">
+
+                                <button class="buy-btn">
+                                    <span>
+                                        <img src="../assets/svg/Frame 38.svg" alt="">
+                                    </span>
+                                    Купить
+                                </button>
+
+                                <div class="card-icons">
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (2).svg" alt="">
+                                    </button>
+
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (1).svg" alt="">
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- CARD 5 -->
+                        <div class="product-card">
+
+                            <div class="product-img">
+                                <img src="../assets/img/Rectangle 22.png" alt="product">
+                            </div>
+
+                            <p class="article">Артикул: XJ89YHGO</p>
+
+                            <h3>Набор гравировальных насадок Nozzle-Tok</h3>
+
+                            <div class="price-row">
+                                <del>15 999 ₽</del>
+                                <strong>12 789 ₽</strong>
+                                <span class="discount">-15%</span>
+                            </div>
+
+                            <div class="card-bottom">
+                                <button class="buy-btn">
+                                    <span>
+                                        <img src="../assets/svg/Frame 38.svg" alt="">
+                                    </span>
+                                    Купить
+                                </button>
+
+                                <div class="card-icons">
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (2).svg" alt="">
+                                    </button>
+
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (1).svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- CARD 6 -->
+                        <div class="product-card">
+                            <span class="hit-badge">ХИТ</span>
+
+                            <div class="product-img">
+                                <img src="../assets/img/Rectangle 22.png" alt="product">
+                            </div>
+
+                            <p class="article">Артикул: XJ89YHGO</p>
+
+                            <h3>
+                                Перфоратор универсальный Wander X645-46 GF 1450W
+                            </h3>
+
+                            <div class="price-row">
+                                <del>15 999 ₽</del>
+                                <strong>12 789 ₽</strong>
+                                <span class="discount">-15%</span>
+                            </div>
+
+                            <div class="card-bottom">
+                                <button class="buy-btn">
+                                    <span>
+                                        <img src="../assets/svg/Frame 38.svg" alt="">
+                                    </span>
+                                    Купить
+                                </button>
+
+                                <div class="card-icons">
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (2).svg" alt="">
+                                    </button>
+
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (1).svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- CARD 7 -->
+                        <div class="product-card">
+
+                            <div class="product-img">
+                                <img src="../assets/img/Rectangle 22.png" alt="product">
+                            </div>
+
+                            <p class="article">Артикул: XJ89YHGO</p>
+
+                            <h3>Смеситель Faris G-120 для раковины</h3>
+
+                            <div class="price-row">
+                                <strong>1 789 ₽</strong>
+                            </div>
+
+                            <div class="card-bottom">
+                                <button class="buy-btn">
+                                    <span>
+                                        <img src="../assets/svg/Frame 38.svg" alt="">
+                                    </span>
+                                    Купить
+                                </button>
+
+                                <div class="card-icons">
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (2).svg" alt="">
+                                    </button>
+
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (1).svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- CARD 8 -->
+                        <div class="product-card">
+                            <span class="hit-badge">ХИТ</span>
+
+                            <div class="product-img">
+                                <img src="../assets/img/Rectangle 22.png" alt="product">
+                            </div>
+
+                            <p class="article">Артикул: XJ89YHGO</p>
+
+                            <h3>Триммерная леска «Спираль-100»</h3>
+
+                            <div class="price-row">
+                                <del>312 ₽</del>
+                                <strong>260 ₽</strong>
+                                <span class="discount">-10%</span>
+                            </div>
+
+                            <div class="card-bottom">
+                                <button class="buy-btn">
+                                    <span>
+                                        <img src="../assets/svg/Frame 38.svg" alt="">
+                                    </span>
+                                    Купить
+                                </button>
+
+                                <div class="card-icons">
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (2).svg" alt="">
+                                    </button>
+
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (1).svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- CARD 9 -->
+                        <div class="product-card">
+
+                            <div class="product-img">
+                                <img src="../assets/img/Rectangle 22.png" alt="product">
+                            </div>
+
+                            <p class="article">Артикул: XJ89YHGO</p>
+
+                            <h3>Набор гравировальных насадок Nozzle-Tok</h3>
+
+                            <div class="price-row">
+                                <del>15 999 ₽</del>
+                                <strong>12 789 ₽</strong>
+                                <span class="discount">-15%</span>
+                            </div>
+
+                            <div class="card-bottom">
+                                <button class="buy-btn">
+                                    <span>
+                                        <img src="../assets/svg/Frame 38.svg" alt="">
+                                    </span>
+                                    Купить
+                                </button>
+
+                                <div class="card-icons">
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (2).svg" alt="">
+                                    </button>
+
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (1).svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- CARD 10 -->
+                        <div class="product-card">
+                            <span class="hit-badge">ХИТ</span>
+
+                            <div class="product-img">
+                                <img src="../assets/img/Rectangle 22.png" alt="product">
+                            </div>
+
+                            <p class="article">Артикул: XJ89YHGO</p>
+
+                            <h3>
+                                Перфоратор универсальный Wander X645-46 GF 1450W
+                            </h3>
+
+                            <div class="price-row">
+                                <del>15 999 ₽</del>
+                                <strong>12 789 ₽</strong>
+                                <span class="discount">-15%</span>
+                            </div>
+
+                            <div class="card-bottom">
+                                <button class="buy-btn">
+                                    <span>
+                                        <img src="../assets/svg/Frame 38.svg" alt="">
+                                    </span>
+                                    Купить
+                                </button>
+
+                                <div class="card-icons">
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (2).svg" alt="">
+                                    </button>
+
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (1).svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- CARD 11 -->
+                        <div class="product-card">
+
+                            <div class="product-img">
+                                <img src="../assets/img/Rectangle 22.png" alt="product">
+                            </div>
+
+                            <p class="article">Артикул: XJ89YHGO</p>
+
+                            <h3>Унитаз подвесной Aragio с двойным сливом</h3>
+
+                            <div class="price-row">
+                                <del>15 999 ₽</del>
+                                <strong>12 789 ₽</strong>
+                                <span class="discount">-12%</span>
+                            </div>
+
+                            <div class="card-bottom">
+                                <button class="buy-btn">
+                                    <span>
+                                        <img src="../assets/svg/Frame 38.svg" alt="">
+                                    </span>
+                                    Купить
+                                </button>
+
+                                <div class="card-icons">
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (2).svg" alt="">
+                                    </button>
+
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (1).svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- CARD 12 -->
+                        <div class="product-card">
+
+                            <div class="product-img">
+                                <img src="../assets/img/Rectangle 22.png" alt="product">
+                            </div>
+
+                            <p class="article">Артикул: XJ89YHGO</p>
+
+                            <h3>Смеситель Faris G-120 для раковины</h3>
+
+                            <div class="price-row">
+                                <strong>1 789 ₽</strong>
+                            </div>
+
+                            <div class="card-bottom">
+                                <button class="buy-btn">
+                                    <span>
+                                        <img src="../assets/svg/Frame 38.svg" alt="">
+                                    </span>
+                                    Купить
+                                </button>
+
+                                <div class="card-icons">
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (2).svg" alt="">
+                                    </button>
+
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (1).svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- CARD 13 -->
+                        <div class="product-card">
+                            <span class="hit-badge">ХИТ</span>
+
+                            <div class="product-img">
+                                <img src="../assets/img/Rectangle 22.png" alt="product">
+                            </div>
+
+                            <p class="article">Артикул: XJ89YHGO</p>
+
+                            <h3>Триммерная леска «Спираль-100»</h3>
+
+                            <div class="price-row">
+                                <del>312 ₽</del>
+                                <strong>260 ₽</strong>
+                                <span class="discount">-10%</span>
+                            </div>
+
+                            <div class="card-bottom">
+                                <button class="buy-btn">
+                                    <span>
+                                        <img src="../assets/svg/Frame 38.svg" alt="">
+                                    </span>
+                                    Купить
+                                </button>
+
+                                <div class="card-icons">
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (2).svg" alt="">
+                                    </button>
+
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (1).svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- CARD 14 -->
+                        <div class="product-card">
+
+                            <div class="product-img">
+                                <img src="../assets/img/Rectangle 22.png" alt="product">
+                            </div>
+
+                            <p class="article">Артикул: XJ89YHGO</p>
+
+                            <h3>Набор гравировальных насадок Nozzle-Tok</h3>
+
+                            <div class="price-row">
+                                <del>15 999 ₽</del>
+                                <strong>12 789 ₽</strong>
+                                <span class="discount">-15%</span>
+                            </div>
+
+                            <div class="card-bottom">
+                                <button class="buy-btn">
+                                    <span>
+                                        <img src="../assets/svg/Frame 38.svg" alt="">
+                                    </span>
+                                    Купить
+                                </button>
+
+                                <div class="card-icons">
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (2).svg" alt="">
+                                    </button>
+
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (1).svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- CARD 15 -->
+                        <div class="product-card">
+                            <span class="hit-badge">ХИТ</span>
+
+                            <div class="product-img">
+                                <img src="../assets/img/Rectangle 22.png" alt="product">
+                            </div>
+
+                            <p class="article">Артикул: XJ89YHGO</p>
+
+                            <h3>
+                                Перфоратор универсальный Wander X645-46 GF 1450W
+                            </h3>
+
+                            <div class="price-row">
+                                <del>15 999 ₽</del>
+                                <strong>12 789 ₽</strong>
+                                <span class="discount">-15%</span>
+                            </div>
+
+                            <div class="card-bottom">
+                                <button class="buy-btn">
+                                    <span>
+                                        <img src="../assets/svg/Frame 38.svg" alt="">
+                                    </span>
+                                    Купить
+                                </button>
+
+                                <div class="card-icons">
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (2).svg" alt="">
+                                    </button>
+
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (1).svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- CARD 16 -->
+                        <div class="product-card">
+
+                            <div class="product-img">
+                                <img src="../assets/img/Rectangle 22.png" alt="product">
+                            </div>
+
+                            <p class="article">Артикул: XJ89YHGO</p>
+
+                            <h3>Унитаз подвесной Aragio с двойным сливом</h3>
+
+                            <div class="price-row">
+                                <del>15 999 ₽</del>
+                                <strong>12 789 ₽</strong>
+                                <span class="discount">-12%</span>
+                            </div>
+
+                            <div class="card-bottom">
+                                <button class="buy-btn">
+                                    <span>
+                                        <img src="../assets/svg/Frame 38.svg" alt="">
+                                    </span>
+                                    Купить
+                                </button>
+
+                                <div class="card-icons">
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (2).svg" alt="">
+                                    </button>
+
+                                    <button>
+                                        <img src="../assets/svg/Frame 38 (1).svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+
+
+            <!-- PAGINATION -->
+            <div class="pagination">
+                <button class="pagination-long">← &nbsp; Назад</button>
+
+                <button class="current">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>...</button>
+                <button>231</button>
+
+                <button class="pagination-long">Далее &nbsp; →</button>
+            </div>
+
+
+            <!-- DESCRIPTION -->
+            <section class="catalog-info">
+
+                <h2>Купить электроинструмент</h2>
+
+                <p>
+                    Здесь вы найдете самый широкий выбор высококачественных
+                    электроинструментов для любых задач. Независимо от того,
+                    являетесь ли вы профессиональным мастером или занимаетесь
+                    ремонтами и строительством в домашних условиях, у нас есть
+                    все необходимое, чтобы сделать вашу работу эффективной и комфортной.
+                </p>
+
+                <p>
+                    У нас представлены электроинструменты от ведущих мировых
+                    производителей, гарантирующие надежность, долгий срок службы
+                    и безупречное качество.
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Дрели и Шуруповерты:</strong>
+                        От мощных перфораторов для бурения бетона до удобных
+                        шуруповертов для быстрой и точной работы.
+                    </li>
+
+                    <li>
+                        <strong>Пилы и Фрезеры:</strong>
+                        Выбор инструментов для точной обработки различных материалов.
+                    </li>
+
+                    <li>
+                        <strong>Лобзики и Торцовочные Пилы:</strong>
+                        Для точной резки по контурам и под различными углами.
+                    </li>
+
+                    <li>
+                        <strong>Шлифовальные машины:</strong>
+                        Для обработки и шлифования различных поверхностей.
+                    </li>
+
+                    <li>
+                        <strong>Сварочные аппараты:</strong>
+                        Для профессиональных и домашних работ.
+                    </li>
+                </ul>
+
+            </section>
+
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-logo">
+                    <img src="../assets/svg/logo 1.svg" alt="Стройоптторг">
+
+                    <p>
+                        Всё для строительства и ремонта
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Покупателям</h3>
+                    <a href="#">О компании</a>
+                    <a href="#">Доставка</a>
+                    <a href="#">Оплата</a>
+                    <a href="#">Возврат</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Информация</h3>
+                    <a href="#">Отзывы</a>
+                    <a href="#">Новости</a>
+                    <a href="#">Вопрос-ответ</a>
+                    <a href="#">Контакты</a>
+                </div>
+
+                <div class="footer-column footer-contact">
+                    <h3>Контакты</h3>
+                    <strong>8 800 444 00 65</strong>
+                    <p>Ежедневно, с 8:00 до 18:00</p>
+                    <button>Заказать звонок</button>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© СтройОптТорг. Все права защищены.</p>
+            </div>
+
+        </div>
+    </footer>
+
 </body>
+
 </html>
