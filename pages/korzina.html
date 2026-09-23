@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>СТРОЙОПТОРГ</title>
     <link rel="stylesheet" href="../css/korzina.css">
 </head>
 
@@ -108,7 +108,7 @@
 
     <section class="stroy">
         <div class="container">
-            <p>Стройоптторг <span>  / Корзина товаров</span></p>
+            <p>Стройоптторг <span> / Корзина товаров</span></p>
         </div>
     </section>
 
@@ -125,12 +125,28 @@
                     <div class="line"></div>
                     <div class="text">
                         <span class="price">0 ₽</span>
-                       <span class="price max_price">20 000 ₽</span>
+                        <span class="price max_price">20 000 ₽</span>
                     </div>
                 </div>
-                <h2>Добавьте в корзину товаров <span>на 20.000 ₽</span> и получите скидку 12% <span class="info">Информация о скидках от суммы корзины</span></h2>
+                <h2>Добавьте в корзину товаров <span>на 20.000 ₽</span> и получите скидку 12% <div class="info-wrapper">
+                        <input type="checkbox" id="info-toggle" class="info-toggle">
+                        <label for="info-toggle" class="info">Информация о скидках от суммы корзины</label>
+
+                        <div class="tooltip">
+                            <p class="tooltip-title">Сейчас у нас действуют следующие пороги:</p>
+                            <div class="tooltip-list">
+                                <span class="item">от <strong>3 000 ₽</strong> <span
+                                        class="badge green">-5%</span></span>
+                                <span class="item">от <strong>7 000 ₽</strong> <span
+                                        class="badge orange">-10%</span></span>
+                                <span class="item">от <strong>20 000 ₽</strong> <span
+                                        class="badge red">-15%</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </h2>
             </div>
-        </div>  
+        </div>
     </section>
 
     <div class="total">
@@ -143,7 +159,7 @@
             <div class="promokode">
                 <p class="skidka">Скидка от суммы заказа</p>
                 <h3>0</h3>
-            </div>  
+            </div>
             <div class="promokode">
                 <p class="summa">Сумма</p>
                 <h2>0</h2>
@@ -170,7 +186,30 @@
                 <h3>Количество</h3>
                 <h3>Сумма</h3>
             </div>
+            <div class="purchases_cards">
+                <div class="info">
+                    <img src="../assets/img/drel.png" alt="drel">
+                    <div class="card_info">
+                        <p>Перфоратор универсальный Wander X645-46 GF 1450W</p>
+                        <h5>Артикул: XJ89YHGO</h5>
+                    </div>
+                </div>
+                <div class="prices">
+                    <h2>7 899 ₽</h2>
+                    <h2 class="cars_discounts">7 899 ₽</h2>
+                </div>
+                <div class="how_much">
+                    <p>-</p>
+                    <p>0</p>
+                    <p>+</p>
+                </div>
+                <div class="card_total_price">
+                    <h2>7 899 ₽</h2>
+                    <img src="../assets/svg/delete.svg" alt="trash">
+                </div>
+            </div>
         </div>
+
     </section>
 
 </body>

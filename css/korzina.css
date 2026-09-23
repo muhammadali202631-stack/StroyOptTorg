@@ -290,6 +290,86 @@ body .towars .container .price h2 .info {
   background-color: #F6F8FB;
   padding: 15px 17px;
 }
+body .towars .container .price h2 .info-wrapper {
+  position: relative;
+  display: inline-block;
+}
+body .towars .container .price h2 .info-wrapper .info-toggle {
+  display: none;
+}
+body .towars .container .price h2 .info-wrapper .info-toggle:checked ~ .tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+body .towars .container .price h2 .info-wrapper .info {
+  color: #117FE3;
+  background-color: #F6F8FB;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+}
+body .towars .container .price h2 .info-wrapper .tooltip {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: #FFFFFF;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  white-space: nowrap;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease;
+}
+body .towars .container .price h2 .info-wrapper .tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 7px;
+  border-style: solid;
+  border-color: #FFFFFF transparent transparent transparent;
+}
+body .towars .container .price h2 .info-wrapper .tooltip .tooltip-title {
+  font-size: 13px;
+  color: #186FD4;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+body .towars .container .price h2 .info-wrapper .tooltip .tooltip-list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  color: #333;
+}
+body .towars .container .price h2 .info-wrapper .tooltip .tooltip-list .item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+body .towars .container .price h2 .info-wrapper .tooltip .tooltip-list .badge {
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+}
+body .towars .container .price h2 .info-wrapper .tooltip .tooltip-list .badge.green {
+  background-color: #00A86B;
+}
+body .towars .container .price h2 .info-wrapper .tooltip .tooltip-list .badge.orange {
+  background-color: #FF9900;
+}
+body .towars .container .price h2 .info-wrapper .tooltip .tooltip-list .badge.red {
+  background-color: #E6004C;
+}
 body .total {
   position: absolute;
   width: 370px;
@@ -358,6 +438,26 @@ body .total .container button {
   background-color: #186FD4;
   color: white;
   border-radius: 8px;
+}
+body .towar_card .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+body .towar_card .container .towars_names {
+  justify-content: space-evenly;
+  margin-top: 30px;
+  width: 60%;
+  border-radius: 8px;
+  display: flex;
+  border: 2px solid #EDF0F2;
+}
+body .towar_card .container .purchases_cards {
+  padding-top: 20px;
+  display: flex;
+  border: 2px solid #EDF0F2;
+}
+body .towar_card .container .purchases_cards .info {
+  display: flex;
 }
 
 /*# sourceMappingURL=korzina.css.map */
