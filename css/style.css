@@ -1018,5 +1018,236 @@ body .about-section .about-text button span {
   margin-left: 14px;
   font-size: 19px;
 }
+body .news-section {
+  width: 100%;
+  padding: 70px 0 90px;
+  background: #fff;
+}
+body .news-section .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+body .news-section .news-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+body .news-section .news-top h2 {
+  margin: 0;
+  font-size: 32px;
+  color: #2f3640;
+}
+body .news-section .news-top button {
+  height: 45px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 6px;
+  background: #f5f8fc;
+  color: #1682ee;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+body .news-section .news-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+body .news-section .news-card img {
+  width: 100%;
+  height: 208px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+body .news-section .news-card h3 {
+  margin: 15px 0 12px;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #303741;
+}
+body .news-section .news-card p {
+  margin: 0 0 12px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #444;
+}
+body .news-section .news-card span {
+  font-size: 13px;
+  color: #111;
+}
+body .footer {
+  width: 100%;
+  background: #f4f5f6;
+  color: #40464c;
+}
+body .footer .container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+body .footer .line {
+  width: 100%;
+  height: 1px;
+  background: #dfe2e5;
+}
+body .footer .footer-top {
+  min-height: 135px;
+  display: grid;
+  grid-template-columns: 220px 170px 170px 170px 210px 200px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+body .footer .footer-top .footer-logo {
+  width: 210px;
+  height: auto;
+  display: block;
+}
+body .footer .footer-top p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 19px;
+}
+body .footer .footer-top a {
+  color: #087be3;
+  font-size: 12px;
+}
+body .footer .footer-top .phone {
+  display: flex;
+  flex-direction: column;
+}
+body .footer .footer-top .phone b {
+  color: #111;
+  font-size: 20px;
+  line-height: 24px;
+}
+body .footer .footer-top .phone span {
+  margin-top: 3px;
+  font-size: 11px;
+}
+body .footer .footer-top button {
+  width: 200px;
+  height: 44px;
+  border: 1px solid #ff252b;
+  border-radius: 5px;
+  background: transparent;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+body .footer .footer-main {
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  gap: 70px;
+  padding: 38px 0 28px;
+}
+body .footer .footer-main h3 {
+  margin: 0 0 27px;
+  color: #353a40;
+  font-size: 16px;
+}
+body .footer .footer-main a {
+  display: block;
+  margin-bottom: 22px;
+  color: #444a50;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 19px;
+}
+body .footer .footer-main .info-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+body .footer .footer-main .catalog-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 55px;
+}
+body .footer .footer-pay {
+  min-height: 95px;
+  display: grid;
+  grid-template-columns: 120px 1fr 230px 360px;
+  align-items: center;
+  gap: 30px;
+}
+body .footer .footer-pay p {
+  margin: 0;
+  color: #91989f;
+  font-size: 11px;
+  line-height: 15px;
+}
+body .footer .footer-pay .pay-logos {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+body .footer .footer-pay .pay-logos img {
+  width: auto;
+  max-width: 85px;
+  height: 24px;
+  object-fit: contain;
+  display: block;
+}
+body .footer .footer-pay h3 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 600;
+}
+body .footer .footer-pay .email-box {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 7px;
+  overflow: hidden;
+}
+body .footer .footer-pay .email-box input {
+  flex: 1;
+  height: 100%;
+  padding: 0 17px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: 11px;
+}
+body .footer .footer-pay .email-box button {
+  width: 55px;
+  height: 100%;
+  border: 0;
+  background: transparent;
+  font-size: 19px;
+  cursor: pointer;
+}
+body .footer .footer-bottom {
+  min-height: 70px;
+  display: grid;
+  grid-template-columns: 1fr 170px 270px;
+  align-items: center;
+  gap: 35px;
+}
+body .footer .footer-bottom p {
+  margin: 0;
+  color: #90969c;
+  font-size: 10px;
+  line-height: 20px;
+}
+body .footer .footer-bottom img {
+  width: 140px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+}
+body .footer .footer-bottom a {
+  color: #555;
+  font-size: 11px;
+  text-align: right;
+}
 
 /*# sourceMappingURL=style.css.map */
