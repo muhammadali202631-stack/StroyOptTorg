@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -272,7 +273,7 @@ body .account-page .container .layout .sidebar {
 body .account-page .container .layout .sidebar .sidebar__item {
   display: flex;
   align-items: center;
-  padding: 14px 16px;
+  padding: 20px 16px;
   color: #2C333D;
   font-size: 14px;
   cursor: pointer;
@@ -628,210 +629,6 @@ body .footer .footer-bottom a {
   color: #555;
   font-size: 11px;
   text-align: right;
-}
-
-@media (max-width: 1200px) {
-  body .navbar .logo .main-logo {
-    width: 140px;
-    min-width: 140px;
-    margin-right: 16px;
-  }
-  body .navbar .logo .main-logo img {
-    width: 130px;
-  }
-  body .navbar .logo .catalog-btn {
-    width: 100px;
-    min-width: 100px;
-    margin-right: 16px;
-    font-size: 11px;
-  }
-  body .navbar .logo .navbar-actions {
-    gap: 14px;
-  }
-  body .account-page .container .layout .content .action-cards {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-@media (max-width: 992px) {
-  body .header .container .header-text .text1 {
-    gap: 12px;
-  }
-  body .header .container .header-text .text1 p {
-    font-size: 11px;
-  }
-  body .header .container .header-text .text2 {
-    gap: 12px;
-  }
-  body .header .container .header-text .text2 p {
-    display: none;
-  }
-  body .header .container .header-text .text2 h2 {
-    font-size: 13px;
-  }
-  body .header .container .header-text .text2 button {
-    width: 110px;
-    font-size: 10px;
-  }
-  body .navbar .logo .catalog-btn {
-    width: 48px;
-    min-width: 48px;
-  }
-  body .navbar .logo .catalog-btn span:not(.catalog-menu) {
-    display: none;
-  }
-  body .navbar .logo .search-box {
-    margin-right: 16px;
-  }
-  body .navbar .logo .navbar-actions .tabrik,
-  body .navbar .logo .navbar-actions .rating {
-    display: none;
-  }
-  body .personal-section .personal-container {
-    margin: 24px auto;
-    padding: 0 16px;
-  }
-  body .personal-section .personal-container h1 {
-    font-size: 36px;
-  }
-  body .account-page .container .layout {
-    flex-direction: column;
-  }
-  body .account-page .container .layout .sidebar {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  body .account-page .container .layout .sidebar .sidebar__item {
-    flex: 1 1 auto;
-    width: auto;
-    padding: 12px 14px;
-    font-size: 13px;
-  }
-  body .account-page .container .layout .content .orders .orders__row {
-    grid-template-columns: 1fr 1fr 1fr 50px;
-  }
-  body .account-page .container .layout .content .orders .orders__row .orders__cell {
-    padding: 12px 10px;
-    font-size: 12px;
-  }
-  body .account-page .container .layout .content .orders .orders__row .orders__cell--date {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  body .header {
-    height: auto;
-    padding: 8px 0;
-  }
-  body .header .container .header-text {
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  body .header .container .header-text .text1 {
-    display: none;
-  }
-  body .header .container .header-text .text2 {
-    width: 100%;
-    justify-content: space-between;
-  }
-  body .navbar {
-    height: auto;
-  }
-  body .navbar .logo {
-    flex-wrap: wrap;
-    row-gap: 10px;
-    padding: 10px 0;
-  }
-  body .navbar .logo .main-logo {
-    order: 1;
-  }
-  body .navbar .logo .catalog-btn {
-    order: 2;
-  }
-  body .navbar .logo .search-box {
-    order: 4;
-    width: 100%;
-    margin-right: 0;
-    flex: 0 0 100%;
-  }
-  body .navbar .logo .navbar-actions {
-    order: 3;
-    margin-left: auto;
-    gap: 10px;
-  }
-  body .account-page .container .layout .content .action-cards {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
-  body .account-page .container .layout .content .action-cards .action-card {
-    padding: 16px 8px;
-  }
-  body .account-page .container .layout .content .orders .orders__row {
-    grid-template-columns: 1fr;
-    padding: 12px;
-    gap: 6px;
-  }
-  body .account-page .container .layout .content .orders .orders__row .orders__cell {
-    padding: 4px 0;
-  }
-  body .account-page .container .layout .content .orders .orders__row .orders__cell::before {
-    content: attr(data-label);
-    font-weight: 600;
-    color: #1F1E31;
-    margin-right: 6px;
-    text-transform: uppercase;
-    font-size: 10px;
-  }
-  body .account-page .container .layout .content .orders .orders__row .orders__cell--action {
-    justify-content: flex-end;
-  }
-  body .account-page .container .layout .content .orders .orders__row--head {
-    display: none;
-  }
-}
-@media (max-width: 576px) {
-  body .stroyopttorg-section .stroyopttorg-text {
-    font-size: 12px;
-    gap: 0.5rem;
-    padding: 0 16px;
-  }
-  body .personal-section .personal-container {
-    margin: 16px auto;
-  }
-  body .personal-section .personal-container h1 {
-    font-size: 26px;
-  }
-  body .account-page {
-    padding: 16px 0;
-  }
-  body .account-page .container {
-    padding: 0 16px;
-  }
-  body .account-page .container .layout .sidebar {
-    flex-direction: column;
-  }
-  body .account-page .container .layout .sidebar .sidebar__item {
-    width: 100%;
-  }
-  body .navbar .logo .navbar-actions .nav-action p {
-    display: none;
-  }
-}
-@media (max-width: 480px) {
-  body .header .container .header-text .text2 {
-    flex-wrap: wrap;
-  }
-  body .header .container .header-text .text2 h2 {
-    font-size: 12px;
-  }
-  body .header .container .header-text .text2 button {
-    width: 100%;
-    margin-top: 6px;
-  }
-  body .account-page .container .layout .content .action-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 /*# sourceMappingURL=Personal_Account.css.map */

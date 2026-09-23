@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none
 }
 
 @import "../scss/variablals";
@@ -9,7 +10,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    list-style: none;
+    
 
     .header {
         width: 100%;
@@ -320,7 +321,7 @@ body {
                     .sidebar__item {
                         display: flex;
                         align-items: center;
-                        padding: 24px 16px;
+                        padding: 20px 16px;
                         color: $text2-color;
                         font-size: 14px;
                         cursor: pointer;
