@@ -1394,15 +1394,17 @@ body {
         line-height: 15px;
       }
       .pay-logos {
+        width: 400px;
         display: flex;
         align-items: center;
         gap: 35px;
         img {
-          width: auto;
-          max-width: 85px;
+          width: 54px;
           height: 24px;
           object-fit: contain;
           display: block;
+          background-color: white;
+          color: white;
         }
       }
       h3 {
