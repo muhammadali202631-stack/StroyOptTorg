@@ -9,6 +9,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    list-style: none;
 
     .header {
         width: 100%;
@@ -319,7 +320,7 @@ body {
                     .sidebar__item {
                         display: flex;
                         align-items: center;
-                        padding: 14px 16px;
+                        padding: 24px 16px;
                         color: $text2-color;
                         font-size: 14px;
                         cursor: pointer;

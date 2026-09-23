@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/personal_profile.css">
 </head>
+
 <body>
-    
+
+
     <header class="header">
         <div class="container">
             <div class="header-text">
@@ -99,5 +102,89 @@
             </div>
         </div>
     </nav>
+
+    <section class="stroyopttorg-section">
+        <div class="stroyopttorg-text stroyopttorg-container">
+            <p>Стройоптторг</p>
+            <h5>/</h5>
+            <span> Личный кабинет</span>
+        </div>
+    </section>
+
+
+    <section class="personal-section">
+        <div class="personal-container">
+            <h1>Личный кабинет</h1>
+        </div>
+    </section>
+
+
+<section class="profile-section">
+    <div class="container profile-container">
+        <!-- Chap tomondagi Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar__item">
+                <a  href="../pages/Personal_Account.html" class="icon"><img src="../assets/img/Vector (19).png" alt=""></a>
+                <span>Мой аккаунт</span>
+            </div>
+            <div class="sidebar__item sidebar__item--active">
+                <span class="icon"><img src="../assets/img/Vector (11).png" alt=""></span>
+                <span>Изменить профиль</span>
+            </div>
+            <div class="sidebar__item">
+                <span class="icon"><img src="../assets/img/Vector (12).png" alt=""></span>
+                <span>Мои заказы</span>
+            </div>
+            <div class="sidebar__item">
+                <span class="icon"><img src="../assets/img/Vector (14).png" alt=""></span>
+                <span>Адрес доставки</span>
+            </div>
+            <div class="sidebar__item">
+                <span class="icon"><img src="../assets/img/Vector (16).png" alt=""></span>
+                <span>Избранные товары</span>
+                <span class="badge">7</span>
+            </div>
+            <div class="sidebar__item">
+                <span class="icon"><img src="../assets/img/Vector (17).png" alt=""></span>
+                <span>Сменить пароль</span>
+            </div>
+            <div class="sidebar__item">
+                <span class="icon"><img src="../assets/img/Vector (18).png" alt=""></span>
+                <span>Выйти из аккаунта</span>
+            </div>
+        </aside>
+
+        <!-- O'ng tomondagi Forma kardi -->
+        <main class="profile-content">
+            <h2 class="profile-title">Изменить профиль</h2>
+            
+            <form class="profile-card">
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span>:</label>
+                    <input type="email" id="email" placeholder="Введите ваш email">
+                </div>
+
+                <div class="form-group">
+                    <label for="fio">ФИО <span class="required">*</span>:</label>
+                    <input type="text" id="fio" placeholder="Введите ваш email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Номер телефона <span class="required">*</span>:</label>
+                    <input type="tel" id="phone" placeholder="+7 (   )   -   -">
+                </div>
+
+                <div class="form-group">
+                    <label for="region">Регион <span class="required">*</span>:</label>
+                    <input type="text" id="region" placeholder="Ваш регион">
+                </div>
+
+                <button type="submit" class="save-btn">СОХРАНИТЬ ИЗМЕНЕНИЯ</button>
+            </form>
+        </main>
+    </div>
+</section>
+
 </body>
+
 </html>
