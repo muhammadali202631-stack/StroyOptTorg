@@ -259,11 +259,24 @@ body {
     width: 100%;
     font-size: 45px;
     font-weight: 600;
+    margin-bottom: 20px;
   }
   .section{
     width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 50px;
+    line-height: 30px;
+    .section-texts {
+        margin-bottom: 20px;
+    }
+    .ul-li {
+        ul {
+            padding-left: 35px;
+            li::marker {
+                color: #EE0906;
+            }
+        }
+    }
   }
 }

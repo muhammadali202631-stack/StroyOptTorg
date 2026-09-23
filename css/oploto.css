@@ -229,12 +229,23 @@ body .oplata {
   width: 100%;
   font-size: 45px;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 body .section {
   width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 50px;
+  line-height: 30px;
+}
+body .section .section-texts {
+  margin-bottom: 20px;
+}
+body .section .ul-li ul {
+  padding-left: 35px;
+}
+body .section .ul-li ul li::marker {
+  color: #EE0906;
 }
 
 /*# sourceMappingURL=oploto.css.map */
