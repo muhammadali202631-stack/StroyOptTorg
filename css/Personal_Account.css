@@ -477,6 +477,90 @@ body .badge {
     margin-top: -40px;
     margin-left: -10px;
   }
+  body .account-page .container .layout .content .action-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  body .account-page .container .layout .content .orders {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #EDF0F2;
+    border-radius: 15px;
+  }
+  body .account-page .container .layout .content .orders .flex-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  body .account-page .container .layout .content .orders .flex-div .orders__row {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: none;
+  }
+  body .account-page .container .layout .content .orders .flex-div .orders__row .orders__cell {
+    padding: 18px 16px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  body .account-page .container .layout .content .orders .flex-div .orders__row .orders__cell .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  body .account-page .container .layout .content .orders .flex-div .orders__row .orders__cell .status::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  body .account-page .container .layout .content .orders .flex-div .orders__row .orders__cell .status--processing {
+    background: transparent;
+    color: #FF6915;
+    border: 1px solid #FF6915;
+  }
+  body .account-page .container .layout .content .orders .flex-div .orders__row .orders__cell .status--processing::before {
+    background: #FF6915;
+  }
+  body .account-page .container .layout .content .orders .flex-div .orders__row .orders__cell .status--done {
+    background: transparent;
+    color: #11A342;
+    border: 1px solid #11A342;
+  }
+  body .account-page .container .layout .content .orders .flex-div .orders__row .orders__cell .status--done::before {
+    background: #11A342;
+  }
+  body .account-page .container .layout .content .orders .flex-div .orders__row .orders__cell .status--cancelled {
+    background: transparent;
+    color: #E52B0E;
+    border: 1px solid #E52B0E;
+  }
+  body .account-page .container .layout .content .orders .flex-div .orders__row .orders__cell .status--cancelled::before {
+    background: #E52B0E;
+  }
+  body .account-page .container .layout .content .orders .flex-div .orders__row .orders__cell .row-btn {
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  body .account-page .container .layout .content .orders .flex-div .orders__row:last-child {
+    border-bottom: none;
+  }
+  body .account-page .container .layout .content .orders .flex-div .orders__row--head .orders__cell {
+    font-size: 12px;
+    font-weight: 600;
+    color: #1F1E31;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 12px 16px;
+  }
 }
 
 /*# sourceMappingURL=Personal_Account.css.map */
