@@ -1182,16 +1182,18 @@ body .footer .footer-pay p {
   line-height: 15px;
 }
 body .footer .footer-pay .pay-logos {
+  width: 400px;
   display: flex;
   align-items: center;
   gap: 35px;
 }
 body .footer .footer-pay .pay-logos img {
-  width: auto;
-  max-width: 85px;
+  width: 54px;
   height: 24px;
   object-fit: contain;
   display: block;
+  background-color: white;
+  color: white;
 }
 body .footer .footer-pay h3 {
   margin: 0;
