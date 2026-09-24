@@ -8,20 +8,6 @@
 @import "../scss/variablals";
 
 
-@media (max-width: 480px) {
-    .mobile-menu {
-        display: flex;
-    }
-
-    .footer .footer-main .info-links.open,
-    .footer .footer-main .catalog-links.open {
-        display: grid;
-    }
-
-    .footer .footer-main h3.open .acc-chevron {
-        transform: rotate(180deg);
-    }
-}
 
 .burger-btn {
     display: none;
