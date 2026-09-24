@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/Personal_Account.css">
+    <link rel="stylesheet" href="../css/custom_order.css">
 </head>
 
 <body>
@@ -121,7 +121,7 @@
         <div class="container">
             <div class="layout">
                 <section class="sidebar">
-                    <div class="sidebar__item sidebar__item--active">
+                    <div class="sidebar__item ">
                         <span class="icon"><img src="../assets/img/Vector (10).png" alt=""></span>
                         <span>Мой аккаунт</span>
                     </div>
@@ -129,7 +129,7 @@
                         <span class="icon"><img src="../assets/img/Vector (11).png" alt=""></span>
                         <span>Изменить профиль</span>
                     </a>
-                    <a href="../pages/custom_order.html" class="sidebar__item">
+                    <a href="../pages/custom_order.html" class="sidebar__item sidebar__item--active">
                         <span class="icon"><img src="../assets/img/Vector (12).png" alt=""></span>
                         <span>Мои заказы</span>
                     </a>
@@ -152,35 +152,8 @@
                     </div>
                 </section>
                 <section class="content">
-                    <p class="greeting">Здравствуйте, Евгений!</p>
-                    <div class="action-cards">
-                        <div class="action-card action-card--active">
-                            <span class="icon icon--lg"><img src="../assets/img/Vector (1).png" alt=""></span>
-                            <span class="action-card__label">Мои заказы</span>
-                        </div>
-                        <a href="../pages/personal_profile.html" class="action-card">
-                            <span class="icon icon--lg"><img src="../assets/img/Vector (5).png" alt=""></span>
-                            <span class="action-card__label">Изменить профиль</span>
-                        </a>
-                        <div class="action-card">
-                            <span class="icon icon--lg"><img src="../assets/img/Vector (6).png" alt=""></span>
-                            <span class="action-card__label">Адрес доставки</span>
-                        </div>
-                        <div class="action-card">
-                            <span class="badge badge--card">3</span>
-                            <span class="icon icon--lg"><img src="../assets/img/Vector (7).png" alt=""></span>
-                            <span class="action-card__label">Избранное</span>
-                        </div>
-                        <div class="action-card">
-                            <span class="icon icon--lg"><img src="../assets/img/Vector (8).png" alt=""></span>
-                            <span class="action-card__label">Сменить пароль</span>
-                        </div>
-                        <div class="action-card">
-                            <span class="icon icon--lg"><img src="../assets/img/Vector (9).png" alt=""></span>
-                            <span class="action-card__label">Выйти</span>
-                        </div>
-                    </div>
-                    <p class="section-title">Текущие заказы</p>
+
+                    <p class="section-title">История заказов</p>
                     <div class="orders ">
                         <div class="flex-div">
                             <div class="orders__row orders__row--head">
@@ -248,10 +221,24 @@
                         </div>
                     </div>
                 </section>
+
             </div>
         </div>
     </div>
 
+    <div class="pagination">
+        <button class="pagination__btn pagination__btn--prev">
+            <span><img src="../assets/img/Arrow 5 (1).png" alt=""></span> Назад
+        </button>
+        <div class="pagination__pages">
+            <a href="#" class="pagination__page pagination__page--active">1</a>
+            <a href="#" class="pagination__page">2</a>
+            <a href="#" class="pagination__page">3</a>
+        </div>
+        <button class="pagination__btn pagination__btn--next">
+            Далее <span><img src="../assets/img/Arrow 5.png" alt=""></span>
+        </button>
+    </div>
 
     <footer class="footer">
         <div class="container">
