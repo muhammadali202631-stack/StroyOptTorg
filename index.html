@@ -136,13 +136,41 @@
     </nav>
 
     <section class="section-rasm">
-        <div class="container hero">
-            <div class="hero-text">
-                <h1>Электроинструмент <br>для любых нужд</h1>
-                <p>У нас обновился ассортимент сантехники, мебели для <br> ванной комнаты, а так же других сопутствующих
-                    товаров.</p>
-                <button class="hero-btn">ПЕРЕЙТИ К ТОВАРАМ <span>›</span> </button>
+        <div class="container hero" id="heroSlider">
+            <div class="hero-slides">
+                <div class="hero-slide slide-1 active" style="background-image: url('./assets/img/Group 31.png');">
+                    <div class="hero-text">
+                        <h1>Электроинструмент <br>для любых нужд</h1>
+                        <p>У нас обновился ассортимент сантехники, мебели для <br> ванной комнаты, а так же других
+                            сопутствующих товаров.</p>
+                        <button class="hero-btn">ПЕРЕЙТИ К ТОВАРАМ <span>›</span> </button>
+                    </div>
+                </div>
+                <div class="hero-slide slide-2" style="background-image: url('./assets/img/Group 31 (1).png');">
+                    <div class="hero-text">
+                        <h1>Сантехника <br>по выгодным ценам</h1>
+                        <p>Большой выбор смесителей, унитазов и душевых систем <br> от проверенных брендов со скидками
+                            до 30%.</p>
+                        <button class="hero-btn">СМОТРЕТЬ АКЦИЮ <span>›</span> </button>
+                    </div>
+                </div>
+                <div class="hero-slide slide-3" style="background-image: url('./assets/img/Group 31 (2).png');">
+                    <div class="hero-text">
+                        <h1>Отделочные материалы <br>для вашего ремонта</h1>
+                        <p>Краски, клеи и напольные покрытия — всё для быстрого <br> и качественного ремонта в одном
+                            месте.</p>
+                        <button class="hero-btn">ВЫБРАТЬ ТОВАР <span>›</span> </button>
+                    </div>
+                </div>
+                <div class="hero-slide slide-4" style="background-image: url('./assets/img/Group 31 (3).png');">
+                    <div class="hero-text">
+                        <h1>Доставка <br>по всей стране</h1>
+                        <p>Оформляйте заказ онлайн — привезём быстро и аккуратно <br> прямо к вам домой или на объект.</p>
+                        <button class="hero-btn">УЗНАТЬ БОЛЬШЕ <span>›</span> </button>
+                    </div>
+                </div>
             </div>
+
             <button class="slider-arrow slider-prev" aria-label="Предыдущий слайд">
                 ‹
             </button>
@@ -150,14 +178,15 @@
                 ›
             </button>
             <div class="slider-dots">
-                <button class="dot"></button>
-                <button class="dot active"></button>
-                <button class="dot"></button>
-                <button class="dot"></button>
+                <button class="dot active" data-index="0"></button>
+                <button class="dot" data-index="1"></button>
+                <button class="dot" data-index="2"></button>
+                <button class="dot" data-index="3"></button>
             </div>
         </div>
-    
+
     </section>
+
 
     <section class="advantages-section">
         <div class="container">
@@ -664,6 +693,74 @@
                 heading.classList.toggle('open', isOpen);
             });
         });
+
+        // Hero banner slayderi (avto-almashish + strelka/nuqta boshqaruvi + svayp)
+        (function () {
+            var slider = document.getElementById('heroSlider');
+            if (!slider) return;
+
+            var slides = slider.querySelectorAll('.hero-slide');
+            var dots = slider.querySelectorAll('.dot');
+            var prevBtn = slider.querySelector('.slider-prev');
+            var nextBtn = slider.querySelector('.slider-next');
+            var current = 0;
+            var total = slides.length;
+            var autoplayDelay = 5000;
+            var timer = null;
+
+            function goTo(index) {
+                index = (index + total) % total;
+                slides[current].classList.remove('active');
+                dots[current].classList.remove('active');
+                current = index;
+                slides[current].classList.add('active');
+                dots[current].classList.add('active');
+            }
+
+            function next() { goTo(current + 1); }
+            function prev() { goTo(current - 1); }
+
+            function startAutoplay() {
+                stopAutoplay();
+                timer = setInterval(next, autoplayDelay);
+            }
+
+            function stopAutoplay() {
+                if (timer) clearInterval(timer);
+            }
+
+            if (nextBtn) nextBtn.addEventListener('click', function () { next(); startAutoplay(); });
+            if (prevBtn) prevBtn.addEventListener('click', function () { prev(); startAutoplay(); });
+
+            dots.forEach(function (dot, i) {
+                dot.addEventListener('click', function () {
+                    goTo(i);
+                    startAutoplay();
+                });
+            });
+
+            // Sichqoncha ustida to'xtatish (desktop)
+            slider.addEventListener('mouseenter', stopAutoplay);
+            slider.addEventListener('mouseleave', startAutoplay);
+
+            // Mobil uchun barmoq bilan surish (swipe)
+            var touchStartX = 0;
+            slider.addEventListener('touchstart', function (e) {
+                touchStartX = e.changedTouches[0].screenX;
+                stopAutoplay();
+            }, { passive: true });
+
+            slider.addEventListener('touchend', function (e) {
+                var touchEndX = e.changedTouches[0].screenX;
+                var diff = touchEndX - touchStartX;
+                if (Math.abs(diff) > 40) {
+                    diff < 0 ? next() : prev();
+                }
+                startAutoplay();
+            }, { passive: true });
+
+            startAutoplay();
+        })();
     </script>
 
 </body>

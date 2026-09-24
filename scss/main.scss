@@ -545,12 +545,55 @@ body {
     .hero {
       height: 390px;
       position: relative;
-      background-image: url("../assets/img/Group 31.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
       border-radius: 10px;
       overflow: visible;
+
+      .hero-slides {
+        position: absolute;
+        inset: 0;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .hero-slide {
+        position: absolute;
+        inset: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.9s ease;
+
+        &::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.6) 0%,
+            rgba(255, 255, 255, 0.2) 42%,
+            rgba(255, 255, 255, 0) 62%
+          );
+          z-index: 0;
+        }
+
+        &.active {
+          opacity: 1;
+          visibility: visible;
+          z-index: 1;
+          animation: heroZoom 7s ease-out forwards;
+        }
+      }
+
+      @keyframes heroZoom {
+        from {
+          transform: scale(1.07);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
 
       .hero-text {
         position: absolute;
