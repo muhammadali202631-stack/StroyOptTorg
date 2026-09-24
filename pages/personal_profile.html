@@ -10,11 +10,18 @@
 
 <body>
 
-
     <header class="header">
         <div class="container">
             <div class="header-text">
                 <div class="text1">
+                    <p class="burger-btn" aria-label="Меню">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </p>
                     <p>О компании</p>
                     <p>Оплата</p>
                     <p>Доставка</p>
@@ -118,10 +125,14 @@
         </div>
     </section>
 
-
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
     <section class="profile-section">
         <div class="container profile-container">
-            <aside class="sidebar">
+            <aside class="sidebar" id="profileSidebar">
+                <div class="sidebar__header">
+                    <h3>Меню профиля</h3>
+                    <button class="sidebar__close" id="closeSidebar">&times;</button>
+                </div>
                 <a href="../pages/Personal_Account.html" class="sidebar__item">
                     <span class="icon"><img src="../assets/img/Vector (19).png" alt=""></span>
                     <span>Мой аккаунт</span>
@@ -152,31 +163,36 @@
                     <span>Выйти из аккаунта</span>
                 </div>
             </aside>
-
             <main class="profile-content">
+                <div class="btn-flex" id="openSidebar">
+                    <span class="burger-btn2" aria-label="Меню">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </span>
+                    <p>Меню профиля</p>
+                </div>
                 <h2 class="profile-title">Изменить профиль</h2>
-
                 <form class="profile-card">
                     <div class="form-group">
                         <label for="email">Email <span class="required">*</span>:</label>
                         <input type="email" id="email" placeholder="Введите ваш email">
                     </div>
-
                     <div class="form-group">
                         <label for="fio">ФИО <span class="required">*</span>:</label>
                         <input type="text" id="fio" placeholder="Введите ваш email">
                     </div>
-
                     <div class="form-group">
                         <label for="phone">Номер телефона <span class="required">*</span>:</label>
                         <input type="tel" id="phone" placeholder="+7 (   )   -   -">
                     </div>
-
                     <div class="form-group">
                         <label for="region">Регион <span class="required">*</span>:</label>
                         <input type="text" id="region" placeholder="Ваш регион">
                     </div>
-
                     <button type="submit" class="save-btn">СОХРАНИТЬ ИЗМЕНЕНИЯ</button>
                 </form>
             </main>
@@ -265,6 +281,8 @@
         </div>
     </footer>
 
+
+    <script src="../js/profile.js"></script>
 </body>
 
 </html>
