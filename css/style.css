@@ -482,12 +482,45 @@ body .section-rasm .container {
 body .section-rasm .hero {
   height: 390px;
   position: relative;
-  background-image: url("../assets/img/Group 31.png");
+  border-radius: 10px;
+  overflow: visible;
+}
+body .section-rasm .hero .hero-slides {
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .section-rasm .hero .hero-slide {
+  position: absolute;
+  inset: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 10px;
-  overflow: visible;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.9s ease;
+}
+body .section-rasm .hero .hero-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 42%, rgba(255, 255, 255, 0) 62%);
+  z-index: 0;
+}
+body .section-rasm .hero .hero-slide.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+  animation: heroZoom 7s ease-out forwards;
+}
+@keyframes heroZoom {
+  from {
+    transform: scale(1.07);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 body .section-rasm .hero .hero-text {
   position: absolute;
