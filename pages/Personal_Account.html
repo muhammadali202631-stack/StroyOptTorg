@@ -14,6 +14,14 @@
         <div class="container">
             <div class="header-text">
                 <div class="text1">
+                    <button class="burger-btn" aria-label="Меню">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
                     <p>О компании</p>
                     <p>Оплата</p>
                     <p>Доставка</p>
@@ -33,6 +41,7 @@
         <div class="chiziq"></div>
     </header>
 
+
     <nav class="navbar">
         <div class="container">
             <div class="logo">
@@ -48,7 +57,6 @@
                 </button>
                 <div class="search-box">
                     <input type="text" placeholder="Найти среди 50000 товаров. Например: Дрель Bosch">
-
                     <button class="search-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
                             fill="currentColor">
@@ -58,46 +66,38 @@
                         </svg>
                     </button>
                 </div>
-
                 <div class="navbar-actions">
-
                     <div class="nav-action tabrik">
                         <div class="icon-box">
                             <img src="../assets/svg/Frame 8.svg" alt="">
                         </div>
                         <p>Все акции</p>
                     </div>
-
                     <div class="nav-action user">
                         <div class="icon-box">
                             <img src="../assets/svg/Frame 8 (1).svg" alt="">
                         </div>
                         <p>Войти</p>
                     </div>
-
                     <div class="nav-action rating">
                         <div class="icon-box">
                             <img src="../assets/svg/Frame 8 (2).svg" alt="">
                         </div>
                         <p>Сравнение</p>
                     </div>
-
                     <div class="nav-action yurakcha">
                         <div class="icon-box">
                             <img src="../assets/svg/Frame 8 (4).svg" alt="">
                         </div>
                         <p>Избранное</p>
                     </div>
-
                     <div class="nav-action korzinka">
                         <div class="icon-box">
                             <img src="../assets/svg/Frame 8 (3).svg" alt="">
                         </div>
                         <p>Корзина</p>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </nav>
@@ -105,11 +105,10 @@
     <section class="stroyopttorg-section">
         <div class="stroyopttorg-text stroyopttorg-container">
             <p>Стройоптторг</p>
-            <h5>/</h5>
-            <span> Личный кабинет</span>
+            <span>/</span>
+            <span>Личный кабинет</span>
         </div>
     </section>
-
 
     <section class="personal-section">
         <div class="personal-container">
@@ -120,134 +119,194 @@
     <div class="account-page">
         <div class="container">
             <div class="layout">
-                <section class="sidebar">
+                <aside class="sidebar">
                     <div class="sidebar__item sidebar__item--active">
-                        <span class="icon"><img src="../assets/img/Vector (10).png" alt=""></span>
+                        <span class="icon"><img src="../assets/img/Vector (10).png" alt="Мой аккаунт"></span>
                         <span>Мой аккаунт</span>
                     </div>
                     <a href="../pages/personal_profile.html" class="sidebar__item">
-                        <span class="icon"><img src="../assets/img/Vector (11).png" alt=""></span>
+                        <span class="icon"><img src="../assets/img/Vector (11).png" alt="Изменить профиль"></span>
                         <span>Изменить профиль</span>
                     </a>
                     <a href="../pages/custom_order.html" class="sidebar__item">
-                        <span class="icon"><img src="../assets/img/Vector (12).png" alt=""></span>
+                        <span class="icon"><img src="../assets/img/Vector (12).png" alt="Мои заказы"></span>
                         <span>Мои заказы</span>
                     </a>
                     <a href="../pages/personal_address.html" class="sidebar__item">
-                        <span class="icon"><img src="../assets/img/Vector (14).png" alt=""></span>
+                        <span class="icon"><img src="../assets/img/Vector (14).png" alt="Адрес доставки"></span>
                         <span>Адрес доставки</span>
                     </a>
                     <div class="sidebar__item">
-                        <span class="icon"><img src="../assets/img/Vector (16).png" alt=""></span>
+                        <span class="icon"><img src="../assets/img/Vector (16).png" alt="Избранные товары"></span>
                         <span>Избранные товары</span>
                         <span class="badge">7</span>
                     </div>
-                    <a href="../pages/personal_password.html"  class="sidebar__item">
-                        <span class="icon"><img src="../assets/img/Vector (17).png" alt=""></span>
+                    <a href="../pages/personal_password.html" class="sidebar__item">
+                        <span class="icon"><img src="../assets/img/Vector (17).png" alt="Сменить пароль"></span>
                         <span>Сменить пароль</span>
                     </a>
                     <div class="sidebar__item">
-                        <span class="icon"><img src="../assets/img/Vector (18).png" alt=""></span>
+                        <span class="icon"><img src="../assets/img/Vector (18).png" alt="Выйти"></span>
                         <span>Выйти из аккаунта</span>
                     </div>
-                </section>
-                <section class="content">
+                </aside>
+
+                <main class="content">
                     <p class="greeting">Здравствуйте, Евгений!</p>
+
                     <div class="action-cards">
                         <div class="action-card action-card--active">
-                            <span class="icon icon--lg"><img src="../assets/img/Vector (1).png" alt=""></span>
+                            <span class="icon icon--lg"><img src="../assets/img/Vector (1).png" alt="Заказы"></span>
                             <span class="action-card__label">Мои заказы</span>
                         </div>
                         <a href="../pages/personal_profile.html" class="action-card">
-                            <span class="icon icon--lg"><img src="../assets/img/Vector (5).png" alt=""></span>
+                            <span class="icon icon--lg"><img src="../assets/img/Vector (5).png" alt="Профиль"></span>
                             <span class="action-card__label">Изменить профиль</span>
                         </a>
                         <a href="../pages/personal_address.html" class="action-card">
-                            <span class="icon icon--lg"><img src="../assets/img/Vector (6).png" alt=""></span>
+                            <span class="icon icon--lg"><img src="../assets/img/Vector (6).png" alt="Адрес"></span>
                             <span class="action-card__label">Адрес доставки</span>
                         </a>
                         <div class="action-card">
                             <span class="badge badge--card">3</span>
-                            <span class="icon icon--lg"><img src="../assets/img/Vector (7).png" alt=""></span>
+                            <span class="icon icon--lg"><img src="../assets/img/Vector (7).png" alt="Избранное"></span>
                             <span class="action-card__label">Избранное</span>
                         </div>
                         <a href="../pages/personal_password.html" class="action-card">
-                            <span class="icon icon--lg"><img src="../assets/img/Vector (8).png" alt=""></span>
+                            <span class="icon icon--lg"><img src="../assets/img/Vector (8).png" alt="Пароль"></span>
                             <span class="action-card__label">Сменить пароль</span>
                         </a>
                         <div class="action-card">
-                            <span class="icon icon--lg"><img src="../assets/img/Vector (9).png" alt=""></span>
+                            <span class="icon icon--lg"><img src="../assets/img/Vector (9).png" alt="Выйти"></span>
                             <span class="action-card__label">Выйти</span>
                         </div>
                     </div>
-                    <p class="section-title">Текущие заказы</p>
-                    <div class="orders ">
-                        <div class="flex-div">
+
+
+                    <section class="orders-section">
+                        <h2 class="section-title">Текущие заказы</h2>
+                        <div class="orders-table">
                             <div class="orders__row orders__row--head">
-                                <span class="orders__cell orders__cell--number">Номер</span>
-                                <span class="orders__cell orders__cell--date">Дата</span>
-                                <span class="orders__cell orders__cell--status">Статус</span>
-                                <span class="orders__cell orders__cell--total">Итого</span>
-                                <span class="orders__cell orders__cell--action"></span>
+                                <span class="orders__cell">Номер</span>
+                                <span class="orders__cell">Дата</span>
+                                <span class="orders__cell">Статус</span>
+                                <span class="orders__cell">Итого</span>
+                                <span class="orders__cell"></span>
                             </div>
                             <div class="orders__row">
-                                <span class="orders__cell orders__cell--number">#2365341-11</span>
-                                <span class="orders__cell orders__cell--date">16 Августа 2023</span>
-                                <span class="orders__cell orders__cell--status">
+                                <span class="orders__cell">#2365341-11</span>
+                                <span class="orders__cell">16 Августа 2023</span>
+                                <span class="orders__cell">
                                     <span class="status status--processing">Обработка</span>
                                 </span>
-                                <span class="orders__cell orders__cell--total price">36 829 ₽</span>
-                                <span class="orders__cell orders__cell--action">
-                                    <span class="row-btn"><img src="../assets/img/Frame 134076.png" alt=""></span>
+                                <span class="orders__cell price">36 829 ₽</span>
+                                <span class="orders__cell">
+                                    <p class="row-btn" type="button"><img src="../assets/img/Frame 134076.png" alt="">
+                                    </p>
+                                </span>
+                            </div>
+                            <div class="orders__row">
+                                <span class="orders__cell">#2356576-13</span>
+                                <span class="orders__cell">1 Августа 2023</span>
+                                <span class="orders__cell">
+                                    <span class="status status--done">Выполнен</span>
+                                </span>
+                                <span class="orders__cell price">11 299 ₽</span>
+                                <span class="orders__cell">
+                                    <p class="row-btn" type="button"><img src="../assets/img/Frame 134076.png" alt="">
+                                    </p>
+                                </span>
+                            </div>
+                            <div class="orders__row">
+                                <span class="orders__cell">#2356576-13</span>
+                                <span class="orders__cell">1 Августа 2023</span>
+                                <span class="orders__cell">
+                                    <span class="status status--done">Выполнен</span>
+                                </span>
+                                <span class="orders__cell price">11 299 ₽</span>
+                                <span class="orders__cell">
+                                    <p class="row-btn" type="button"><img src="../assets/img/Frame 134076.png" alt="">
+                                    </p>
+                                </span>
+                            </div>
+                            <div class="orders__row">
+                                <span class="orders__cell">#577598-26</span>
+                                <span class="orders__cell">17 Июля 2023</span>
+                                <span class="orders__cell">
+                                    <span class="status status--cancelled">Отмеeнен</span>
+                                </span>
+                                <span class="orders__cell price">1 311 ₽</span>
+                                <span class="orders__cell">
+                                    <p class="row-btn" type="button"><img src="../assets/img/Frame 134076.png" alt="">
+                                    </p>
                                 </span>
                             </div>
                         </div>
-                        <div class="orders__row">
-                            <span class="orders__cell orders__cell--number">#2356576-13</span>
-                            <span class="orders__cell orders__cell--date">1 Августа 2023</span>
-                            <span class="orders__cell orders__cell--status">
-                                <span class="status status--done">Выполнен</span>
-                            </span>
-                            <span class="orders__cell orders__cell--total price">11 299 ₽</span>
-                            <span class="orders__cell orders__cell--action">
-                                <span class="row-btn"><img src="../assets/img/Frame 134076.png" alt=""></span>
-                            </span>
+                        <div class="orders-cards">
+                            <div class="order-card">
+                                <div class="order-card__row">
+                                    <span class="order-card__label">НОМЕР</span>
+                                    <span class="order-card__value">#2365341-11</span>
+                                </div>
+                                <div class="order-card__row">
+                                    <span class="order-card__label">ДАТА</span>
+                                    <span class="order-card__value">16 Августа 2023</span>
+                                </div>
+                                <div class="order-card__row">
+                                    <span class="order-card__label">СТАТУС</span>
+                                    <span class="status status--processing">Обработка</span>
+                                </div>
+                                <div class="order-card__row">
+                                    <span class="order-card__label">ИТОГ</span>
+                                    <span class="order-card__value price">36 829 ₽</span>
+                                </div>
+                                <button type="button" class="order-card__btn">Просмотр заказа</button>
+                            </div>
+
+                            <!-- Карточка 2 -->
+                            <div class="order-card">
+                                <div class="order-card__row">
+                                    <span class="order-card__label">НОМЕР</span>
+                                    <span class="order-card__value">#2365341-11</span>
+                                </div>
+                                <div class="order-card__row">
+                                    <span class="order-card__label">ДАТА</span>
+                                    <span class="order-card__value">16 Августа 2023</span>
+                                </div>
+                                <div class="order-card__row">
+                                    <span class="order-card__label">СТАТУС</span>
+                                    <span class="status status--done">Выполнен</span>
+                                </div>
+                                <div class="order-card__row">
+                                    <span class="order-card__label">ИТОГ</span>
+                                    <span class="order-card__value price">36 829 ₽</span>
+                                </div>
+                                <button type="button" class="order-card__btn">Просмотр заказа</button>
+                            </div>
+
+                            <!-- Карточка 3 -->
+                            <div class="order-card">
+                                <div class="order-card__row">
+                                    <span class="order-card__label">НОМЕР</span>
+                                    <span class="order-card__value">#2365341-11</span>
+                                </div>
+                                <div class="order-card__row">
+                                    <span class="order-card__label">ДАТА</span>
+                                    <span class="order-card__value">16 Августа 2023</span>
+                                </div>
+                                <div class="order-card__row">
+                                    <span class="order-card__label">СТАТУС</span>
+                                    <span class="status status--cancelled">Отменен</span>
+                                </div>
+                                <div class="order-card__row">
+                                    <span class="order-card__label">ИТОГ</span>
+                                    <span class="order-card__value price">36 829 ₽</span>
+                                </div>
+                                <button type="button" class="order-card__btn">Просмотр заказа</button>
+                            </div>
                         </div>
-                        <div class="orders__row">
-                            <span class="orders__cell orders__cell--number">#577598-26</span>
-                            <span class="orders__cell orders__cell--date">17 Июля 2023</span>
-                            <span class="orders__cell orders__cell--status">
-                                <span class="status status--cancelled">Отмеeeнен</span>
-                            </span>
-                            <span class="orders__cell orders__cell--total price">1 311 ₽</span>
-                            <span class="orders__cell orders__cell--action">
-                                <span class="row-btn"><img src="../assets/img/Frame 134076.png" alt=""></span>
-                            </span>
-                        </div>
-                        <div class="orders__row">
-                            <span class="orders__cell orders__cell--number">#436879-12</span>
-                            <span class="orders__cell orders__cell--date">11 Января 2023</span>
-                            <span class="orders__cell orders__cell--status">
-                                <span class="status status--processing">Обработка</span>
-                            </span>
-                            <span class="orders__cell orders__cell--total price">12 889 ₽</span>
-                            <span class="orders__cell orders__cell--action">
-                                <span class="row-btn"><img src="../assets/img/Frame 134076.png" alt=""></span>
-                            </span>
-                        </div>
-                        <div class="orders__row">
-                            <span class="orders__cell orders__cell--number">#2365341-11</span>
-                            <span class="orders__cell orders__cell--date">10 Декабря 2022</span>
-                            <span class="orders__cell orders__cell--status">
-                                <span class="status status--processing">Обработка</span>
-                            </span>
-                            <span class="orders__cell orders__cell--total price">2 829 ₽</span>
-                            <span class="orders__cell orders__cell--action">
-                                <span class="row-btn"><img src="../assets/img/Frame 134076.png" alt=""></span>
-                            </span>
-                        </div>
-                    </div>
-                </section>
+                    </section>
+                </main>
             </div>
         </div>
     </div>

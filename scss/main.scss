@@ -571,12 +571,10 @@ body {
           content: "";
           position: absolute;
           inset: 0;
-          background: linear-gradient(
-            90deg,
-            rgba(255, 255, 255, 0.6) 0%,
-            rgba(255, 255, 255, 0.2) 42%,
-            rgba(255, 255, 255, 0) 62%
-          );
+          background: linear-gradient(90deg,
+              rgba(255, 255, 255, 0.6) 0%,
+              rgba(255, 255, 255, 0.2) 42%,
+              rgba(255, 255, 255, 0) 62%);
           z-index: 0;
         }
 
@@ -592,6 +590,7 @@ body {
         from {
           transform: scale(1.07);
         }
+
         to {
           transform: scale(1);
         }
