@@ -352,6 +352,132 @@ body {
                     flex: 1;
                     min-width: 0;
 
+                    .account-container {
+                        display: flex;
+                        gap: 30px;
+                        align-items: flex-start;
+                        font-family: Arial, sans-serif;
+                    }
+
+
+
+                    .address {
+                        flex-grow: 1;
+                    }
+
+                    .address-title {
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: #111827;
+                        margin-bottom: 20px;
+                    }
+
+                    .address-card {
+                        position: relative;
+                        background-color: #ffffff;
+                        border: 1px solid #eef1f5;
+                        border-radius: 4px;
+                        padding: 24px;
+                    }
+
+                    .address-card-badge {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+                        background-color: #eef5ff;
+                        color: #2563eb;
+                        padding: 8px 14px;
+                        font-size: 11px;
+                        font-weight: 600;
+                        letter-spacing: 0.3px;
+                        border-bottom-left-radius: 4px;
+                    }
+
+                    .address-card-badge svg {
+                        stroke: #2563eb;
+                    }
+
+                    .address-card-name {
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #111827;
+                        margin-top: 0;
+                        margin-bottom: 24px;
+                    }
+
+                    .address-card-details {
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 30px;
+                        margin-bottom: 24px;
+                    }
+
+                    .address-card-col {
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .address-card-col-address {
+                        max-width: 280px;
+                    }
+
+                    .address-card-col p {
+                        margin: 0;
+                        font-size: 13px;
+                        line-height: 1.5;
+                        color: #374151;
+                    }
+
+                    .address-card-label {
+                        font-size: 11px;
+                        color: #9ca3af;
+                        margin-bottom: 4px;
+                    }
+
+                    .address-card-value {
+                        font-weight: 500;
+                    }
+
+                    .address-card-actions {
+                        display: inline-flex;
+                        align-items: center;
+                        background-color: #f9fafb;
+                        border: 1px solid #f3f4f6;
+                        border-radius: 4px;
+                        padding: 4px;
+                    }
+
+                    .address-card-btn {
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+                        background: none;
+                        border: none;
+                        padding: 6px 12px;
+                        font-size: 11px;
+                        font-weight: 600;
+                        color: #6b7280;
+                        cursor: pointer;
+                        transition: color 0.2s;
+                    }
+
+                    .address-card-btn:hover {
+                        color: #111827;
+                    }
+
+                    .address-card-btn svg {
+                        stroke: currentColor;
+                    }
+
+                    .address-card-divider {
+                        width: 1px;
+                        height: 12px;
+                        background-color: #d1d5db;
+                    }
+
                     .greeting {
                         font-size: 20px;
                         font-weight: 600;
