@@ -7,6 +7,7 @@
 .container {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 10px;
 }
 
 body {
@@ -306,6 +307,16 @@ body .section .left-elements .rassilku .rassilku-footer p {
   font-size: 13px;
   text-align: start;
   line-height: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  body .section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  body .section .left-elements .img1, body .section .left-elements .img2 {
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=oploto.css.map */
