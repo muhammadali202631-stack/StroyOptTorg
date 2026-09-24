@@ -241,11 +241,71 @@ body .section {
 body .section .section-texts {
   margin-bottom: 20px;
 }
+body .section .section-texts span {
+  color: #2C333D;
+}
 body .section .ul-li ul {
   padding-left: 35px;
 }
+body .section .ul-li ul li {
+  color: #2C333D;
+}
 body .section .ul-li ul li::marker {
   color: #EE0906;
+}
+body .section .right-elements .text4 p span {
+  font-weight: 600;
+}
+body .section .left-elements .img1, body .section .left-elements .img2 {
+  margin-bottom: 35px;
+}
+body .section .left-elements .rassilku {
+  text-align: center;
+  padding: 0 15px;
+}
+body .section .left-elements .rassilku .rassilku-texts span {
+  font-size: 20px;
+  font-weight: 600;
+}
+body .section .left-elements .rassilku .rassilku-texts p {
+  font-size: 14px;
+  color: #91969D;
+  line-height: 20px;
+  margin-top: 20px;
+}
+body .section .left-elements .rassilku .inputs input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+body .section .left-elements .rassilku .rassilku-btns button {
+  width: 100%;
+  height: 50px;
+  background-color: #1976D2;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+body .section .left-elements .rassilku .rassilku-footer {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+body .section .left-elements .rassilku .rassilku-footer input {
+  width: 50px;
+}
+body .section .left-elements .rassilku .rassilku-footer p {
+  color: #91969D;
+  font-size: 13px;
+  text-align: start;
+  line-height: 20px;
 }
 
 /*# sourceMappingURL=oploto.css.map */
