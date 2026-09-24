@@ -14,6 +14,13 @@
         <div class="container">
             <div class="header-text">
                 <div class="text1">
+                    <button class="burger-btn" aria-label="Меню">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
                     <p>О компании</p>
                     <p>Оплата</p>
                     <p>Доставка</p>
@@ -32,6 +39,29 @@
         </div>
         <div class="chiziq"></div>
     </header>
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <aside class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-top">
+            <img src="./assets/svg/logo 1.svg" alt="Стройоптторг">
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Закрыть меню">✕</button>
+        </div>
+        <nav class="mobile-menu-links">
+            <a href="#">О компании</a>
+            <a href="#">Оплата</a>
+            <a href="#">Доставка</a>
+            <a href="#">Возврат</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Вопрос-ответ</a>
+            <a href="#">Новости</a>
+            <a href="#">Контакты</a>
+        </nav>
+        <div class="mobile-menu-bottom">
+            <span>Ежедневно, с 8:00 до 18:00</span>
+            <h2>8 800 444 00 65</h2>
+            <button>Заказать звонок</button>
+        </div>
+    </aside>
 
     <nav class="navbar">
         <div class="container">
@@ -78,6 +108,7 @@
                     <div class="nav-action rating">
                         <div class="icon-box">
                             <img src="./assets/svg/Frame 8 (2).svg" alt="">
+                            <span class="mob-badge">3</span>
                         </div>
                         <p>Сравнение</p>
                     </div>
@@ -85,6 +116,7 @@
                     <div class="nav-action yurakcha">
                         <div class="icon-box">
                             <img src="./assets/svg/Frame 8 (4).svg" alt="">
+                            <span class="mob-badge">3</span>
                         </div>
                         <p>Избранное</p>
                     </div>
@@ -92,6 +124,7 @@
                     <div class="nav-action korzinka">
                         <div class="icon-box">
                             <img src="./assets/svg/Frame 8 (3).svg" alt="">
+                            <span class="mob-badge">3</span>
                         </div>
                         <p><a href="./pages/korzina.html">Корзина</a></p>
                     </div>
@@ -366,6 +399,7 @@
 
             <div class="offers-products">
                 <div class="offer-card">
+                    <span class="product-badge hit-badge2">хит</span>
                     <div class="offer-image"><img src="./assets/img/Rectangle 22 (4).png" alt=""></div>
                     <p class="article">Артикул: XJ89YHGO</p>
                     <h3>Набор гравировальных насадок Nozzle-Tok</h3>
@@ -432,6 +466,10 @@
                                     src="./assets/svg/Frame 38 (1).svg" alt=""></button></div>
                     </div>
                 </div>
+            </div>
+            <div class="offers-nav">
+                <button class="slider-arrow offers-prev" aria-label="Назад">‹</button>
+                <button class="slider-arrow offers-next" aria-label="Вперёд">›</button>
             </div>
         </div>
     </section>
@@ -502,6 +540,11 @@
                     <span>5 Августа 2023</span>
                 </div>
             </div>
+            <div class="mob-news-nav">
+                <button class="slider-arrow news-prev" aria-label="Назад">‹</button>
+                <button class="slider-arrow news-next" aria-label="Вперёд">›</button>
+            </div>
+            <button class="mob-more-news-btn">Больше новостей</button>
         </div>
     </section>
 
@@ -519,7 +562,7 @@
 
             <div class="footer-main">
                 <div class="info">
-                    <h3>Информация</h3>
+                    <h3>Информация <span class="acc-chevron">⌄</span></h3>
                     <div class="info-links">
                         <div>
                             <a href="#">О компании</a>
@@ -539,7 +582,7 @@
                 </div>
 
                 <div class="catalog">
-                    <h3>Каталог</h3>
+                    <h3>Каталог <span class="acc-chevron">⌄</span></h3>
                     <div class="catalog-links">
                         <div>
                             <a href="#">Общестроительные материалы</a>
@@ -588,6 +631,40 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Mobil burger-menyu (chapdan chiqadigan panel)
+        var burgerBtn = document.querySelector('.burger-btn');
+        var mobileMenu = document.getElementById('mobileMenu');
+        var mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+        var mobileMenuClose = document.getElementById('mobileMenuClose');
+
+        function openMobileMenu() {
+            mobileMenu.classList.add('active');
+            mobileMenuOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('active');
+            mobileMenuOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        if (burgerBtn) burgerBtn.addEventListener('click', openMobileMenu);
+        if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
+        if (mobileMenuOverlay) mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+
+        // Footer akkordeon (Информация / Каталог) — faqat mobil kenglikda ishlaydi
+        document.querySelectorAll('.footer-main h3').forEach(function (heading) {
+            heading.addEventListener('click', function () {
+                var linksBlock = heading.nextElementSibling;
+                if (window.innerWidth > 480 || !linksBlock) return;
+                var isOpen = linksBlock.classList.toggle('open');
+                heading.classList.toggle('open', isOpen);
+            });
+        });
+    </script>
 
 </body>
 
