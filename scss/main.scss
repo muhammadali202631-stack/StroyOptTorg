@@ -267,6 +267,7 @@ body {
       }
     }
   }
+
   .navbar {
     width: 100%;
     height: 82px;
@@ -532,6 +533,7 @@ body {
       }
     }
   }
+
   .section-rasm {
     width: 100%;
     padding: 0 20px 20px;
@@ -720,6 +722,7 @@ body {
       padding: 0 16px 16px;
     }
   }
+
   .advantages-section {
     width: 100%;
     height: 35px;
@@ -811,6 +814,7 @@ body {
       height: auto;
     }
   }
+
   .reklama-section {
     width: 100%;
     height: 205px;
@@ -917,6 +921,7 @@ body {
       height: auto;
     }
   }
+
   .categories-section {
     width: 100%;
     height: 190px;
@@ -1025,6 +1030,7 @@ body {
       margin-top: 24px;
     }
   }
+
   .hits-section {
     width: 100%;
     padding: 45px 0 55px;
@@ -1546,18 +1552,22 @@ body {
       padding: 26px 0 30px;
     }
   }
+
   .hamkorliklar-section {
     width: 100%;
     height: 241px;
     background-color: #f9fafb;
+
     .container {
       max-width: 1400px;
       margin: 0 auto;
+
       .hamkorliklar {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 15px;
+
         img {
           width: 188px;
           padding-top: 40px;
@@ -1579,6 +1589,7 @@ body {
           gap: 12px;
         }
       }
+
       h2 {
         font-size: 33px;
         font-weight: 700;
@@ -1603,10 +1614,12 @@ body {
       padding: 26px 0;
     }
   }
+
   .offers-section {
     width: 100%;
     height: 700px;
     background: #fff;
+
     .container {
       max-width: 1400px;
       margin: auto;
@@ -1616,6 +1629,7 @@ body {
         padding: 26px 16px 30px;
       }
     }
+
     .offers-title {
       margin-bottom: 27px;
       font-size: 30px;
@@ -1626,10 +1640,12 @@ body {
         margin-bottom: 14px;
       }
     }
+
     .offers-tabs {
       display: flex;
       gap: 10px;
       margin-bottom: 45px;
+
       button {
         height: 43px;
         padding: 0 20px;
@@ -1638,6 +1654,7 @@ body {
         background: #fff;
         color: #5f646a;
         cursor: pointer;
+
         &.active {
           background: #f5f8fc;
           color: #1682ee;
@@ -1659,6 +1676,7 @@ body {
         padding-bottom: 2px;
       }
     }
+
     .offers-products {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -1672,8 +1690,10 @@ body {
         padding-bottom: 4px;
       }
     }
+
     .offer-card {
       position: relative;
+
       .product-badge {
         position: absolute;
         top: 0;
@@ -1683,23 +1703,28 @@ body {
         background: #fff;
         font-size: 11px;
       }
+
       .sale-badge {
         border: 1px solid #ff1744;
         color: #ff1744;
       }
+
       .new-badge {
         border: 1px solid #17a96b;
         color: #17a96b;
       }
+
       .hit-badge2 {
         border: 1px solid #ff9700;
         color: #ff8b00;
       }
+
       .offer-image {
         height: 220px;
         display: flex;
         align-items: center;
         justify-content: center;
+
         img {
           width: 100%;
           max-width: 220px;
@@ -1716,6 +1741,7 @@ body {
           height: 150px;
         }
       }
+
       .article {
         margin: 18px 0;
         color: #adb2b7;
@@ -1726,6 +1752,7 @@ body {
           font-size: 10px;
         }
       }
+
       h3 {
         min-height: 50px;
         margin-bottom: 16px;
@@ -1740,15 +1767,18 @@ body {
           line-height: 16px;
         }
       }
+
       .price {
         display: flex;
         align-items: center;
         gap: 9px;
         margin-bottom: 9px;
+
         del {
           color: #aaa;
           font-size: 12px;
         }
+
         strong {
           color: #1767a9;
           font-size: 18px;
@@ -1757,6 +1787,7 @@ body {
             font-size: 14px;
           }
         }
+
         span {
           padding: 5px 6px;
           border-radius: 3px;
@@ -1765,10 +1796,12 @@ body {
           font-size: 9px;
         }
       }
+
       .offer-bottom {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         .buy-btn {
           display: flex;
           align-items: center;
@@ -1787,9 +1820,11 @@ body {
             font-size: 10px;
           }
         }
+
         .actions {
           display: flex;
           gap: 9px;
+
           .action-btn {
             width: 38px;
             height: 38px;
@@ -1833,18 +1868,17 @@ body {
       height: auto;
     }
   }
+
   .about-section {
     width: 100%;
     height: 490px;
     background:
-      linear-gradient(
-        90deg,
+      linear-gradient(90deg,
         #f7f9fb 0%,
         #f7f9fb 39%,
         rgba(247, 249, 251, 0.94) 46%,
         rgba(247, 249, 251, 0.3) 58%,
-        rgba(247, 249, 251, 0) 68%
-      ),
+        rgba(247, 249, 251, 0) 68%),
       url("../assets/img/arrangement-yellow-set-repair-tools 1 (2).png");
     background-repeat: no-repeat;
     background-position:
@@ -1853,6 +1887,7 @@ body {
     background-size:
       100% 100%,
       58% 100%;
+
     .container {
       max-width: 1400px;
       height: 100%;
@@ -1863,8 +1898,10 @@ body {
         padding: 26px 16px;
       }
     }
+
     .about-text {
       width: 610px;
+
       h2 {
         margin: 0 0 13px;
         font-size: 26px;
@@ -1874,6 +1911,7 @@ body {
           font-size: 21px;
         }
       }
+
       p {
         margin: 0;
         font-size: 14px;
@@ -1885,12 +1923,15 @@ body {
           line-height: 19px;
         }
       }
+
       .about-info {
         display: flex;
         gap: 65px;
         margin: 23px 0 24px;
+
         div {
           min-width: 90px;
+
           h3 {
             margin: 0 0 14px;
             color: #1482e8;
@@ -1902,6 +1943,7 @@ body {
               margin-bottom: 8px;
             }
           }
+
           span {
             color: #50575e;
             font-size: 14px;
@@ -1920,6 +1962,7 @@ body {
           margin: 18px 0 20px;
         }
       }
+
       .about-bottom {
         font-size: 14px;
         line-height: 20px;
@@ -1930,6 +1973,7 @@ body {
           line-height: 19px;
         }
       }
+
       button {
         width: 190px;
         height: 48px;
@@ -1940,6 +1984,7 @@ body {
         font-size: 10px;
         font-weight: 700;
         cursor: pointer;
+
         span {
           margin-left: 14px;
           font-size: 19px;
@@ -1962,10 +2007,12 @@ body {
       background: #f7f9fb;
     }
   }
+
   .news-section {
     width: 100%;
     padding: 70px 0 90px;
     background: #fff;
+
     .container {
       max-width: 1400px;
       margin: 0 auto;
@@ -1974,11 +2021,13 @@ body {
         padding: 0 16px;
       }
     }
+
     .news-top {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 30px;
+
       h2 {
         margin: 0;
         font-size: 32px;
@@ -1988,6 +2037,7 @@ body {
           font-size: 21px;
         }
       }
+
       button {
         height: 45px;
         padding: 0 20px;
@@ -2008,6 +2058,7 @@ body {
         margin-bottom: 18px;
       }
     }
+
     .news-cards {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -2021,6 +2072,7 @@ body {
         padding-bottom: 4px;
       }
     }
+
     .news-card {
       img {
         width: 100%;
@@ -2033,6 +2085,7 @@ body {
           height: 130px;
         }
       }
+
       h3 {
         margin: 15px 0 12px;
         font-size: 20px;
@@ -2046,6 +2099,7 @@ body {
           margin: 10px 0 6px;
         }
       }
+
       p {
         margin: 0 0 12px;
         font-size: 15px;
@@ -2057,6 +2111,7 @@ body {
           line-height: 17px;
         }
       }
+
       span {
         font-size: 13px;
         color: #111;
@@ -2110,10 +2165,12 @@ body {
       padding: 26px 0 30px;
     }
   }
+
   .footer {
     width: 100%;
     background: #f4f5f6;
     color: #40464c;
+
     .container {
       width: 100%;
       max-width: 1400px;
@@ -2124,11 +2181,13 @@ body {
         padding: 0 16px;
       }
     }
+
     .line {
       width: 100%;
       height: 1px;
       background: #dfe2e5;
     }
+
     .footer-top {
       min-height: 135px;
       display: grid;
@@ -2136,6 +2195,7 @@ body {
       align-items: center;
       justify-content: space-between;
       gap: 20px;
+
       .footer-logo {
         width: 210px;
         height: auto;
@@ -2146,18 +2206,22 @@ body {
           width: 140px;
         }
       }
+
       p {
         margin: 0;
         font-size: 12px;
         line-height: 19px;
       }
+
       a {
         color: #087be3;
         font-size: 12px;
       }
+
       .phone {
         display: flex;
         flex-direction: column;
+
         b {
           color: #111;
           font-size: 20px;
@@ -2168,6 +2232,7 @@ body {
             line-height: 20px;
           }
         }
+
         span {
           margin-top: 3px;
           font-size: 11px;
@@ -2177,6 +2242,7 @@ body {
           order: 3;
         }
       }
+
       button {
         width: 200px;
         height: 44px;
@@ -2222,11 +2288,13 @@ body {
         row-gap: 16px;
       }
     }
+
     .footer-main {
       display: grid;
       grid-template-columns: 460px 1fr;
       gap: 70px;
       padding: 38px 0 28px;
+
       h3 {
         margin: 0 0 27px;
         color: #353a40;
@@ -2255,6 +2323,7 @@ body {
           }
         }
       }
+
       a {
         display: block;
         margin-bottom: 22px;
@@ -2263,6 +2332,7 @@ body {
         font-size: 13px;
         line-height: 19px;
       }
+
       .info-links {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -2272,6 +2342,7 @@ body {
           display: none;
         }
       }
+
       .catalog-links {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -2288,23 +2359,27 @@ body {
         padding: 6px 0 6px;
       }
     }
+
     .footer-pay {
       min-height: 95px;
       display: grid;
       grid-template-columns: 120px 1fr 230px 360px;
       align-items: center;
       gap: 30px;
+
       p {
         margin: 0;
         color: #91989f;
         font-size: 11px;
         line-height: 15px;
       }
+
       .pay-logos {
         width: 400px;
         display: flex;
         align-items: center;
         gap: 35px;
+
         img {
           width: 54px;
           height: 24px;
@@ -2325,6 +2400,7 @@ body {
           gap: 16px;
         }
       }
+
       h3 {
         margin: 0;
         font-size: 14px;
@@ -2335,6 +2411,7 @@ body {
           font-size: 13px;
         }
       }
+
       .email-box {
         width: 100%;
         height: 50px;
@@ -2343,6 +2420,7 @@ body {
         background: #fff;
         border-radius: 7px;
         overflow: hidden;
+
         input {
           flex: 1;
           height: 100%;
@@ -2352,6 +2430,7 @@ body {
           background: transparent;
           font-size: 11px;
         }
+
         button {
           width: 55px;
           height: 100%;
@@ -2373,12 +2452,14 @@ body {
         padding: 20px 0;
       }
     }
+
     .footer-bottom {
       min-height: 70px;
       display: grid;
       grid-template-columns: 1fr 170px 270px;
       align-items: center;
       gap: 35px;
+
       p {
         margin: 0;
         color: #90969c;
@@ -2390,12 +2471,14 @@ body {
           line-height: 15px;
         }
       }
+
       img {
         width: 140px;
         height: 30px;
         object-fit: contain;
         display: block;
       }
+
       a {
         color: #555;
         font-size: 11px;
