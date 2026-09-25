@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 body {
   font-family: Arial, sans-serif;
   position: relative;
@@ -237,7 +242,9 @@ body .stroy .container p span {
     color: rgb(108, 111, 113);
 }
 
-
+ /* <!-- =================================================
+                      AVTORIZATION FOOTER
+    ================================================= --> */
 
 
 
