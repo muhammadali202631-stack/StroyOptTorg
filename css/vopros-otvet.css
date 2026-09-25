@@ -819,6 +819,12 @@ body .footer .footer-bottom a {
   body .section .right-elements .faq__title {
     font-size: 24px;
   }
+  body .section .left-elements {
+    margin: 0 auto;
+  }
+  body .section .left-elements .img1 img, body .section .left-elements .img2 img {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=vopros-otvet.css.map */

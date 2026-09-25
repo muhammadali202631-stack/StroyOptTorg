@@ -806,6 +806,12 @@ body .footer .footer-bottom a {
   body .section .right-elements .faq-container {
     max-width: 100%;
   }
+  body .section .left-elements {
+    margin: 0 auto;
+  }
+  body .section .left-elements .img1 img, body .section .left-elements .img2 img {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=vozvrat.css.map */
