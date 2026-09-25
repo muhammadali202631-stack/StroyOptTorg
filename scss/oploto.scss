@@ -221,7 +221,7 @@ body {
       background-color: #ebeef0;
       margin-top: 5px;
     }
-    
+
     @media (max-width: 480px) {
       height: auto;
 
@@ -916,10 +916,11 @@ body {
       gap: 20px;
 
       .left-elements {
+        margin: 0 auto;
 
-        .img1,
-        .img2 {
-          margin: 0 auto;
+        .img1 img,
+        .img2 img {
+          width: 100%;
         }
       }
     }

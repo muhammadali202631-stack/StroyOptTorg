@@ -915,6 +915,12 @@ body {
                     max-width: 100%;
                 }
             }
+            .left-elements {
+                margin: 0 auto;
+                .img1 img, .img2 img {
+                    width: 100%;
+                }
+            }
         }
     }
 }

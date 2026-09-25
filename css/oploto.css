@@ -810,9 +810,12 @@ body .footer .footer-bottom a {
     flex-direction: column;
     gap: 20px;
   }
-  body .section .left-elements .img1,
-  body .section .left-elements .img2 {
+  body .section .left-elements {
     margin: 0 auto;
+  }
+  body .section .left-elements .img1 img,
+  body .section .left-elements .img2 img {
+    width: 100%;
   }
 }
 
