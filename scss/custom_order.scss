@@ -486,7 +486,6 @@ body {
                 align-items: flex-start;
                 gap: 24px;
 
-                /* Sidebar Desktop */
                 .sidebar {
                     width: 260px;
                     min-width: 260px;
@@ -545,8 +544,6 @@ body {
                         background: #011120;
                         color: $white-color;
                         font-weight: 600;
-                        border-top-left-radius: 10px;
-                        border-top-right-radius: 10px;
                     }
                 }
 
@@ -554,7 +551,6 @@ body {
                     flex: 1;
                     min-width: 0;
 
-                    /* "Меню профиля" tugmasi */
                     .btn-flex {
                         display: none;
                         align-items: center;
