@@ -372,8 +372,8 @@ body .towars .container .price h2 .info-wrapper .tooltip .tooltip-list .badge.re
 body .total {
   position: absolute;
   width: 370px;
-  top: 280px;
-  right: 14%;
+  top: 275px;
+  right: 230px;
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -442,21 +442,20 @@ body .total .container button {
 body .towar_card {
   padding-top: 20px;
   background: #FFFFFF;
-  border: 2px solid #EDF0F2;
+  border: 1px solid #EDF0F2;
   border-radius: 8px;
-  width: 57%;
-  overflow: hidden;
+  width: 700px;
 }
-body .towar_card .towars_names {
+body .towar_card .container .towars_names {
   max-width: 1400px;
   margin: 0;
   display: flex;
   align-items: center;
   background: #F8FAFC;
-  border-bottom: 2px solid #EDF0F2;
+  border-bottom: 1px solid #EDF0F2;
   padding: 14px 24px;
 }
-body .towar_card .towars_names h3 {
+body .towar_card .container .towars_names h3 {
   font-size: 12px;
   font-weight: 700;
   color: #A3B4C4;
@@ -464,86 +463,86 @@ body .towar_card .towars_names h3 {
   letter-spacing: 0.05em;
   margin: 0;
 }
-body .towar_card .purchases_cards {
+body .towar_card .container .purchases_cards {
   display: flex;
   align-items: center;
-  padding: 24px;
-  border-bottom: 2px solid #EDF0F2;
+  padding: 20px 24px;
+  border-bottom: 1px solid #EDF0F2;
 }
-body .towar_card .purchases_cards:last-child {
+body .towar_card .container .purchases_cards:last-child {
   border-bottom: none;
 }
-body .towar_card .towars_names h3:nth-child(1),
-body .towar_card .info {
+body .towar_card .container .towars_names h3:nth-child(1),
+body .towar_card .container .info {
   flex: 2.5;
   display: flex;
   align-items: center;
 }
-body .towar_card .towars_names h3:nth-child(2),
-body .towar_card .prices {
+body .towar_card .container .towars_names h3:nth-child(2),
+body .towar_card .container .prices {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body .towar_card .towars_names h3:nth-child(3),
-body .towar_card .how_much {
+body .towar_card .container .towars_names h3:nth-child(3),
+body .towar_card .container .how_much {
   flex: 1.2;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body .towar_card .towars_names h3:nth-child(4),
-body .towar_card .card_total_price {
+body .towar_card .container .towars_names h3:nth-child(4),
+body .towar_card .container .card_total_price {
   flex: 1.2;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body .towar_card .info img {
+body .towar_card .container .info img {
   width: 64px;
   height: 64px;
   object-fit: contain;
   margin-right: 18px;
 }
-body .towar_card .info .card_info {
+body .towar_card .container .info .card_info {
   display: flex;
   flex-direction: column;
 }
-body .towar_card .info .card_info p {
-  font-size: 15px;
+body .towar_card .container .info .card_info p {
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.4;
   color: #2B2F33;
   margin: 0 0 4px 0;
 }
-body .towar_card .info .card_info h5 {
+body .towar_card .container .info .card_info h5 {
   font-size: 12px;
   color: #A3B4C4;
   font-weight: 400;
   margin: 0;
 }
-body .towar_card .prices h2 {
-  font-size: 16px;
+body .towar_card .container .prices h2 {
+  font-size: 15px;
   font-weight: 700;
-  color: #2B2F33;
+  color: #0066CC;
   margin: 0;
 }
-body .towar_card .prices h2.cars_discounts {
-  font-size: 13px;
+body .towar_card .container .prices h2.cars_discounts {
+  font-size: 12px;
   color: #A3B4C4;
   text-decoration: line-through;
   margin-top: 2px;
   font-weight: 400;
 }
-body .towar_card .how_much {
+body .towar_card .container .how_much {
   display: flex;
   align-items: center;
   background: #F0F2F5;
   border-radius: 20px;
   padding: 3px;
 }
-body .towar_card .how_much p {
+body .towar_card .container .how_much p {
   margin: 0;
   width: 32px;
   height: 32px;
@@ -554,31 +553,31 @@ body .towar_card .how_much p {
   align-items: center;
   justify-content: center;
 }
-body .towar_card .how_much p:nth-child(1), body .towar_card .how_much p:nth-child(3) {
+body .towar_card .container .how_much p:nth-child(1), body .towar_card .container .how_much p:nth-child(3) {
   font-size: 18px;
   cursor: pointer;
   color: #7A8A99;
   border-radius: 50%;
 }
-body .towar_card .how_much p:nth-child(1):hover, body .towar_card .how_much p:nth-child(3):hover {
+body .towar_card .container .how_much p:nth-child(1):hover, body .towar_card .container .how_much p:nth-child(3):hover {
   background: #E1E4E8;
 }
-body .towar_card .how_much p:nth-child(2) {
+body .towar_card .container .how_much p:nth-child(2) {
   width: 36px;
 }
-body .towar_card .card_total_price h2 {
-  font-size: 18px;
+body .towar_card .container .card_total_price h2 {
+  font-size: 16px;
   font-weight: 700;
-  color: #0066CC;
+  color: #2B2F33;
   margin: 0;
 }
-body .towar_card .card_total_price img {
+body .towar_card .container .card_total_price img {
   cursor: pointer;
   padding: 8px;
   border-radius: 6px;
   transition: background 0.2s;
 }
-body .towar_card .card_total_price img:hover {
+body .towar_card .container .card_total_price img:hover {
   background: #FFF0F0;
 }
 body .interest {
@@ -602,6 +601,38 @@ body .interest .container .russia_cards .card {
   padding: 15px;
   position: relative;
   font-family: sans-serif;
+}
+body .interest .container .russia_cards .card .price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #003B73;
+  padding-bottom: 5px;
+}
+body .interest .container .russia_cards .card .card_prices {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body .interest .container .russia_cards .card .card_prices del {
+  font-size: 15px;
+  color: #8F9296;
+  font-weight: 400;
+}
+body .interest .container .russia_cards .card .card_prices .price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #003B73;
+  padding-bottom: 5px;
+}
+body .interest .container .russia_cards .card .card_prices .lower_prise {
+  font-size: 11px;
+  font-weight: 400;
+  background-color: #00A86B;
+  display: flex;
+  align-items: center;
+  color: white;
+  border-radius: 4px;
+  padding: 5px;
 }
 body .interest .container .russia_cards .card img {
   width: 100%;
@@ -627,11 +658,6 @@ body .interest .container .russia_cards .card .title {
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 10px;
-}
-body .interest .container .russia_cards .card .price {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 15px;
 }
 body .interest .container .russia_cards .card .card-bottom {
   display: flex;
