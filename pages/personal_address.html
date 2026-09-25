@@ -5,15 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Addres-page</title>
-    <link rel="stylesheet" href="../css/persoanl_address.css">
+    <link rel="stylesheet" href="../css/personal_address.css">
 </head>
 
 <body>
+
 
     <header class="header">
         <div class="container">
             <div class="header-text">
                 <div class="text1">
+                    <button class="burger-btn" aria-label="Меню">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
                     <p>О компании</p>
                     <p>Оплата</p>
                     <p>Доставка</p>
@@ -33,6 +42,7 @@
         <div class="chiziq"></div>
     </header>
 
+
     <nav class="navbar">
         <div class="container">
             <div class="logo">
@@ -48,7 +58,6 @@
                 </button>
                 <div class="search-box">
                     <input type="text" placeholder="Найти среди 50000 товаров. Например: Дрель Bosch">
-
                     <button class="search-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
                             fill="currentColor">
@@ -58,46 +67,38 @@
                         </svg>
                     </button>
                 </div>
-
                 <div class="navbar-actions">
-
                     <div class="nav-action tabrik">
                         <div class="icon-box">
                             <img src="../assets/svg/Frame 8.svg" alt="">
                         </div>
                         <p>Все акции</p>
                     </div>
-
                     <div class="nav-action user">
                         <div class="icon-box">
                             <img src="../assets/svg/Frame 8 (1).svg" alt="">
                         </div>
                         <p>Войти</p>
                     </div>
-
                     <div class="nav-action rating">
                         <div class="icon-box">
                             <img src="../assets/svg/Frame 8 (2).svg" alt="">
                         </div>
                         <p>Сравнение</p>
                     </div>
-
                     <div class="nav-action yurakcha">
                         <div class="icon-box">
                             <img src="../assets/svg/Frame 8 (4).svg" alt="">
                         </div>
                         <p>Избранное</p>
                     </div>
-
                     <div class="nav-action korzinka">
                         <div class="icon-box">
                             <img src="../assets/svg/Frame 8 (3).svg" alt="">
                         </div>
                         <p>Корзина</p>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </nav>
@@ -142,7 +143,7 @@
                         <span>Избранные товары</span>
                         <span class="badge">7</span>
                     </div>
-                    <a href="../pages/personal_password.html"  class="sidebar__item">
+                    <a href="../pages/personal_password.html" class="sidebar__item">
                         <span class="icon"><img src="../assets/img/Vector (17).png" alt=""></span>
                         <span>Сменить пароль</span>
                     </a>
@@ -154,7 +155,18 @@
                 <section class="content">
                     <div class="account-container">
                         <main class="address">
+                            <div class="btn-flex" id="sidebarOpen">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                                </svg>
+                                <p>Меню профиля</p>
+                            </div>
+
                             <h1 class="address-title">Мой адрес доставки</h1>
+
                             <div class="address-card">
                                 <div class="address-card-badge">
                                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -289,6 +301,9 @@
         </div>
     </footer>
 
+
+
+    <script src="../js/address.js"></script>
 </body>
 
 </html>
