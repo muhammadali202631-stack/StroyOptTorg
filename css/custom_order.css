@@ -1008,6 +1008,123 @@ body .footer .footer-bottom a {
     padding: 18px 0;
   }
 }
+body .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+body .overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+body .mobile-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  max-width: 80%;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 1000;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+body .mobile-drawer.active {
+  transform: translateX(0);
+}
+body .mobile-drawer .drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid #ebeef0;
+}
+body .mobile-drawer .drawer-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1976d2;
+}
+body .mobile-drawer .drawer-header .close-btn {
+  background: none;
+  border: none;
+  font-size: 26px;
+  line-height: 1;
+  color: #6c6f71;
+  cursor: pointer;
+  padding: 0;
+}
+body .mobile-drawer .drawer-header .close-btn:hover {
+  color: #000;
+}
+body .mobile-drawer .drawer-body {
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+body .mobile-drawer .drawer-body .drawer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body .mobile-drawer .drawer-body .drawer-menu li {
+  margin-bottom: 16px;
+}
+body .mobile-drawer .drawer-body .drawer-menu li a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  transition: color 0.2s ease;
+}
+body .mobile-drawer .drawer-body .drawer-menu li a:hover {
+  color: #1976d2;
+}
+body .mobile-drawer .drawer-body .drawer-divider {
+  border: 0;
+  height: 1px;
+  background-color: #ebeef0;
+  margin: 20px 0;
+}
+body .mobile-drawer .drawer-body .drawer-contact {
+  margin-top: auto;
+}
+body .mobile-drawer .drawer-body .drawer-contact .phone {
+  font-weight: 700;
+  font-size: 15px;
+  color: #111;
+  margin-bottom: 10px;
+}
+body .mobile-drawer .drawer-body .drawer-contact .call-btn {
+  width: 100%;
+  height: 36px;
+  background-color: #f2f5fc;
+  color: #2a5e8d;
+  border: 1px solid #2a5e8d;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+body .mobile-drawer .drawer-body .drawer-contact .call-btn:hover {
+  background-color: #e2e9f8;
+}
 @media screen and (max-width: 768px) {
   body .account-page .container {
     padding: 0 16px;
