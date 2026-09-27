@@ -244,14 +244,61 @@ body .stroy .container p span {
 
  /* <!-- =================================================
                       AVTORIZATION FOOTER
-    ================================================= --> */
+================================================= --> */
 
+.avtorization{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.avtorizetion_left_part, .avtorizetion_rigt_part{
+  width: 50%;
+}
 
+.avtorization_part h1{
+  font-size: 45px;
+  font-weight: 700;
+}
 
+.email p, .parol p{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
 
+.email input{
+  width: 400px;
+  border: 1px solid #EBEEF0;
+  outline: none;
+  color: #EBEEF0;
+  padding: 25px 20px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 400;
+}
 
+.input_eye{
+  width: 400px;
+  border: 1px solid #EBEEF0;
+  display: flex;
+}
 
+.input_eye img{
+  display: flex;
+  
+}
+
+.parol input{
+  border: none;
+  outline: none;
+  color: #EBEEF0;
+  padding: 25px 20px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 400;
+}
 
 
 
