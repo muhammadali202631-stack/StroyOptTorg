@@ -6,7 +6,6 @@
 
 body {
   font-family: Arial, sans-serif;
-  position: relative;
 }
 body .header {
   width: 100%;
@@ -231,149 +230,8 @@ body .stroy .container p span {
   color: #91969D;
   word-spacing: 8px;
 }
-body .towars .container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-body .towars .container h1 {
-  font-size: 50px;
-  font-weight: 700;
-}
-body .towars .container .price {
-  margin-top: 20px;
-  border: 1px solid #EDF0F2;
-  padding: 15px 20px;
-  border-radius: 8px;
-  width: 60%;
-}
-body .towars .container .price h4 {
-  font-size: 15px;
-  font-weight: 600;
-}
-body .towars .container .price h4 span {
-  color: #003B73;
-}
-body .towars .container .price .blu_line {
-  padding: 10px 0;
-}
-body .towars .container .price .blu_line .line {
-  width: 95%;
-  height: 8px;
-  background: repeating-linear-gradient(45deg, #2f6fd6, #2f6fd6 10px, #3c7be0 10px, #3c7be0 20px);
-  border-radius: 5px;
-}
-body .towars .container .price .blu_line .text {
-  display: flex;
-  font-size: 15px;
-  font-weight: 400;
-  color: #3D3D3D;
-}
-body .towars .container .price .blu_line .text .price {
-  border: none;
-  display: flex;
-  padding-left: 300px;
-}
-body .towars .container .price .blu_line .text .max_price {
-  border: none;
-  display: flex;
-  color: #898989;
-}
-body .towars .container .price h2 {
-  font-size: 15px;
-  font-weight: 400;
-}
-body .towars .container .price h2 span {
-  color: #003B73;
-}
-body .towars .container .price h2 .info {
-  color: #117FE3;
-  background-color: #F6F8FB;
-  padding: 15px 17px;
-}
-body .towars .container .price h2 .info-wrapper {
-  position: relative;
-  display: inline-block;
-}
-body .towars .container .price h2 .info-wrapper .info-toggle {
-  display: none;
-}
-body .towars .container .price h2 .info-wrapper .info-toggle:checked ~ .tooltip {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(0);
-}
-body .towars .container .price h2 .info-wrapper .info {
-  color: #117FE3;
-  background-color: #F6F8FB;
-  padding: 8px 12px;
-  border-radius: 6px;
-  cursor: pointer;
-  display: inline-block;
-}
-body .towars .container .price h2 .info-wrapper .tooltip {
-  position: absolute;
-  bottom: calc(100% + 12px);
-  left: 50%;
-  transform: translateX(-50%) translateY(10px);
-  background: #FFFFFF;
-  padding: 15px 20px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-  white-space: nowrap;
-  z-index: 10;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.25s ease;
-}
-body .towars .container .price h2 .info-wrapper .tooltip::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border-width: 7px;
-  border-style: solid;
-  border-color: #FFFFFF transparent transparent transparent;
-}
-body .towars .container .price h2 .info-wrapper .tooltip .tooltip-title {
-  font-size: 13px;
-  color: #186FD4;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-body .towars .container .price h2 .info-wrapper .tooltip .tooltip-list {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 13px;
-  color: #333;
-}
-body .towars .container .price h2 .info-wrapper .tooltip .tooltip-list .item {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-body .towars .container .price h2 .info-wrapper .tooltip .tooltip-list .badge {
-  padding: 2px 6px;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 11px;
-  font-weight: 700;
-}
-body .towars .container .price h2 .info-wrapper .tooltip .tooltip-list .badge.green {
-  background-color: #00A86B;
-}
-body .towars .container .price h2 .info-wrapper .tooltip .tooltip-list .badge.orange {
-  background-color: #FF9900;
-}
-body .towars .container .price h2 .info-wrapper .tooltip .tooltip-list .badge.red {
-  background-color: #E6004C;
-}
 body .total {
-  position: absolute;
   width: 370px;
-  top: 275px;
-  right: 230px;
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -599,7 +457,6 @@ body .interest .container .russia_cards .card {
   background: #fff;
   border-radius: 12px;
   padding: 15px;
-  position: relative;
   font-family: sans-serif;
 }
 body .interest .container .russia_cards .card .price {
@@ -640,7 +497,6 @@ body .interest .container .russia_cards .card img {
   object-fit: contain;
 }
 body .interest .container .russia_cards .card .badge {
-  position: absolute;
   top: 10px;
   left: 10px;
   background: orange;

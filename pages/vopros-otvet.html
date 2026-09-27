@@ -14,6 +14,14 @@
         <div class="container">
             <div class="header-text">
                 <div class="text1">
+                    <button class="burger-btn" aria-label="Меню">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
                     <p>О компании</p>
                     <p>Оплата</p>
                     <p>Доставка</p>
@@ -32,6 +40,29 @@
         </div>
         <div class="chiziq"></div>
     </header>
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <aside class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-top">
+            <img src="../assets/svg/logo 1.svg" alt="Стройоптторг">
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Закрыть меню">✕</button>
+        </div>
+        <nav class="mobile-menu-links">
+            <a href="#">О компании</a>
+            <a href="#">Оплата</a>
+            <a href="#">Доставка</a>
+            <a href="#">Возврат</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Вопрос-ответ</a>
+            <a href="#">Новости</a>
+            <a href="#">Контакты</a>
+        </nav>
+        <div class="mobile-menu-bottom">
+            <span>Ежедневно, с 8:00 до 18:00</span>
+            <h2>8 800 444 00 65</h2>
+            <button>Заказать звонок</button>
+        </div>
+    </aside>
 
     <nav class="navbar">
         <div class="container">
@@ -78,6 +109,7 @@
                     <div class="nav-action rating">
                         <div class="icon-box">
                             <img src="../assets/svg/Frame 8 (2).svg" alt="">
+                            <span class="mob-badge">3</span>
                         </div>
                         <p>Сравнение</p>
                     </div>
@@ -85,6 +117,7 @@
                     <div class="nav-action yurakcha">
                         <div class="icon-box">
                             <img src="../assets/svg/Frame 8 (4).svg" alt="">
+                            <span class="mob-badge">3</span>
                         </div>
                         <p>Избранное</p>
                     </div>
@@ -92,8 +125,9 @@
                     <div class="nav-action korzinka">
                         <div class="icon-box">
                             <img src="../assets/svg/Frame 8 (3).svg" alt="">
+                            <span class="mob-badge">3</span>
                         </div>
-                        <p>Корзина</p>
+                        <p><a href="../pages/korzina.html">Корзина</a></p>
                     </div>
 
                 </div>
