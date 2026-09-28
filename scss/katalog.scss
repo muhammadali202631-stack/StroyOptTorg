@@ -548,12 +548,9 @@ body {
             display: flex;
             flex-direction: column;
             transition: 0.25s;
+            gap: 10px;
 
-            &:hover {
-              z-index: 2;
-              border-color: #1976d2;
-              box-shadow: 0 7px 22px rgba(0, 0, 0, 0.08);
-            }
+          
 
             .hit-badge {
               position: absolute;
