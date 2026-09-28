@@ -441,19 +441,24 @@ body {
   }
 
   .frame {
-    width: 100%;
-    margin: 25px auto;
     display: flex;
-    word-spacing: 10px;
+    margin-bottom: 30px;
+    gap: 25px;
 
-    span {
+    a {
+      text-decoration: none;
       color: #91969D;
+    }
+
+    a:last-child {
+      text-decoration: none;
+      color: #000000;
     }
   }
 
   .oplata {
     width: 100%;
-    font-size: 45px;
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 20px;
   }
@@ -498,6 +503,7 @@ body {
     }
 
     .left-elements {
+      margin-bottom: 50px;
 
       .img1,
       .img2 {
@@ -507,6 +513,9 @@ body {
       .rassilku {
         text-align: center;
         padding: 0 15px;
+        background: #F9FAFB;
+        border-radius: 5px;
+        padding: 20px;
 
         .rassilku-texts {
           span {

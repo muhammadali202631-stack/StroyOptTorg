@@ -1,14 +1,25 @@
-document.querySelectorAll('.faq-question').forEach(item => {
-  item.addEventListener('click', () => {
-    const parent = item.parentElement;
-    const toggleBtn = item.querySelector('.faq-toggle');
-    
-    parent.classList.toggle('active');
-    
-    if (parent.classList.contains('active')) {
-      toggleBtn.textContent = '−';
-    } else {
-      toggleBtn.textContent = '+';
-    }
+document.addEventListener('DOMContentLoaded', function () {
+  const accordionItems = document.querySelectorAll('.accordion-item');
+
+  accordionItems.forEach(function (item) {
+    const header = item.querySelector('.accordion-header');
+    const content = item.querySelector('.accordion-content');
+
+    header.addEventListener('click', function () {
+      const isActive = item.classList.contains('active');
+
+      // Oldingi barcha ochilganlarni yopish
+      accordionItems.forEach(function (otherItem) {
+        otherItem.classList.remove('active');
+        const otherContent = otherItem.querySelector('.accordion-content');
+        otherContent.style.maxHeight = null;
+      });
+
+      // Agar bosilgan element yopiq bo'lsa, uni ochish
+      if (!isActive) {
+        item.classList.add('active');
+        content.style.maxHeight = content.scrollHeight + 'px';
+      }
+    });
   });
 });
