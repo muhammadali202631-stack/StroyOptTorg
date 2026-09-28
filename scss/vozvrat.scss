@@ -585,11 +585,18 @@ body {
         }
 
         .left-elements {
+            width: 40%;
             margin-bottom: 50px;
 
             .img1,
             .img2 {
                 margin-bottom: 35px;
+                width: 100%;
+            }
+
+            .img1 img,
+            .img2 img {
+                width: 100%;
             }
 
             .rassilku {

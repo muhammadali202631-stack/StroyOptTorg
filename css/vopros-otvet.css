@@ -481,11 +481,17 @@ body .section .right-elements .faq__item.is-active .faq__answer {
   opacity: 1;
 }
 body .section .left-elements {
+  width: 30%;
   margin-bottom: 50px;
 }
 body .section .left-elements .img1,
 body .section .left-elements .img2 {
+  width: 100%;
   margin-bottom: 35px;
+}
+body .section .left-elements .img1 img,
+body .section .left-elements .img2 img {
+  width: 100%;
 }
 body .section .left-elements .rassilku {
   text-align: center;

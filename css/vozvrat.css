@@ -514,11 +514,17 @@ body .section .right-elements .accordion-body {
   line-height: 1.5;
 }
 body .section .left-elements {
+  width: 40%;
   margin-bottom: 50px;
 }
 body .section .left-elements .img1,
 body .section .left-elements .img2 {
   margin-bottom: 35px;
+  width: 100%;
+}
+body .section .left-elements .img1 img,
+body .section .left-elements .img2 img {
+  width: 100%;
 }
 body .section .left-elements .rassilku {
   text-align: center;
