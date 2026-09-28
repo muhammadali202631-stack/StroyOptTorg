@@ -598,8 +598,7 @@ body .footer .footer-bottom a {
 
 /* MEDIA */
 
- @media (min-width: 1000px) and (max-width: 769px) {
- 
+ @media (max-width: 1000px) and (min-width: 769px) {
 
   section, nav{
     padding: 10px 20px;
@@ -625,10 +624,12 @@ body .footer .footer-bottom a {
     gap: 15px;
     font-weight: 600;
   }
-  .text1 svg{
+  .text1 button svg{
     display: block;
     background-color: white;
+    color: #000;
   }
+  
   .text2 {
     font-weight: 600;
     display: flex;
