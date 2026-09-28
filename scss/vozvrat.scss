@@ -441,12 +441,15 @@ body {
     }
 
     .frame {
-        width: 100%;
-        margin: 25px auto;
         display: flex;
-        word-spacing: 10px;
-
-        span {
+        margin-bottom: 30px;
+        gap: 25px;
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+        a:last-child {
+            text-decoration: none;
             color: #91969D;
         }
     }
@@ -460,8 +463,19 @@ body {
 
         .right-elements {
             .text1 {
-                h1 {
+                p {
                     margin-bottom: 30px;
+                    font-size: 28px;
+                    font-weight: 600;
+                }
+            }
+
+            .text5 {
+                p {
+                    font-size: 30px;
+                    font-weight: 600;
+                    margin-top: 50px;
+                    margin-bottom: 15px;
                 }
             }
 
@@ -484,60 +498,94 @@ body {
                 }
             }
 
-            .faq-container {
-                max-width: 800px;
-                font-family: Arial, sans-serif;
+            .accordion-item {
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color: #f0f0f0;
+            }
 
-                .faq-item {
-                    border-bottom: 1px solid #e0e0e0;
-                    padding: 15px 0;
+            .accordion-header {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 18px;
+                padding-bottom: 18px;
+                padding-left: 0px;
+                padding-right: 0px;
+                background-color: transparent;
+                border-width: 0px;
+                cursor: pointer;
+                text-align: left;
+                outline: none;
+            }
 
-                    .faq-question {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        font-weight: bold;
-                        cursor: pointer;
-                        color: #333333;
+            .accordion-title {
+                font-size: 15px;
+                font-weight: 600;
+                color: #1a1a1a;
+                padding-right: 16px;
+            }
 
-                        .faq-toggle {
-                            width: 28px;
-                            height: 28px;
-                            background-color: #eaf2ff;
-                            color: #0066cc;
-                            border-radius: 50%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            font-size: 18px;
-                            user-select: none;
-                            transition: background-color 0.2s ease, color 0.2s ease;
-                        }
-                    }
+            .accordion-icon {
+                position: relative;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                background-color: #eaf3ff;
+                flex-shrink: 0;
+            }
 
-                    .faq-answer {
-                        display: none;
-                        padding-top: 10px;
-                        color: #666666;
-                        font-size: 14px;
-                    }
+            /* Gorizontal chiziq (Ikkalasida ham turadi) */
+            .accordion-icon::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 12px;
+                height: 2px;
+                background-color: #3b82f6;
+                transform: translate(-50%, -50%);
+            }
 
-                    // Active (ochilgan) holati
-                    &.active {
-                        .faq-answer {
-                            display: block;
-                        }
+            /* Vertikal chiziq ('+' belgisini beradi) */
+            .accordion-icon::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 12px;
+                height: 2px;
+                background-color: #3b82f6;
+                transform: translate(-50%, -50%) rotate(90deg);
+                transition-property: transform;
+                transition-duration: 0.3s;
+                transition-timing-function: ease;
+            }
 
-                        .faq-toggle {
-                            background-color: #0066cc;
-                            color: #ffffff;
-                        }
-                    }
-                }
+            /* Bosilganda vertikal chiziq aylanib '-' belgisiga aylanadi */
+            .accordion-item.active .accordion-icon::after {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            .accordion-content {
+                max-height: 0px;
+                overflow: hidden;
+                transition-property: max-height;
+                transition-duration: 0.3s;
+                transition-timing-function: ease-out;
+            }
+
+            .accordion-body {
+                padding-bottom: 20px;
+                font-size: 14px;
+                color: #8c8c8c;
+                line-height: 1.5;
             }
         }
 
         .left-elements {
+            margin-bottom: 50px;
 
             .img1,
             .img2 {
@@ -547,6 +595,9 @@ body {
             .rassilku {
                 text-align: center;
                 padding: 0 15px;
+                background: #F9FAFB;
+                border-radius: 5px;
+                padding: 20px;
 
                 .rassilku-texts {
                     span {

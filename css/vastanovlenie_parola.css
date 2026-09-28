@@ -8,6 +8,17 @@
     max-width: 1400px;
     margin: 0 auto;
 }
+button{
+    cursor: pointer;
+}
+
+.red_star{
+    color: red;
+}
+
+li{
+    list-style: none;
+}
 
 .text1 svg{
   display: none;
@@ -246,9 +257,6 @@ body .stroy .container p span {
     color: rgb(108, 111, 113);
 }
 
- /* <!-- =================================================
-                      AVTORIZATION FOOTER
-================================================= --> */
 
 .avtorization{
   padding-top: 20px;
@@ -336,8 +344,13 @@ a{
 }
 
 .second_btn{
-  padding: 25px 32px;
-  background-color: #117FE3;
+    margin-top: 15px;
+    padding: 25px 32px;
+    background-color: #117FE3;
+    border: none;
+    border-radius: 7px;
+    text-transform: uppercase;
+    width: 480px;
 }
 
 .second_btn a{
@@ -594,11 +607,59 @@ body .footer .footer-bottom a {
   display: none;
 }
 
-/*# sourceMappingURL=korzina.css.map */
+.parol_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-/* MEDIA */
+.parol_card{
+    padding-top: 70px;
+}
+
+.parol_card_inner{
+    padding: 30px;
+    border: 1px solid #EDF0F2;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parol_card_inner .parol_card_inners_p{
+    text-align: center;
+    max-width: 400px;
+}
+
+.search-btn{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  @media (max-width: 1000px) and (min-width: 769px) {
+    
+  .search-btn{
+    display: block;
+  }
 
   section, nav{
     padding: 10px 20px;
@@ -624,12 +685,10 @@ body .footer .footer-bottom a {
     gap: 15px;
     font-weight: 600;
   }
-  .text1 button svg{
+  .text1 svg{
     display: block;
     background-color: white;
-    color: #000;
   }
-  
   .text2 {
     font-weight: 600;
     display: flex;
@@ -952,9 +1011,33 @@ body .footer .footer-bottom a {
     max-width: 100%;
   }
 
-}   
+  .vostanovlenie{
+    padding: 10px;
+  }
 
-@media screen and (max-width: 400px) {
+    .parol_card_inners_p{
+    
+     max-width: 390px;
+     line-height: 25px;
+    }
+    .email p{
+        padding: 10px 0;
+    }
+    .email input{
+        width: 480px;
+    }
+    .second_btn{
+        justify-content: center;
+    }
+
+}
+
+ @media screen and (max-width: 500px) {
+
+
+  .search-btn{
+    display: block;
+  }
 
   .header-text{
     padding: 0 20px ;
@@ -1276,9 +1359,39 @@ body .footer .footer-bottom a {
   }
 
   body {
-    overflow-x: hidden;
     max-width: 100%;
+    overflow-x: hidden;
   }
 
+    .vostanovlenie{
+     padding: 10px;
+    }
+
+    .parol_card {
+        padding-top: 30px;
+    }
+
+    .parol_card_inners_p{
+     max-width: 390px;
+     line-height: 25px;
+    }
+    .email p{
+        padding: 10px 0;
+    }
+    .email input {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .second_btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .second_btn a {
+        width: 100%;
+        text-align: center;
+    }
+
 }
- 

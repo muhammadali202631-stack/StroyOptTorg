@@ -212,7 +212,7 @@ body .navbar .logo .navbar-actions .korzinka {
   min-width: 52px;
 }
 body .stroyopttorg .stroyopttorg-container {
-  max-width: 1400px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 body .stroyopttorg .text_stroyopttorg {
@@ -221,13 +221,17 @@ body .stroyopttorg .text_stroyopttorg {
   gap: 1rem;
 }
 body .products {
-  max-width: 1400px;
-  margin: 30px auto;
+  max-width: 1200px;
+  margin: 20px auto;
 }
-body .products .saved h1 {
+body .products .saved {
   display: flex;
   align-items: center;
-  font-size: 25px;
+}
+body .products .saved p {
+  padding-left: 60px;
+  font-size: 20px;
+  color: red;
 }
 body .container {
   width: 1100px;
@@ -251,6 +255,65 @@ body .catalog {
   grid-template-columns: 130px 1fr;
   gap: 12px;
   padding: 0 15px;
+}
+body .pagination {
+  max-width: 800px;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 600px;
+}
+body .pagination .pagination__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 16px;
+  background-color: #ffffff;
+  border: 1px solid #ebeef0;
+  border-radius: 6px;
+  color: #2c3238;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+body .pagination .pagination__btn:hover {
+  border-color: #011120;
+  color: #011120;
+}
+body .pagination .pagination__btn span {
+  font-size: 14px;
+}
+body .pagination .pagination__pages {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+body .pagination .pagination__pages .pagination__page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid #ebeef0;
+  border-radius: 6px;
+  color: #2c3238;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+body .pagination .pagination__pages .pagination__page:hover {
+  border-color: #011120;
+}
+body .pagination .pagination__pages .pagination__page.pagination__page--active {
+  background-color: #011120;
+  border-color: #011120;
+  color: #ffffff;
 }
 body .products {
   display: grid;
@@ -599,6 +662,64 @@ body .footer .footer-main .catalog-links {
     gap: 0;
     padding: 6px 0 6px;
   }
+}
+body .footer .pagination {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body .footer .pagination .pagination__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 16px;
+  background-color: #ffffff;
+  border: 1px solid #ebeef0;
+  border-radius: 6px;
+  color: #2c3238;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+body .footer .pagination .pagination__btn:hover {
+  border-color: #011120;
+  color: #011120;
+}
+body .footer .pagination .pagination__btn span {
+  font-size: 14px;
+}
+body .footer .pagination .pagination__pages {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+body .footer .pagination .pagination__pages .pagination__page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid #ebeef0;
+  border-radius: 6px;
+  color: #2c3238;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+body .footer .pagination .pagination__pages .pagination__page:hover {
+  border-color: #011120;
+}
+body .footer .pagination .pagination__pages .pagination__page.pagination__page--active {
+  background-color: #011120;
+  border-color: #011120;
+  color: #ffffff;
 }
 body .footer .footer-pay {
   min-height: 95px;
