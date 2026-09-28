@@ -407,8 +407,10 @@ body .section {
   gap: 50px;
   line-height: 25px;
 }
-body .section .right-elements .text1 h1 {
+body .section .right-elements .text1 p {
   margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
 }
 body .section .right-elements .text5 p {
   font-size: 30px;
