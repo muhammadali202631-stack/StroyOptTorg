@@ -398,7 +398,7 @@ body .frame span {
 }
 body .oplata {
   width: 100%;
-  font-size: 45px;
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -427,6 +427,9 @@ body .section .ul-li ul li::marker {
 body .section .right-elements .text4 p span {
   font-weight: 600;
 }
+body .section .left-elements {
+  margin-bottom: 50px;
+}
 body .section .left-elements .img1,
 body .section .left-elements .img2 {
   margin-bottom: 35px;
@@ -434,6 +437,9 @@ body .section .left-elements .img2 {
 body .section .left-elements .rassilku {
   text-align: center;
   padding: 0 15px;
+  background: #F9FAFB;
+  border-radius: 5px;
+  padding: 20px;
 }
 body .section .left-elements .rassilku .rassilku-texts span {
   font-size: 20px;

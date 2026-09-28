@@ -406,14 +406,11 @@ body .section {
 body .section .right-elements {
   width: 100%;
 }
-body .section .right-elements .faq {
-  max-width: 100%;
-  margin: 0 auto;
-}
 body .section .right-elements .faq__title {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
-  margin-bottom: 25px;
+  color: #111111;
+  margin-bottom: 24px;
 }
 body .section .right-elements .faq__list {
   display: flex;
@@ -422,56 +419,67 @@ body .section .right-elements .faq__list {
 body .section .right-elements .faq__item {
   border-bottom: 1px solid #e5e5e5;
 }
-body .section .right-elements .faq__item.is-active .faq__icon {
-  background-color: #0088ff;
-  color: #ffffff;
-}
 body .section .right-elements .faq__question {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 0;
   background: none;
   border: none;
   outline: none;
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   cursor: pointer;
-  font-family: inherit;
+  text-align: left;
   font-size: 15px;
   font-weight: 600;
-  color: #2c2c2c;
-  text-align: left;
+  color: #111111;
+  transition: color 0.3s ease;
 }
 body .section .right-elements .faq__question:hover .faq__icon {
-  background-color: #d1e9ff;
+  background-color: #1a193d;
 }
 body .section .right-elements .faq__icon {
   width: 28px;
   height: 28px;
-  background-color: #eaf5ff;
-  color: #0088ff;
   border-radius: 50%;
+  background-color: #f0f4f8;
+  color: #0088ff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
   font-weight: bold;
+  line-height: 1;
   flex-shrink: 0;
   margin-left: 15px;
-  user-select: none;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 body .section .right-elements .faq__answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s cubic-bezier(0, 1, 0, 1), padding 0.3s ease;
-  font-size: 14px;
-  color: #666666;
-  line-height: 1.5;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 body .section .right-elements .faq__answer p {
   margin: 0;
   padding-bottom: 18px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666666;
+}
+body .section .right-elements {
+  /* Faol (is-active) holatdagi ko'rinishi */
+}
+body .section .right-elements .faq__item.is-active .faq__icon {
+  background-color: #0088ff;
+  color: #ffffff;
+  transform: rotate(180deg);
+}
+body .section .right-elements .faq__item.is-active .faq__answer {
+  opacity: 1;
+}
+body .section .left-elements {
+  margin-bottom: 50px;
 }
 body .section .left-elements .img1,
 body .section .left-elements .img2 {
@@ -480,6 +488,9 @@ body .section .left-elements .img2 {
 body .section .left-elements .rassilku {
   text-align: center;
   padding: 0 15px;
+  background: #F9FAFB;
+  border-radius: 5px;
+  padding: 20px;
 }
 body .section .left-elements .rassilku .rassilku-texts span {
   font-size: 20px;
