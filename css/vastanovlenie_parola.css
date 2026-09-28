@@ -246,9 +246,6 @@ body .stroy .container p span {
     color: rgb(108, 111, 113);
 }
 
- /* <!-- =================================================
-                      AVTORIZATION FOOTER
-================================================= --> */
 
 .avtorization{
   padding-top: 20px;
@@ -594,9 +591,31 @@ body .footer .footer-bottom a {
   display: none;
 }
 
-/*# sourceMappingURL=korzina.css.map */
 
-/* MEDIA */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  @media (min-width: 1000px) and (max-width: 769px) {
  
@@ -953,6 +972,8 @@ body .footer .footer-bottom a {
 
 }   
 
+
+
 @media screen and (max-width: 400px) {
 
   .header-text{
@@ -1280,4 +1301,3 @@ body .footer .footer-bottom a {
   }
 
 }
- 
