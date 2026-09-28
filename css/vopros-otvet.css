@@ -435,9 +435,6 @@ body .section .right-elements .faq__question {
   color: #111111;
   transition: color 0.3s ease;
 }
-body .section .right-elements .faq__question:hover .faq__icon {
-  background-color: #1a193d;
-}
 body .section .right-elements .faq__icon {
   width: 28px;
   height: 28px;
