@@ -441,13 +441,18 @@ body {
   }
 
   .frame {
-    width: 100%;
-    margin: 25px auto;
     display: flex;
-    word-spacing: 10px;
+    margin-bottom: 30px;
+    gap: 25px;
 
-    span {
+    a {
+      text-decoration: none;
       color: #91969D;
+    }
+
+    a:last-child {
+      text-decoration: none;
+      color: #000000;
     }
   }
 
@@ -499,6 +504,7 @@ body {
 
     .left-elements {
       margin-bottom: 50px;
+
       .img1,
       .img2 {
         margin-bottom: 35px;

@@ -441,12 +441,15 @@ body {
     }
 
     .frame {
-        width: 100%;
-        margin: 25px auto;
         display: flex;
-        word-spacing: 10px;
-
-        span {
+        margin-bottom: 30px;
+        gap: 25px;
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+        a:last-child {
+            text-decoration: none;
             color: #91969D;
         }
     }

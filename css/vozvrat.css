@@ -388,12 +388,16 @@ body .navbar .logo .navbar-actions .korzinka {
   min-width: 52px;
 }
 body .frame {
-  width: 100%;
-  margin: 25px auto;
   display: flex;
-  word-spacing: 10px;
+  margin-bottom: 30px;
+  gap: 25px;
 }
-body .frame span {
+body .frame a {
+  text-decoration: none;
+  color: #000000;
+}
+body .frame a:last-child {
+  text-decoration: none;
   color: #91969D;
 }
 body .section {
