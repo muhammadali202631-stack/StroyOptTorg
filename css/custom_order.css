@@ -417,7 +417,6 @@ body .account-page .container .layout {
   display: flex;
   align-items: flex-start;
   gap: 24px;
-  /* Sidebar Desktop */
 }
 body .account-page .container .layout .sidebar {
   width: 260px;
@@ -471,8 +470,6 @@ body .account-page .container .layout .sidebar .sidebar__item--active {
   background: #011120;
   color: #ffffff;
   font-weight: 600;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 body .account-page .container .layout .content {
   flex: 1;
