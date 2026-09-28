@@ -538,17 +538,16 @@ body {
         .products-grid {
           display: grid;
           grid-template-columns: repeat(4, minmax(0, 1fr));
-
+          gap: 10px;
           .product-card {
             min-width: 0;
             min-height: 385px;
-            border: 1px solid #eeeeee;
             padding: 14px;
             position: relative;
             display: flex;
             flex-direction: column;
             transition: 0.25s;
-            gap: 10px;
+            
 
           
 
