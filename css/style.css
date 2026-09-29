@@ -13,11 +13,6 @@
   padding: 0;
 }
 
-a{
-  text-decoration: none;
-  color: #767676;
-}
-
 .mob-badge {
   display: none;
 }
@@ -179,6 +174,11 @@ body .header .container .header-text .text2 h2 {
   cursor: pointer;
   font-size: 14px;
   font-weight: 600px;
+}
+a{
+  text-decoration: none;
+  font-size: 12px;
+  color:  #838383;
 }
 body .header .container .header-text .text2 button {
   cursor: pointer;
@@ -1990,11 +1990,10 @@ body .footer .line {
 }
 body .footer .footer-top {
   min-height: 135px;
-  display: grid;
-  grid-template-columns: 220px 170px 170px 170px 210px 200px;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 10px;
 }
 body .footer .footer-top .footer-logo {
   width: 210px;

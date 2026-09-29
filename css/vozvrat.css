@@ -391,10 +391,11 @@ body .frame {
   display: flex;
   margin-bottom: 30px;
   gap: 25px;
+  color: #91969D;
 }
 body .frame a {
   text-decoration: none;
-  color: #000000;
+  color: #91969D;
 }
 body .frame a:last-child {
   text-decoration: none;
@@ -514,11 +515,17 @@ body .section .right-elements .accordion-body {
   line-height: 1.5;
 }
 body .section .left-elements {
+  width: 40%;
   margin-bottom: 50px;
 }
 body .section .left-elements .img1,
 body .section .left-elements .img2 {
   margin-bottom: 35px;
+  width: 100%;
+}
+body .section .left-elements .img1 img,
+body .section .left-elements .img2 img {
+  width: 100%;
 }
 body .section .left-elements .rassilku {
   text-align: center;
