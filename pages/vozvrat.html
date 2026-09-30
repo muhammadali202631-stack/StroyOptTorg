@@ -10,7 +10,7 @@
 
 <body>
 
-    <header class="header">
+   <header class="header">
         <div class="container">
             <div class="header-text">
                 <div class="text1">
@@ -21,13 +21,14 @@
                             <line x1="3" y1="12" x2="21" y2="12"></line>
                             <line x1="3" y1="18" x2="21" y2="18"></line>
                         </svg>
+                        <span class="menu">Меню</span>
                     </button>
                     <p>О компании</p>
-                    <p>Оплата</p>
+                    <a href="./checkout.html"><p>Оплата</p></a>
                     <p>Доставка</p>
-                    <p>Возврат</p>
+                    <a href="./returns.html"><p>Возврат</p></a>
                     <p>Отзывы</p>
-                    <p>Вопрос-ответ</p>
+                    <a href="./faq.html"><p>Вопрос-ответ</p></a>
                     <p>Новости</p>
                     <p>Контакты</p>
                 </div>
@@ -41,100 +42,133 @@
         <div class="chiziq"></div>
     </header>
 
-    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
-    <aside class="mobile-menu" id="mobileMenu">
-        <div class="mobile-menu-top">
-            <img src="../assets/svg/logo 1.svg" alt="Стройоптторг">
-            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Закрыть меню">✕</button>
-        </div>
-        <nav class="mobile-menu-links">
-            <a href="#">О компании</a>
-            <a href="#">Оплата</a>
-            <a href="#">Доставка</a>
-            <a href="#">Возврат</a>
-            <a href="#">Отзывы</a>
-            <a href="#">Вопрос-ответ</a>
-            <a href="#">Новости</a>
-            <a href="#">Контакты</a>
-        </nav>
-        <div class="mobile-menu-bottom">
-            <span>Ежедневно, с 8:00 до 18:00</span>
-            <h2>8 800 444 00 65</h2>
-            <button>Заказать звонок</button>
-        </div>
-    </aside>
-
     <nav class="navbar">
+
         <div class="container">
+
             <div class="logo">
-                <a href="#" class="main-logo">
-                    <img src="../assets/svg/logo 1.svg" alt="Стройоптторг">
+
+                <a href="../index.html" class="main-logo">
+
+                    <img src="../assets/svg/navbar logo.svg" alt="Стройоптторг">
+
                 </a>
-                <button class="catalog-btn">
+
+                <a href="../pages/katolog.html" class="catalog-btn">
+
                     <span class="catalog-menu">
+
+                        <span>
+                            ----
+                            
+                        </span>
+
                         <span></span>
+
                         <span></span>
+
                     </span>
+
                     КАТАЛОГ
-                </button>
+
+                </a>
+
                 <div class="search-box">
+
                     <input type="text" placeholder="Найти среди 50000 товаров. Например: Дрель Bosch">
 
                     <button class="search-btn">
+
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
                             fill="currentColor">
+
                             <path
                                 d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z">
+
                             </path>
+
                         </svg>
+
                     </button>
+
                 </div>
 
                 <div class="navbar-actions">
 
-                    <div class="nav-action tabrik">
-                        <div class="icon-box">
-                            <img src="../assets/svg/Frame 8.svg" alt="">
-                        </div>
-                        <p>Все акции</p>
-                    </div>
+                    <a href="../pages/custom-order.html" class="nav-action tabrik">
 
-                    <div class="nav-action user">
                         <div class="icon-box">
-                            <img src="../assets/svg/Frame 8 (1).svg" alt="">
-                        </div>
-                        <p>Войти</p>
-                    </div>
 
-                    <div class="nav-action rating">
-                        <div class="icon-box">
-                            <img src="../assets/svg/Frame 8 (2).svg" alt="">
-                            <span class="mob-badge">3</span>
-                        </div>
-                        <p>Сравнение</p>
-                    </div>
+                            <img src="../assets/svg/sovg'a navbar.svg" alt="">
 
-                    <div class="nav-action yurakcha">
-                        <div class="icon-box">
-                            <img src="../assets/svg/Frame 8 (4).svg" alt="">
-                            <span class="mob-badge">3</span>
                         </div>
-                        <p>Избранное</p>
-                    </div>
 
-                    <div class="nav-action korzinka">
+                        <span>Все акции</span>
+
+                    </a>
+
+                    <a href="./login.html" class="nav-action user">
+
                         <div class="icon-box">
-                            <img src="../assets/svg/Frame 8 (3).svg" alt="">
-                            <span class="mob-badge">3</span>
+
+                            <img src="../assets/svg/profil navbar.svg" alt="">
+
                         </div>
-                        <p><a href="../pages/korzina.html">Корзина</a></p>
-                    </div>
+
+                        <span>Войти</span>
+
+                    </a>
+
+                    <a href="../pages/kartochka_fixed.html" class="nav-action rating">
+
+                        <div class="icon-box">
+
+                            <img src="../assets/svg/tartib navbar .svg" alt="">
+
+                            <span class="mob-badge"></span>
+
+                        </div>
+
+                        <span>Сравнение</span>
+
+                    </a>
+
+                    <a href="../pages/saved_products.html" class="nav-action yurakcha">
+
+                        <div class="icon-box">
+
+                            <img src="../assets/svg/like navbar .svg" alt="">
+
+                            <span class="mob-badge"></span>
+
+                        </div>
+
+                        <span>Избранное</span>
+
+                    </a>
+
+                    <a href="../pages/cart.html" class="nav-action korzinka">
+
+                        <div class="icon-box">
+
+                            <img src="../assets/svg/savat navbar.svg" alt="">
+
+                            <span class="mob-badge"></span>
+
+                        </div>
+
+                        <span>Корзина</span>
+
+                    </a>
 
                 </div>
 
             </div>
+
         </div>
+
     </nav>
+    
     <div class="container frame">
         <a href="../index.html">Стройоптторг</a> <div>/</div> <a href="./oploto.html">Способы оплаты</a>
     </div>
