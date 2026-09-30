@@ -868,6 +868,28 @@ body {
 
 
 
+            .nav-action.yurakcha .icon-box {
+    position: relative;
+    
+    .wishlist-badge {
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        background: #e44545;
+        color: #fff;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
 
             p:nth-child(4) {
                 @media (max-width: 480px) {
