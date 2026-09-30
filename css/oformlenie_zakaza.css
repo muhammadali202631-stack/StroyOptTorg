@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  /* font-family: "Roboto", sans-serif; */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +8,13 @@
 }
 
 .container{
-    max-width: 1400px;
-    margin: 0 auto;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+p{
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .text1 svg{
@@ -246,17 +254,508 @@ a{
   color: black;
 }
 
-svg{
-  width: 22px;
-  height: 25px;
-}
-
 .required{
   color: red;
 }
 
+/* <!-- =================================================
+                    OFORMLENIE ZAKAZA FOOTER
+================================================= --> */
 
-/* footer */
+svg{
+  width: 15px;
+  height: 17px;
+
+}
+
+.order_part{
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  gap: 50px;
+}
+
+.left_order_part{
+  max-width: 60%;
+}
+
+.right_order_part{
+  align-self: flex-start;
+  max-width: 40%;
+  height: auto;
+  border: 1px solid #EBEEF0;
+  padding: 35px 40px;
+  border-radius: 8px;
+  height: auto;
+  border: 1px solid #EBEEF0;
+}
+
+.left_order_part .order_part_start, .oll_info_about_delivery{
+  border: 1px solid #EDF0F2;
+  padding-left: 20px;
+}
+
+.oformlenie h1{
+  font-weight: 700;
+  font-size: 45px;
+  padding-bottom: 20px;
+}
+
+.order_part_start{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+.order_part_start h3{
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.order_part_start button{
+  border: none;
+  border-radius: 10px;
+  padding: 14px 16px;
+  background-color: #F6F8FB;
+}
+
+.order_part_start a{
+  color: #117FE3;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.oll_info_about_delivery{
+  padding-top: 15px;
+}
+
+.regions{
+  padding-top: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.regions div{
+  cursor: pointer;
+  border: 1px solid #EBEEF0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  border-radius: 10px;
+  width: 470px;
+}
+
+.regions div input{
+  border: none;
+  outline: none;
+  width: 200px;
+}
+
+.delivery_informations{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.delivery_card{
+  width: 320px;
+  height: 170px;
+  margin-top: 30px;
+  border: 2px solid #DFE2E4;
+  border-radius: 7px;
+  padding: 15px;
+}
+.check_box:focus{
+  border: 1px solid #186FD4;
+
+}
+
+.check_box{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.delivery_information_text p{
+  padding-top: 8px;
+  padding-left: 25px;
+  font-size: 13px;
+  flex-wrap: nowrap;
+  color: #62676F;
+}
+
+.place{
+  margin-top: 10px;
+  background-color: #F6F8FB;
+  font-size: 16px;
+  color: #000;
+  display: flex;
+  gap: 5px;
+  padding: 9px 11px;
+  border-radius: 7px;
+}
+
+.place p{
+  font-size: 30px;
+}
+
+.delivery_card:has(input:checked) {
+  border: 2px solid #186FD4;
+}
+
+.cdek-options {
+  display: none;
+}
+
+.delivery_card.active {
+  border: 2px solid #186FD4;
+  background: #F0F7FF;
+}
+
+.cdek-options {
+  display: none;
+  padding-top: 15px;
+  padding-left: 35px;
+  flex-direction: column;
+  gap: 10px;
+  color: #2C333D;
+}
+
+.cdek-options.show {
+  display: flex;
+}
+
+.address_form{
+  display: flex;
+  gap: 20px;
+}
+
+.form_group{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.form_group input{
+  border: none;
+  outline: none;
+  padding: 15px 10px;
+  border-radius: 7px;
+}
+
+.first_from input{
+  margin-top: 10px;
+  width: 380px;  border: 1px solid #EBEEF0;
+
+}
+
+.second_from input{
+  margin-top: 10px;
+  border: 1px solid #EBEEF0;
+  width: 200px;
+}
+
+.form_group label{
+  font-size: 14px;
+}
+
+#house{
+  color: #EBEEF0;
+}
+
+.payment_card h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin: 0 0 20px 0;
+}
+
+.payment_card .check_boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.payment_card .check_box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.payment_card .check_box input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #186FD4;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.payment_card .check_box p {
+    margin: 0;
+    font-size: 14px;
+    color: #1A1A1A;
+}
+
+.payment_card .check_box p a {
+    color: #186FD4;
+    text-decoration: underline;
+    margin-left: 4px;
+}
+
+.promokod {
+    margin: 25px 0;
+    background: #F6F8FB;
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-size: 14px;
+    color: #1A1A1A;
+}
+
+.promokod a {
+    color: #186FD4;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.first_input_part {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.first_input_part .form-group {
+    flex: 1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #1A1A1A;
+    margin-bottom: 8px;
+}
+
+.form-group label .required {
+    color: #E53935;
+}
+
+.form-group input {
+    border: 1px solid #DFE2E4;
+    border-radius: 6px;
+    padding: 12px 14px;
+    font-size: 14px;
+    color: #1A1A1A;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input::placeholder {
+    color: #A6ACB4;
+}
+
+.form-group input:focus {
+    border-color: #186FD4;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #186FD4;
+    cursor: pointer;
+}
+
+.custom-checkbox .checkmark {
+    font-size: 14px;
+    color: #1A1A1A;
+    cursor: pointer;
+}
+
+.order_comment {
+    display: flex;
+    flex-direction: column;
+}
+
+.order_comment p {
+    font-size: 14px;
+    color: #1A1A1A;
+    margin: 0 0 8px 0;
+}
+
+.order_comment input {
+    border: 1px solid #DFE2E4;
+    border-radius: 6px;
+    padding: 35px 14px;
+    font-size: 14px;
+    color: #1A1A1A;
+    outline: none;
+    text-align: left;
+    transition: border-color 0.2s;
+    margin-bottom: 50px;
+}
+
+.order_comment input::placeholder {
+    color: #A6ACB4;
+}
+
+.order_comment input:focus {
+    border-color: #186FD4;
+}
+
+/* <!-- =================================================
+                     RIGHT PART
+================================================= --> */
+
+.right_order_part {
+    background: #FFFFFF;
+    border: 1px solid #EBEEF0;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 400px;
+}
+
+.your_order h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin: 0 0 20px 0;
+}
+
+.your_order_card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid #EBEEF0;
+}
+
+.your_order_card img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.your_order_card .small_info {
+    flex: 1;
+}
+
+.your_order_card .small_info p:first-child {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1A1A1A;
+    margin: 0 0 6px 0;
+    line-height: 1.4;
+}
+
+.your_order_card .small_info p:last-child {
+    font-size: 12px;
+    color: #A6ACB4;
+    margin: 0;
+}
+
+.your_order_card .costs {
+    font-size: 15px;
+    font-weight: 700;
+    color: #186FD4;
+    white-space: nowrap;
+}
+
+.oll_costs {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 14px 0;
+}
+
+.oll_costs p {
+    margin: 0;
+    font-size: 15px;
+    color: #1A1A1A;
+    white-space: nowrap;
+}
+
+.oll_costs .costs {
+    font-size: 15px;
+    font-weight: 700;
+    color: #186FD4;
+    white-space: nowrap;
+}
+
+.oll_costs[class~="3"] {
+    border-top: 1px solid #EBEEF0;
+    margin-top: 4px;
+}
+
+.oll_costs[class~="3"] p {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.oll_costs[class~="3"] .costs {
+    font-size: 18px;
+}
+
+.agreeng {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.agreeng input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    accent-color: #186FD4;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.agreeng p {
+    margin: 0;
+    font-size: 13px;
+    color: #62676F;
+    line-height: 1.5;
+}
+
+.right_order_part button {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: #186FD4;
+    padding: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.right_order_part button:hover {
+    background-color: #135BB0;
+}
+
+.right_order_part button a {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+/* <!-- =================================================
+                     FOOTER
+================================================= --> */
 
 body .footer {
   margin-top: 100px;
@@ -436,22 +935,6 @@ body .footer .footer-bottom a {
 .burger-btn{
   display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*# sourceMappingURL=korzina.css.map */
 
@@ -811,9 +1294,133 @@ body .footer .footer-bottom a {
     max-width: 100%;
   }
 
+  
+  .left_order_part, .right_order_part{
+    width: 100%;
+  }
+
+  .oformlenie {
+    padding: 0 10px;
+  }
+
+  .oformlenie h1{
+    font-size: 30px;
+  }
+  .order_part, .delivery{
+    flex-direction: column;
+  }
+
+  .left_order_part, .right_order_part {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .oformlenie {
+    padding: 0 10px;
+  }
+
+  .oformlenie h1 {
+    font-size: 24px;
+  }
+
+  .order_part {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .oll_info_about_delivery{
+    padding: 0 10px;
+  }
+
+  .first_from input, #house, #flat{
+    width: auto;
+  }
+
+  .delivery p {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .regions {
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 15px;
+  }
+
+  .regions div {
+    width: 100%;
+  }
+
+  .delivery_informations {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .delivery_card {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .cdek-options {
+    padding-left: 30px;
+  }
+
+  .address_form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+  }
+
+  .address_form .first_from {
+    width: 100%;
+  }
+
+  .address_form .second_from {
+    display: inline-flex;
+    width: 48%;
+  }
+
+  .address_form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    column-gap: 4%;
+  }
+
+  .payment_card h2 {
+    font-size: 20px;
+  }
+
+  .payment_card .check_boxes {
+    gap: 15px;
+  }
+
+  .first_input_part {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .first_input_part .form-group {
+    width: 100%;
+  }
+
+  .form-group input {
+    width: 100%;
+  }
+
+  .order_comment input {
+    padding: 20px 14px;
+  }
+
+
+
 }   
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width:  768px) {
 
   .header-text{
     padding: 0 20px ;
@@ -1137,6 +1744,127 @@ body .footer .footer-bottom a {
   body {
     overflow-x: hidden;
     max-width: 100%;
+  }
+
+  .left_order_part, .right_order_part{
+    width: 100%;
+  }
+
+  .oformlenie {
+    padding: 0 10px;
+  }
+
+  .oformlenie h1{
+    font-size: 30px;
+  }
+  .order_part, .delivery{
+    flex-direction: column;
+  }
+
+  .left_order_part, .right_order_part {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .oformlenie {
+    padding: 0 10px;
+  }
+
+  .oformlenie h1 {
+    font-size: 24px;
+  }
+
+  .order_part {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .oll_info_about_delivery{
+    padding: 0 10px;
+  }
+
+  .first_from input, #house, #flat{
+    width: auto;
+  }
+
+  .delivery p {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .regions {
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 15px;
+  }
+
+  .regions div {
+    width: 100%;
+  }
+
+  .delivery_informations {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .delivery_card {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .cdek-options {
+    padding-left: 30px;
+  }
+
+  .address_form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+  }
+
+  .address_form .first_from {
+    width: 100%;
+  }
+
+  .address_form .second_from {
+    display: inline-flex;
+    width: 48%;
+  }
+
+  .address_form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    column-gap: 4%;
+  }
+
+  .payment_card h2 {
+    font-size: 20px;
+  }
+
+  .payment_card .check_boxes {
+    gap: 15px;
+  }
+
+  .first_input_part {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .first_input_part .form-group {
+    width: 100%;
+  }
+
+  .form-group input {
+    width: 100%;
+  }
+
+  .order_comment input {
+    padding: 20px 14px;
   }
 
 }
