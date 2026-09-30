@@ -268,6 +268,10 @@ svg{
 
 }
 
+.oll_info_about_delivery{
+  padding: 0 30px;
+}
+
 .order_part{
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -446,7 +450,7 @@ svg{
 
 .first_from input{
   margin-top: 10px;
-  width: 380px;  border: 1px solid #EBEEF0;
+  width: 350px;  border: 1px solid #EBEEF0;
 
 }
 
