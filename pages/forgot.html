@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/avtorizatsiya.css">
+    <link rel="stylesheet" href="../css/vastanovlenie_parola.css">
     <link rel="icon" href="../assets/svg/figma (1).svg">
     <title>СтройОптТорг</title>
 </head>
+
 <body>
-    
+
     <header class="header">
         <div class="container">
             <div class="header-text">
@@ -110,62 +112,38 @@
     </nav>
 
     <!-- =================================================
-                      STROY TEXT FOOTER
+                      STROY TEXT 
     ================================================= -->
 
     <section class="stroy">
         <div class="container">
-            <p>Стройоптторг <span> / Авторизация</span></p>
+            <p><a href="../index.html">Стройоптторг</a> <span> / Восстановление пароля</span></p>
         </div>
     </section>
 
     <!-- =================================================
-                      AVTORIZATION FOOTER
+                      VASTANAVLENIE PAROLA 
     ================================================= -->
 
-    <section class="avtorization_part container">
-        <h1 class="h1">Авторизация</h1>
-        <div class="avtorization">
-            <div class="avtorizetion_left_part">
-                <div class="email three_hundred">
-                    <p>Email или логин *:</p>
-                    <input type="text" placeholder="Введите данные для авторизации">
-                </div>
-                <div class="parol three_hundred">
-                    <p>Пароль *:</p>
-                    <div class="input_eye">
-                        <input type="text" placeholder="Введите пароль">
-                        <img src="../assets/svg/hidden eye.svg" alt="">
+    <section class="vostanovlenie">
+        <div class="container">
+            <h1>Восстановление пароля</h1>
+            <div class="parol_card">
+                <div class="parol_card_inner">
+                    <p class="parol_card_inners_p"><span>Забыли свой пароль?</span> Укажите свой Email или имя пользователя. Ссылку на создание
+                        нового пароля вы получите по электронной почте.</p>
+                    <div class="email three_hundred">
+                        <p>Email или логин <span class="red_star">*</span>:</p>
+                        <input type="text" placeholder="Введите данные для авторизации">
                     </div>
+                    <button class="second_btn"><a href="#">Сбросить пароль</a></button>
                 </div>
-                <div class="avtorization_parts_buttons three_hundred">
-                    <button class="first_btn"><a href="../pages/vostanovlenie_parola.html">Восстановить пароль</a></button>
-                    <button class="second_btn"><a href="#">Авторизоваться</a></button>
-                </div>
-                <div class="remember_me">
-                    <input type="checkbox">
-                    <p>Запомнить меня</p>
-                </div>
-            </div>
-            <div class="avtorizetion_rigt_part">
-                <div class="account">
-                    <img src="../assets/svg/peaple.svg" alt="peaple">
-                    <h1>Еще нет аккаунта?</h1>
-                </div>
-                <div class="registration_in_sayt">
-                    <div class="registration_in_sayt_text_part">
-                        <p><span>Регистрация на сайте</span> позволяет получить доступ к статусу и истории вашего заказа. Просто заполните поля ниже, и вы получите учетную запись. </p>
-                        <p>Мы запрашиваем у вас только информацию, необходимую для того, чтобы сделать процесс покупки более быстрым и легким.</p>
-                    </div>
-                    <button><a href="./registration.html">Зарегистрироваться <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M15.6315 12L10.8838 3.03212L9.11622 3.9679L13.3685 12L9.11622 20.0321L10.8838 20.9679L15.6315 12Z"></path></svg></a></button>
-                </div>
-
             </div>
         </div>
     </section>
 
     <!-- =================================================
-                      FOOTER FOOTER
+                      FOOTER
     ================================================= -->
 
     <footer class="footer">
@@ -253,4 +231,5 @@
     </footer>
 
 </body>
+
 </html>

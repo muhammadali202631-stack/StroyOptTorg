@@ -1,771 +1,1561 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <title>СтройОптТорг</title>
-=======
     <title>Document</title>
     <link rel="icon" href="../assets/svg/figma (1).svg">
->>>>>>> d61f9be968206549f2a11c8ad44ab2ce52c09c77
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .favorite-btn {
+            width: 40px;
+            height: 40px;
+            border: none;
+            background: transparent;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .favorite-heart {
+            width: 24px;
+            height: 24px;
+            fill: transparent;
+            stroke: #333;
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            transition: 0.25s ease;
+        }
+
+        .favorite-btn:hover .favorite-heart {
+            transform: scale(1.1);
+        }
+
+        .favorite-btn.active .favorite-heart {
+            fill: #ff0000;
+            stroke: #ff0000;
+        }
+    </style>
 </head>
 
 <body>
 
     <header class="header">
+
         <div class="container">
+
             <div class="header-text">
+
                 <div class="text1">
+
                     <button class="burger-btn" aria-label="Меню">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round">
+
                             <line x1="3" y1="6" x2="21" y2="6"></line>
+
                             <line x1="3" y1="12" x2="21" y2="12"></line>
+
                             <line x1="3" y1="18" x2="21" y2="18"></line>
+
                         </svg>
+
                     </button>
-                    <p>О компании</p>
-                    <p>Оплата</p>
-                    <p>Доставка</p>
-                    <p>Возврат</p>
-                    <p>Отзывы</p>
-                    <p>Вопрос-ответ</p>
-                    <p>Новости</p>
-                    <p>Контакты</p>
+
+                    <a href="./pages/Ocompany.html">
+                        <p>О компании</p>
+                    </a>
+
+                    <a href="./pages/oploto.html">
+                        <p>Оплата</p>
+                    </a>
+
+                    <a href="./pages/about.html">
+                        <p>Доставка</p>
+                    </a>
+
+                    <a href="./pages/vozvrat.html">
+                        <p>Возврат</p>
+                    </a>
+
+                    <a href="./pages/vopros-otvet.html">
+                        <p>Отзывы</p>
+                    </a>
+
+                    <a href="./pages/vopros-otvet.html">
+                        <p>Вопрос-ответ</p>
+                    </a>
+
+                    <a href="./pages/katolog.html">
+                        <p>Новости</p>
+                    </a>
+
+                    <a href="./pages/personal_profile.html">
+                        <p>Контакты</p>
+                    </a>
+
                 </div>
+
                 <div class="text2">
+
                     <p>Ежедневно, с 8:00 до 18:00</p>
+
                     <h2>8 800 444 00 65</h2>
+
                     <button>Заказать звонок</button>
+
                 </div>
+
             </div>
+
         </div>
+
         <div class="chiziq"></div>
+
     </header>
 
     <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
     <aside class="mobile-menu" id="mobileMenu">
+
         <div class="mobile-menu-top">
+
             <img src="./assets/svg/logo 1.svg" alt="Стройоптторг">
+
             <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Закрыть меню">✕</button>
+
         </div>
+
         <nav class="mobile-menu-links">
+
             <a href="#">О компании</a>
+
             <a href="#">Оплата</a>
+
             <a href="#">Доставка</a>
+
             <a href="#">Возврат</a>
+
             <a href="#">Отзывы</a>
+
             <a href="#">Вопрос-ответ</a>
+
             <a href="#">Новости</a>
+
             <a href="#">Контакты</a>
+
         </nav>
+
         <div class="mobile-menu-bottom">
+
             <span>Ежедневно, с 8:00 до 18:00</span>
+
             <h2>8 800 444 00 65</h2>
+
             <button>Заказать звонок</button>
+
         </div>
+
     </aside>
 
     <nav class="navbar">
+
         <div class="container">
+
             <div class="logo">
-                <a href="#" class="main-logo">
-                    <img src="./assets/svg/logo 1.svg" alt="Стройоптторг">
+
+                <a href="./index.html" class="main-logo">
+
+                    <img src="./assets/svg/navbar logo.svg" alt="Стройоптторг">
+
                 </a>
-                <button class="catalog-btn">
+
+                <a href="./pages/katolog.html" class="catalog-btn">
+
                     <span class="catalog-menu">
+
+                        <span>
+                            ----
+                            
+                        </span>
+
                         <span></span>
+
                         <span></span>
+
                     </span>
+
                     КАТАЛОГ
-                </button>
+
+                </a>
+
                 <div class="search-box">
+
                     <input type="text" placeholder="Найти среди 50000 товаров. Например: Дрель Bosch">
 
                     <button class="search-btn">
+
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
                             fill="currentColor">
+
                             <path
                                 d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z">
+
                             </path>
+
                         </svg>
+
                     </button>
+
                 </div>
 
                 <div class="navbar-actions">
 
-                    <div class="nav-action tabrik">
-                        <div class="icon-box">
-                            <img src="./assets/svg/Frame 8.svg" alt="">
-                        </div>
-                        <p>Все акции</p>
-                    </div>
+                    <a href="./pages/custom_order.html" class="nav-action tabrik">
 
-                    <div class="nav-action user">
                         <div class="icon-box">
-                            <img src="./assets/svg/Frame 8 (1).svg" alt="">
-                        </div>
-                        <a href="./pages/avtorizatsiya.html"><p>Войти</p></a>
-                    </div>
 
-                    <div class="nav-action rating">
+                            <img src="./assets/svg/sovg'a navbar.svg" alt="">
+
+                        </div>
+
+                        <span>Все акции</span>
+
+                    </a>
+
+                    <a href="./pages/avtorizatsiya.html" class="nav-action user">
+
                         <div class="icon-box">
-                            <img src="./assets/svg/Frame 8 (2).svg" alt="">
+
+                            <img src="./assets/svg/profil navbar.svg" alt="">
+
+                        </div>
+
+                        <span>Войти</span>
+
+                    </a>
+
+                    <a href="./pages/kartochka_fixed.html" class="nav-action rating">
+
+                        <div class="icon-box">
+
+                            <img src="./assets/svg/tartib navbar .svg" alt="">
+
                             <span class="mob-badge">3</span>
-                        </div>
-                        <p>Сравнение</p>
-                    </div>
 
-                    <div class="nav-action yurakcha">
-                        <div class="icon-box">
-                            <img src="./assets/svg/Frame 8 (4).svg" alt="">
-                            <span class="mob-badge">3</span>
                         </div>
-                        <p>Избранное</p>
-                    </div>
 
-                    <div class="nav-action korzinka">
+                        <span>Сравнение</span>
+
+                    </a>
+
+                    <a href="./pages/saved_products.html" class="nav-action yurakcha">
+
                         <div class="icon-box">
-                            <img src="./assets/svg/Frame 8 (3).svg" alt="">
+
+                            <img src="./assets/svg/like navbar .svg" alt="">
+
                             <span class="mob-badge">3</span>
+
                         </div>
-                        <p><a href="./pages/korzina.html">Корзина</a></p>
-                    </div>
+
+                        <span>Избранное</span>
+
+                    </a>
+
+                    <a href="./pages/korzina.html" class="nav-action korzinka">
+
+                        <div class="icon-box">
+
+                            <img src="./assets/svg/savat navbar.svg" alt="">
+
+                            <span class="mob-badge">3</span>
+
+                        </div>
+
+                        <span>Корзина</span>
+
+                    </a>
 
                 </div>
 
             </div>
+
         </div>
+
     </nav>
 
     <section class="section-rasm">
+
         <div class="container hero" id="heroSlider">
+
             <div class="hero-slides">
-                <div class="hero-slide slide-1 active" style="background-image: url('./assets/img/Group 31.png');">
+
+                <div class="hero-slide slide-1 active" style="background-image: url('./assets/img/balgarchik.png');">
+
                     <div class="hero-text">
+
                         <h1>Электроинструмент <br>для любых нужд</h1>
+
                         <p>У нас обновился ассортимент сантехники, мебели для <br> ванной комнаты, а так же других
+
                             сопутствующих товаров.</p>
+
                         <button class="hero-btn">ПЕРЕЙТИ К ТОВАРАМ <span>›</span> </button>
+
                     </div>
+
                 </div>
-                <div class="hero-slide slide-2" style="background-image: url('./assets/img/Group 31 (1).png');">
+
+                <div class="hero-slide slide-2" style="background-image: url('./assets/img/balgarchik.png');">
+
                     <div class="hero-text">
+
                         <h1>Сантехника <br>по выгодным ценам</h1>
+
                         <p>Большой выбор смесителей, унитазов и душевых систем <br> от проверенных брендов со скидками
+
                             до 30%.</p>
+
                         <button class="hero-btn">СМОТРЕТЬ АКЦИЮ <span>›</span> </button>
+
                     </div>
+
                 </div>
-                <div class="hero-slide slide-3" style="background-image: url('./assets/img/Group 31 (2).png');">
+
+                <div class="hero-slide slide-3" style="background-image: url('./assets/img/balgarchik.png');">
+
                     <div class="hero-text">
+
                         <h1>Отделочные материалы <br>для вашего ремонта</h1>
+
                         <p>Краски, клеи и напольные покрытия — всё для быстрого <br> и качественного ремонта в одном
+
                             месте.</p>
+
                         <button class="hero-btn">ВЫБРАТЬ ТОВАР <span>›</span> </button>
+
                     </div>
+
                 </div>
-                <div class="hero-slide slide-4" style="background-image: url('./assets/img/Group 31 (3).png');">
+
+                <div class="hero-slide slide-4" style="background-image: url('./assets/img/balgarchik.png');">
+
                     <div class="hero-text">
+
                         <h1>Доставка <br>по всей стране</h1>
-                        <p>Оформляйте заказ онлайн — привезём быстро и аккуратно <br> прямо к вам домой или на объект.</p>
+
+                        <p>Оформляйте заказ онлайн — привезём быстро и аккуратно <br> прямо к вам домой или на объект.
+                        </p>
+
                         <button class="hero-btn">УЗНАТЬ БОЛЬШЕ <span>›</span> </button>
+
                     </div>
+
                 </div>
+
             </div>
 
             <button class="slider-arrow slider-prev" aria-label="Предыдущий слайд">
+
                 ‹
+
             </button>
+
             <button class="slider-arrow slider-next" aria-label="Следующий слайд">
+
                 ›
+
             </button>
+
             <div class="slider-dots">
+
                 <button class="dot active" data-index="0"></button>
+
                 <button class="dot" data-index="1"></button>
+
                 <button class="dot" data-index="2"></button>
+
                 <button class="dot" data-index="3"></button>
+
             </div>
+
         </div>
 
     </section>
 
-
     <section class="advantages-section">
+
         <div class="container">
+
             <div class="benefits">
+
                 <div class="dev1">
-                    <img src="./assets/svg/Vector.svg" alt="">
+
+                    <img src="./assets/svg/karta.svg" alt="">
+
                     <p>Оплата любым удобным способом</p>
+
                 </div>
+
                 <div class="dev1">
-                    <img src="./assets/svg/Vector (1).svg" alt="">
+
+                    <img src="./assets/svg/kartaikki.svg" alt="">
+
                     <p>Большой выбор товаров в каталоге</p>
+
                 </div>
+
                 <div class="dev1">
-                    <img src="./assets/svg/Vector (2).svg" alt="">
+
+                    <img src="./assets/svg/kilobus.svg" alt="">
+
                     <p>Осуществляем быструю доставку</p>
+
                 </div>
+
                 <div class="dev1">
-                    <img src="./assets/svg/Vector (3).svg" alt="">
+
+                    <img src="./assets/svg/doira ichida chizig'i bo.svg" alt="">
+
                     <p>Делаем скидки на крупные покупки</p>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
     <section class="reklama-section">
+
         <div class="container">
+
             <div class="reklama-card">
+
                 <div class="card">
-                    <img src="./assets/img/Frame 18.png" alt="">
+
+                    <img src="./assets/img/vanna.png" alt="">
+
                     <p>Сантехника</p>
+
                 </div>
+
                 <div class="card">
-                    <img src="./assets/img/image copy 3.png" alt="">
+
+                    <img src="./assets/img/gilam.png" alt="">
+
                     <p>Отделочные материалы</p>
+
                 </div>
+
                 <div class="card">
-                    <img src="./assets/img/Frame 18 (8).png" alt="">
+
+                    <img src="./assets/img/udinetil.png" alt="">
+
                     <p>Электротовары</p>
+
                 </div>
+
                 <div class="card">
-                    <img src="./assets/img/Frame 18 (2).png" alt="">
+
+                    <img src="./assets/img/derel.png" alt="">
+
                     <p>Инструменты</p>
+
                 </div>
+
                 <div class="card">
-                    <img src="./assets/img/Frame 18 (3).png" alt="">
+
+                    <img src="./assets/img/taxta.png" alt="">
+
                     <p>Столярные изделия</p>
+
                 </div>
+
                 <div class="card">
-                    <img src="./assets/img/Frame 18 (4).png" alt="">
+
+                    <img src="./assets/img/g'isht.png" alt="">
+
                     <p>Общестроительные материалы</p>
+
                 </div>
+
                 <div class="card">
-                    <img src="./assets/img/image copy 4.png" alt="">
+
+                    <img src="./assets/img/pechka.png" alt="">
+
                     <p>Все для сауны и бани</p>
+
                 </div>
+
                 <div class="card1">
-                    <img src="./assets/img/Group 12.png" alt="">
+
+                    <img src="./assets/img/katta.png" alt="">
+
                     <p>Перейти в каталог</p>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
     <section class="categories-section">
+
         <div class="container">
+
             <div class="categories-card">
+
                 <div class="card1 flex">
+
                     <h2>Метизные изделия</h2>
+
                     <button>до -15%</button>
+
                 </div>
+
                 <div class="card2 flex">
+
                     <h2>Лакокрасочные материалы</h2>
+
                     <button>до -30%</button>
+
                 </div>
+
                 <div class="card3 flex">
+
                     <h2>Напольные покрытия</h2>
+
                     <button>до -25%</button>
+
                 </div>
+
                 <div class="card4 flex">
+
                     <h2>Все для отоплления</h2>
+
                     <button>до -30%</button>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
     <section class="hits-section">
+
         <div class="container">
+
             <h2 class="hits-title">Хиты продаж</h2>
+
             <div class="hits-tabs">
+
                 <button class="tab active">Все товары</button>
+
                 <button class="tab">Инструменты</button>
+
                 <button class="tab">Сантехника</button>
+
                 <button class="tab">Для дома</button>
+
                 <button class="tab">Для сада</button>
+
             </div>
+
             <div class="hits-content">
+
                 <button class="slider-arrow arrow-left">‹</button>
+
                 <div class="products">
+
                     <div class="product-card">
+
                         <span class="hit-badge">ХИТ</span>
+
                         <div class="product-img">
-                            <img src="./assets/img/Rectangle 22.png" alt="product">
+
+                            <img src="./assets/imgit log --oneline -5g/drel 8.png" alt="product">
+
                         </div>
+
                         <p class="article">Артикул: XJ89YHGO</p>
+
                         <h3> Перфоратор универсальный Wander X645-46 GF 1450 </h3>
+
                         <div class="price-row">
+
                             <del>15 999 ₽</del>
+
                             <strong>12 789 ₽</strong>
+
                             <span class="discount">-15%</span>
+
                         </div>
+
                         <div class="card-bottom">
+
                             <button class="buy-btn">
-                                <span><img src="./assets/svg/Frame 38.svg" alt=""></span>
+
+                                <span><img src="./assets/svg/savat .svg" alt=""></span>
+
                                 Купить
+
                             </button>
+
                             <div class="card-icons">
-                                <button><img src="./assets/svg/Frame 38 (2).svg" alt=""></button>
-                                <button><img src="./assets/svg/Frame 38 (1).svg" alt=""></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <span class="hit-badge">ХИТ</span>
-                        <div class="product-img">
-                            <img src="./assets/img/Rectangle 22 (1).png" alt="product">
-                        </div>
-                        <p class="article">Артикул: XJ89YHGO</p>
-                        <h3> Смеситель Faris G-120 для раковин </h3>
-                        <div class="price-row">
-                            <strong>1 789 ₽</strong>
-                        </div>
-                        <div class="card-bottom">
-                            <button class="added-btn"> Добавлен </button>
-                            <div class="card-icons">
-                                <button><img src="./assets/svg/Frame 38 (2).svg" alt=""></button>
-                                <button><img src="./assets/svg/Frame 38 (1).svg" alt=""></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <span class="hit-badge">ХИТ</span>
-                        <div class="product-img">
-                            <img src="./assets/img/Rectangle 22 (2).png" alt="product">
-                        </div>
-                        <p class="article">Артикул: XJ89YHGO</p>
-                        <h3> Триммерная леска «Спираль-100 </h3>
-                        <div class="price-row">
-                            <del>312 ₽</del>
-                            <strong>260 ₽</strong>
-                            <span class="discount">-10%</span>
-                        </div>
-                        <div class="card-bottom">
-                            <button class="buy-btn">
-                                <span><img src="./assets/svg/Frame 38.svg" alt=""></span>
-                                Купить
-                            </button>
-                            <div class="card-icons">
-                                <button><img src="./assets/svg/Frame 38 (2).svg" alt=""></button>
-                                <button><img src="./assets/svg/Frame 38 (1).svg" alt=""></button>
+
+                                <button class="favorite-btn" aria-label="Добавить в избранное">
+                                    <svg class="favorite-heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z" />
+                                    </svg>
+                                </button>
+
+                                <button><img src="./assets/svg/usish tartibi.svg" alt=""></button>
+
                             </div>
 
                         </div>
+
                     </div>
+
                     <div class="product-card">
+
                         <span class="hit-badge">ХИТ</span>
+
                         <div class="product-img">
-                            <img src="./assets/img/Rectangle 22 (3).png" alt="product">
+
+                            <img src="./assets/img/Rectangle 22 (1).png" alt="product">
+
                         </div>
+
                         <p class="article">Артикул: XJ89YHGO</p>
-                        <h3>Унитаз подвесной Aragio с двойным сливом</h3>
+
+                        <h3> Смеситель Faris G-120 для раковин </h3>
+
                         <div class="price-row">
-                            <del>15 999 ₽</del>
-                            <strong>12 789 ₽</strong>
-                            <span class="discount">-12%</span>
+
+                            <strong>1 789 ₽</strong>
+
                         </div>
+
                         <div class="card-bottom">
-                            <button class="buy-btn">
-                                <span><img src="./assets/svg/Frame 38.svg" alt=""></span>
-                                Купить
-                            </button>
+
+                            <button class="added-btn"> Добавлен </button>
+
                             <div class="card-icons">
-                                <button><img src="./assets/svg/Frame 38 (2).svg" alt=""></button>
-                                <button><img src="./assets/svg/Frame 38 (1).svg" alt=""></button>
+
+                                <button class="favorite-btn" aria-label="Добавить в избранное">
+                                    <svg class="favorite-heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z" />
+                                    </svg>
+                                </button>
+
+                                <button><img src="./assets/svg/usish tartibi.svg" alt=""></button>
+
                             </div>
+
                         </div>
+
                     </div>
-                </div>
-                <div class="sale-card">
-                    <div class="sale-top">
-                        <div class="sale-header">
-                            <h3> Успейте купить <br> по скидке </h3>
-                            <span>-12%</span>
+
+                    <div class="product-card">
+
+                        <span class="hit-badge">ХИТ</span>
+
+                        <div class="product-img">
+
+                            <img src="./assets/img/Rectangle 22 (2).png" alt="product">
+
                         </div>
-                        <div class="sale-img">
-                            <img src="./assets/img/image 16.png" alt="sale product">
+
+                        <p class="article">Артикул: XJ89YHGO</p>
+
+                        <h3> Триммерная леска «Спираль-100 </h3>
+
+                        <div class="price-row">
+
+                            <del>312 ₽</del>
+
+                            <strong>260 ₽</strong>
+
+                            <span class="discount">-10%</span>
+
                         </div>
-                        <h4>Клей для напольных <br>покрытий Porret </h4>
-                        <div class="sale-price">
+
+                        <div class="card-bottom">
+
+                            <button class="buy-btn">
+
+                                <span><img src="./assets/svg/savat .svg" alt=""></span>
+
+                                Купить
+
+                            </button>
+
+                            <div class="card-icons">
+
+                                <button class="favorite-btn" aria-label="Добавить в избранное">
+                                    <svg class="favorite-heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z" />
+                                    </svg>
+                                </button>
+
+                                <button><img src="./assets/svg/usish tartibi.svg" alt=""></button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product-card">
+
+                        <span class="hit-badge">ХИТ</span>
+
+                        <div class="product-img">
+
+                            <img src="./assets/img/Rectangle 22 (3).png" alt="product">
+
+                        </div>
+
+                        <p class="article">Артикул: XJ89YHGO</p>
+
+                        <h3>Унитаз подвесной Aragio с двойным сливом</h3>
+
+                        <div class="price-row">
+
                             <del>15 999 ₽</del>
+
                             <strong>12 789 ₽</strong>
+
+                            <span class="discount">-12%</span>
+
                         </div>
+
+                        <div class="card-bottom">
+
+                            <button class="buy-btn">
+
+                                <span><img src="./assets/svg/savat .svg" alt=""></span>
+
+                                Купить
+
+                            </button>
+
+                            <div class="card-icons">
+
+                                <button class="favorite-btn" aria-label="Добавить в избранное">
+                                    <svg class="favorite-heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z" />
+                                    </svg>
+                                </button>
+
+                                <button><img src="./assets/svg/usish tartibi.svg" alt=""></button>
+
+                            </div>
+
+                        </div>
+
                     </div>
-                    <button class="sale-btn">
-                        <span>
-                            <img src="./assets/svg/Frame 38.svg" alt="">
-                        </span>
-                        Добавить в корзину
-                    </button>
+
                 </div>
+
+                <div class="sale-card">
+
+                    <div class="sale-top">
+
+                        <div class="sale-header">
+
+                            <h3> Успейте купить <br> по скидке </h3>
+
+                            <span>-12%</span>
+
+                        </div>
+
+                        <div class="sale-img">
+
+                            <img src="./assets/img/image 16.png" alt="sale product">
+
+                        </div>
+
+                        <h4>Клей для напольных <br>покрытий Porret </h4>
+
+                        <div class="sale-price">
+
+                            <del>15 999 ₽</del>
+
+                            <strong>12 789 ₽</strong>
+
+                        </div>
+
+                    </div>
+
+                    <button class="sale-btn">
+
+                        <span>
+
+                            <img src="./assets/svg/Frame 38.svg" alt="">
+
+                        </span>
+
+                        Добавить в корзину
+
+                    </button>
+
+                </div>
+
                 <button class="slider-arrow arrow-right">›</button>
+
             </div>
+
         </div>
+
     </section>
 
     <section class="hamkorliklar-section">
+
         <div class="container">
+
             <h2>Популярные бренды</h2>
+
             <div class="hamkorliklar">
+
                 <img src="./assets/img/Frame 380.png" alt="#">
+
                 <img src="./assets/img/Frame 382.png" alt="#">
+
                 <img src="./assets/img/Frame 383.png" alt="#">
+
                 <img src="./assets/img/Frame 384.png" alt="#">
+
                 <img src="./assets/img/Frame 385.png" alt="#">
+
                 <img src="./assets/img/Frame 386.png" alt="#">
+
                 <img src="./assets/img/Frame 389.png" alt="#">
+
             </div>
+
         </div>
+
     </section>
 
     <section class="offers-section">
+
         <div class="container">
+
             <h2 class="offers-title">Лучшие предложения</h2>
+
             <div class="offers-tabs">
+
                 <button class="active">Все
+
                     товары</button><button>Инструменты</button><button>Сантехника</button><button>Для
+
                     дома</button><button>Для сада</button>
+
             </div>
 
             <div class="offers-products">
+
                 <div class="offer-card">
+
                     <span class="product-badge hit-badge2">хит</span>
+
                     <div class="offer-image"><img src="./assets/img/Rectangle 22 (4).png" alt=""></div>
+
                     <p class="article">Артикул: XJ89YHGO</p>
+
                     <h3>Набор гравировальных насадок Nozzle-Tok</h3>
+
                     <div class="price"><del>15 999 ₽</del><strong>12 789 ₽</strong><span>-15%</span></div>
+
                     <div class="offer-bottom">
+
                         <button class="buy-btn">
+
                             <img src="./assets/svg/Frame 38.svg" alt=""> Купить</button>
-                        <div class="actions"><button class="action-btn"><img src="./assets/svg/Frame 38 (2).svg"
-                                    alt=""></button><button class="action-btn compare"><img
-                                    src="./assets/svg/Frame 38 (1).svg" alt=""></button></div>
+
+                        <div class="actions"><button class="favorite-btn" aria-label="Добавить в избранное">
+                                <svg class="favorite-heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z" />
+                                </svg>
+                            </button>
+                            </button><button class="action-btn compare"><img src="./assets/svg/usish tartibi.svg"
+                                    alt=""></button></div>
+
                     </div>
+
                 </div>
 
                 <div class="offer-card">
+
                     <span class="product-badge sale-badge">распродажа</span>
+
                     <div class="offer-image"><img src="./assets/img/Rectangle 22 (5).png" alt=""></div>
+
                     <p class="article">Артикул: XJ89YHGO</p>
+
                     <h3>Термостат для душа Torso V-6000</h3>
+
                     <div class="price"><del>312 ₽</del><strong>260 ₽</strong><span>-10%</span></div>
+
                     <div class="offer-bottom"><button class="buy-btn"><img src="./assets/svg/Frame 38.svg" alt="">
+
                             Купить</button>
-                        <div class="actions"><button class="action-btn"><img src="./assets/svg/Frame 38 (2).svg"
-                                    alt=""></button><button class="action-btn compare"><img
-                                    src="./assets/svg/Frame 38 (1).svg" alt=""></button></div>
+
+                        <div class="actions"><button class="favorite-btn" aria-label="Добавить в избранное">
+                                <svg class="favorite-heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z" />
+                                </svg>
+                            </button>
+                            </button><button class="action-btn compare"><img src="./assets/svg/usish tartibi.svg"
+                                    alt=""></button></div>
+
                     </div>
+
                 </div>
 
                 <div class="offer-card">
+
                     <div class="offer-image"><img src="./assets/img/Rectangle 22 (7).png" alt=""></div>
+
                     <p class="article">Артикул: XJ89YHGO</p>
+
                     <h3>Аккумуляторный шуруповерт «Гладиатор»</h3>
+
                     <div class="price"><strong>1 789 ₽</strong></div>
+
                     <div class="offer-bottom"><button class="buy-btn"><img src="./assets/svg/Frame 38.svg" alt="">
+
                             Купить</button>
-                        <div class="actions"><button class="action-btn"><img src="./assets/svg/Frame 38 (2).svg"
-                                    alt=""></button><button class="action-btn compare"><img
-                                    src="./assets/svg/Frame 38 (1).svg" alt=""></button></div>
+
+                        <div class="actions"><button class="favorite-btn" aria-label="Добавить в избранное">
+                                <svg class="favorite-heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z" />
+                                </svg>
+                            </button>
+                            </button><button class="action-btn compare"><img src="./assets/svg/usish tartibi.svg"
+                                    alt=""></button></div>
+
                     </div>
+
                 </div>
 
                 <div class="offer-card">
+
                     <span class="product-badge new-badge">новинка</span>
+
                     <div class="offer-image"><img src="./assets/img/Rectangle 22 (8).png" alt=""></div>
+
                     <p class="article">Артикул: XJ89YHGO</p>
+
                     <h3>Унитаз подвесной Aragio с двойным сливом</h3>
+
                     <div class="price"><del>15 999 ₽</del><strong>12 789 ₽</strong><span>-12%</span></div>
+
                     <div class="offer-bottom"><button class="buy-btn"><img src="./assets/svg/Frame 38.svg" alt="">
+
                             Купить</button>
-                        <div class="actions"><button class="action-btn"><img src="./assets/svg/Frame 38 (2).svg"
-                                    alt=""></button><button class="action-btn compare"><img
-                                    src="./assets/svg/Frame 38 (1).svg" alt=""></button></div>
+
+                        <div class="actions"><button class="favorite-btn" aria-label="Добавить в избранное">
+                                <svg class="favorite-heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z" />
+                                </svg>
+                            </button>
+                            </button><button class="action-btn compare"><img src="./assets/svg/usish tartibi.svg"
+                                    alt=""></button></div>
+
                     </div>
+
                 </div>
 
                 <div class="offer-card">
+
                     <div class="offer-image"><img src="./assets/img/Rectangle 22 (6).png" alt=""></div>
+
                     <p class="article">Артикул: XJ89YHGO</p>
+
                     <h3>Водно-дисперсионный клей Cob</h3>
+
                     <div class="price"><del>15 999 ₽</del><strong>12 789 ₽</strong><span>-15%</span></div>
+
                     <div class="offer-bottom"><button class="buy-btn"><img src="./assets/svg/Frame 38.svg" alt="">
+
                             Купить</button>
-                        <div class="actions"><button class="action-btn"><img src="./assets/svg/Frame 38 (2).svg"
-                                    alt=""></button><button class="action-btn compare"><img
-                                    src="./assets/svg/Frame 38 (1).svg" alt=""></button></div>
+
+                        <div class="actions"><button class="favorite-btn" aria-label="Добавить в избранное">
+                                <svg class="favorite-heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z" />
+                                </svg>
+                            </button>
+                            </button><button class="action-btn compare"><img src="./assets/svg/usish tartibi.svg"
+                                    alt=""></button></div>
+
                     </div>
+
                 </div>
+
             </div>
+
             <div class="offers-nav">
+
                 <button class="slider-arrow offers-prev" aria-label="Назад">‹</button>
+
                 <button class="slider-arrow offers-next" aria-label="Вперёд">›</button>
+
             </div>
+
         </div>
+
     </section>
 
     <section class="about-section">
+
         <div class="container">
+
             <div class="about-text">
+
                 <h2>О нашем магазине</h2>
+
                 <p>Цель и главная задача компании- создать сервис, который не ограничится продажей строительных и
+
                     отделочных материалов, а будет решать задачи и трудности, с которыми сталкиваются люди во время
+
                     ремонта.</p>
+
                 <div class="about-info">
+
                     <div>
+
                         <h3>17 805,3 м²</h3><span>торговых и складских<br>помещений</span>
+
                     </div>
+
                     <div>
+
                         <h3>50 000+</h3><span>наименований<br>товара</span>
+
                     </div>
+
                     <div>
+
                         <h3>2 500+</h3><span>постоянных<br>клиентов</span>
+
                     </div>
+
                     <div>
+
                         <h3>440</h3><span>опытных<br>сотрудников</span>
+
                     </div>
+
                 </div>
+
                 <p class="about-bottom">Уже второе десятилетие мы готовы воплотить в реальность Вашу мечту о красивом,
+
                     комфортабельном доме, благоустроенном современном офисе, уютной теплой даче, помочь реализовать
+
                     любые строительные и дизайнерские фантазии и с минимальными затратами времени и денежных средств.
+
                 </p>
+
                 <button>ПОДРОБНЕЕ О КОМПАНИИ <span>›</span></button>
+
             </div>
+
         </div>
+
     </section>
 
     <section class="news-section">
+
         <div class="container">
+
             <div class="news-top">
+
                 <h2>Последние новости</h2>
+
                 <button>Больше новостей</button>
+
             </div>
 
             <div class="news-cards">
+
                 <div class="news-card">
+
                     <img src="./assets/img/Rectangle 13.png" alt="">
+
                     <h3>Масштабное обновление каталога инструментов</h3>
+
                     <p>С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.</p>
+
                     <span>5 Августа 2023</span>
+
                 </div>
 
                 <div class="news-card">
+
                     <img src="./assets/img/Rectangle 13 (1).png" alt="">
+
                     <h3>Масштабное обновление каталога инструментов</h3>
+
                     <p>С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.</p>
+
                     <span>5 Августа 2023</span>
+
                 </div>
 
                 <div class="news-card">
+
                     <img src="./assets/img/Rectangle 13 (2).png" alt="">
+
                     <h3>Масштабное обновление каталога инструментов</h3>
+
                     <p>С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.</p>
+
                     <span>5 Августа 2023</span>
+
                 </div>
 
                 <div class="news-card">
+
                     <img src="./assets/img/Rectangle 13 (3).png" alt="">
+
                     <h3>Масштабное обновление каталога инструментов</h3>
+
                     <p>С радостью сообщаем вам о крупном пополнении нашего каталога инструментов.</p>
+
                     <span>5 Августа 2023</span>
+
                 </div>
+
             </div>
+
             <div class="mob-news-nav">
+
                 <button class="slider-arrow news-prev" aria-label="Назад">‹</button>
+
                 <button class="slider-arrow news-next" aria-label="Вперёд">›</button>
+
             </div>
+
             <button class="mob-more-news-btn">Больше новостей</button>
+
         </div>
+
     </section>
 
     <footer class="footer">
+
         <div class="container">
+
             <div class="footer-top">
+
                 <img class="footer-logo" src="./assets/svg/logo 1.svg" alt="">
-                <p>ООО «Стройоптторг»</p>
+
+                <a href="./pages/about-company.html">
+                    <p>ООО «Стройоптторг»</p>
+                </a>
+
                 <p>ИНН: 0901051787<br>КПП 090101001</p>
-                <p>Email:<br><a href="#">info@stroiopttorg.ru</a></p>
+
+                <p>Email:<br><a href="#">
+                        <p>info@stroiopttorg.ru</p>
+                    </a></p>
+
                 <div class="phone"><b>8 800 444 00 65</b><span>Ежедневно, с 8:00 до 18:00</span></div>
+
                 <button>ЗАКАЗАТЬ ЗВОНОК</button>
+
             </div>
+
             <div class="line"></div>
 
             <div class="footer-main">
+
                 <div class="info">
+
                     <h3>Информация <span class="acc-chevron">⌄</span></h3>
+
                     <div class="info-links">
+
                         <div>
-                            <a href="#">О компании</a>
-                            <a href="#">Оплата</a>
-                            <a href="#">Доставка</a>
-                            <a href="#">Возврат</a>
-                            <a href="#">Отзывы</a>
+
+                            <a href="./pages/about-company.html">
+                                <p>О компании</p>
+                            </a>
+
+                            <a href="./pages/oploto.html">
+                                <p>Оплата</p>
+                            </a>
+
+                            <a href="#">
+                                <p>Доставка</p>
+                            </a>
+
+                            <a href="./pages/returns.html">
+                                <p>Возврат</p>
+                            </a>
+
+                            <a href="#">
+                                <p>Отзывы</p>
+                            </a>
+
                         </div>
+
                         <div>
-                            <a href="#">Вопрос-ответ</a>
-                            <a href="#">Новости</a>
-                            <a href="#">Контакты</a>
-                            <a href="#">Вход \ Регистрация</a>
-                            <a href="#">Все акции</a>
+
+                            <a href="./pages/vopros-otvet.html">
+                                <p>Вопрос-ответ</p>
+                            </a>
+
+                            <a href="#">
+                                <p>Новости</p>
+                            </a>
+
+                            <a href="#">
+                                <p>Контакты</p>
+                            </a>
+
+                            <a href="./pages/login.html">
+                                <p>Вход Регистрация</p>
+                            </a>
+
+                            <a href="#">
+                                <p>Все акции</p>
+                            </a>
+
                         </div>
+
                     </div>
+
                 </div>
 
                 <div class="catalog">
+
                     <h3>Каталог <span class="acc-chevron">⌄</span></h3>
+
                     <div class="catalog-links">
+
                         <div>
-                            <a href="#">Общестроительные материалы</a>
-                            <a href="#">Все для сауны и бани</a>
-                            <a href="#">Инструмент</a>
-                            <a href="#">Отделочные материалы</a>
-                            <a href="#">Товары для дома, сада и огорода</a>
+
+                            <a href="./pages/catalog.html">
+                                <p>Общестроительные материалы</p>
+                            </a>
+
+                            <a href="./pages/catalog.html">
+                                <p>Все для сауны и бани</p>
+                            </a>
+
+                            <a href="./pages/catalog.html">
+                                <p>Инструмент</p>
+                            </a>
+
+                            <a href="./pages/catalog.html">
+                                <p>Отделочные материалы</p>
+                            </a>
+
+                            <a href="./pages/catalog.html">
+                                <p>Товары для дома, сада и огорода</p>
+                            </a>
+
                         </div>
+
                         <div>
-                            <a href="#">Электротовары</a>
-                            <a href="#">Сантехника</a>
-                            <a href="#">Столярные изделия</a>
-                            <a href="#">Спецодежда и средства индивидуальной пожарной защиты</a>
+
+                            <a href="./pages/catalog.html">
+                                <p>Электротовары</p>
+                            </a>
+
+                            <a href="./pages/catalog.html">
+                                <p>Сантехника</p>
+                            </a>
+
+                            <a href="./pages/catalog.html">
+                                <p>Столярные изделия</p>
+                            </a>
+
+                            <a href="./pages/catalog.html">
+                                <p>Спецодежда и средства индивидуальной пожарной защиты</p>
+                            </a>
+
                         </div>
+
                         <div>
-                            <a href="#">Водо-газоснабжение, отопление, вентиляция</a>
-                            <a href="#">Метизные, такелажные и скобяные изделия</a>
+
+                            <a href="./pages/catalog.html">
+                                <p>Водо-газоснабжение, отопление, вентиляция</p>
+                            </a>
+
+                            <a href="./pages/catalog.html">
+                                <p>Метизные, такелажные и скобяные изделия</p>
+                            </a>
+
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
 
             <div class="line"></div>
 
             <div class="footer-pay">
+
                 <p>Мы принимаем<br>к оплате:</p>
+
                 <div class="pay-logos">
+
                     <img src="./assets/img/Group 49.png" alt="">
+
                     <img src="./assets/img/Group 46 (2).png" alt="">
+
                     <img src="./assets/img/Group 47.png" alt="">
+
                     <img src="./assets/img/Group 48.png" alt="">
+
                     <img src="./assets/img/Vector.png" alt="">
+
                     <img src="./assets/img/Vector (3).png" alt="">
+
                 </div>
+
                 <h3>Подпишитесь на рассылку<br>и будьте в курсе!</h3>
+
                 <div class="email-box"><input type="email" placeholder="Ваш email"><button>➤</button></div>
+
             </div>
 
             <div class="line"></div>
 
             <div class="footer-bottom">
+
                 <p>© 2003-2023 Интернет-магазин ООО «Стройоптторг» р/с 40702810360000102415<br>в Ставропольское
+
                     отделение №5230 ПАО Сбербанк, БИК 040702615</p>
+
                 <img src="./assets/img/readycode_logo_3 1.png" alt="">
-                <a href="#">Политика конфиденциальности</a>
+
+                <a href="./pages/privacy-policy.html">
+                    <p>Политика конфиденциальности</p>
+                </a>
+
             </div>
+
         </div>
+
     </footer>
 
     <script>
+
         // Mobil burger-menyu (chapdan chiqadigan panel)
+
         var burgerBtn = document.querySelector('.burger-btn');
+
         var mobileMenu = document.getElementById('mobileMenu');
+
         var mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+
         var mobileMenuClose = document.getElementById('mobileMenuClose');
 
         function openMobileMenu() {
+
             mobileMenu.classList.add('active');
+
             mobileMenuOverlay.classList.add('active');
+
             document.body.style.overflow = 'hidden';
+
         }
 
         function closeMobileMenu() {
+
             mobileMenu.classList.remove('active');
+
             mobileMenuOverlay.classList.remove('active');
+
             document.body.style.overflow = '';
+
         }
 
         if (burgerBtn) burgerBtn.addEventListener('click', openMobileMenu);
+
         if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
+
         if (mobileMenuOverlay) mobileMenuOverlay.addEventListener('click', closeMobileMenu);
 
         // Footer akkordeon (Информация / Каталог) — faqat mobil kenglikda ishlaydi
+
         document.querySelectorAll('.footer-main h3').forEach(function (heading) {
+
             heading.addEventListener('click', function () {
+
                 var linksBlock = heading.nextElementSibling;
+
                 if (window.innerWidth > 480 || !linksBlock) return;
+
                 var isOpen = linksBlock.classList.toggle('open');
+
                 heading.classList.toggle('open', isOpen);
+
             });
+
         });
 
         // Hero banner slayderi (avto-almashish + strelka/nuqta boshqaruvi + svayp)
+
         (function () {
+
             var slider = document.getElementById('heroSlider');
+
             if (!slider) return;
 
             var slides = slider.querySelectorAll('.hero-slide');
+
             var dots = slider.querySelectorAll('.dot');
+
             var prevBtn = slider.querySelector('.slider-prev');
+
             var nextBtn = slider.querySelector('.slider-next');
+
             var current = 0;
+
             var total = slides.length;
+
             var autoplayDelay = 5000;
+
             var timer = null;
 
             function goTo(index) {
+
                 index = (index + total) % total;
+
                 slides[current].classList.remove('active');
+
                 dots[current].classList.remove('active');
+
                 current = index;
+
                 slides[current].classList.add('active');
+
                 dots[current].classList.add('active');
+
             }
 
             function next() { goTo(current + 1); }
+
             function prev() { goTo(current - 1); }
 
             function startAutoplay() {
+
                 stopAutoplay();
+
                 timer = setInterval(next, autoplayDelay);
+
             }
 
             function stopAutoplay() {
+
                 if (timer) clearInterval(timer);
+
             }
 
             if (nextBtn) nextBtn.addEventListener('click', function () { next(); startAutoplay(); });
+
             if (prevBtn) prevBtn.addEventListener('click', function () { prev(); startAutoplay(); });
 
             dots.forEach(function (dot, i) {
+
                 dot.addEventListener('click', function () {
+
                     goTo(i);
+
                     startAutoplay();
+
                 });
+
             });
 
             // Sichqoncha ustida to'xtatish (desktop)
+
             slider.addEventListener('mouseenter', stopAutoplay);
+
             slider.addEventListener('mouseleave', startAutoplay);
 
             // Mobil uchun barmoq bilan surish (swipe)
+
             var touchStartX = 0;
+
             slider.addEventListener('touchstart', function (e) {
+
                 touchStartX = e.changedTouches[0].screenX;
+
                 stopAutoplay();
+
             }, { passive: true });
 
             slider.addEventListener('touchend', function (e) {
+
                 var touchEndX = e.changedTouches[0].screenX;
+
                 var diff = touchEndX - touchStartX;
+
                 if (Math.abs(diff) > 40) {
+
                     diff < 0 ? next() : prev();
+
                 }
+
                 startAutoplay();
+
             }, { passive: true });
 
             startAutoplay();
+
         })();
+
+        // Barcha cardlardagi yuraklar
+        const favoriteButtons = document.querySelectorAll('.favorite-btn');
+        let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+        favoriteButtons.forEach((button, index) => {
+            if (favorites.includes(index)) button.classList.add('active');
+            button.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                button.classList.toggle('active');
+                if (button.classList.contains('active')) {
+                    if (!favorites.includes(index)) favorites.push(index);
+                } else {
+                    favorites = favorites.filter(item => item !== index);
+                }
+                localStorage.setItem('favorites', JSON.stringify(favorites));
+            });
+        });
     </script>
 
 </body>

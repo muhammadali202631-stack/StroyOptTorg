@@ -32,6 +32,10 @@ body .header .container .header-text .text1 p {
   color: #6c6f71;
   padding: 5px 0 0 0;
 }
+body .header .container .header-text .text1 p a {
+  text-decoration: none;
+  color: rgb(10, 10, 10);
+}
 body .header .container .header-text .text2 {
   display: flex;
   align-items: center;
@@ -443,21 +447,16 @@ body .catalog-main .catalog-layout .products-side .selected-filters button.clear
 body .catalog-main .catalog-layout .products-side .products-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
 }
 body .catalog-main .catalog-layout .products-side .products-grid .product-card {
   min-width: 0;
   min-height: 385px;
-  border: 1px solid #eeeeee;
   padding: 14px;
   position: relative;
   display: flex;
   flex-direction: column;
   transition: 0.25s;
-}
-body .catalog-main .catalog-layout .products-side .products-grid .product-card:hover {
-  z-index: 2;
-  border-color: #1976d2;
-  box-shadow: 0 7px 22px rgba(0, 0, 0, 0.08);
 }
 body .catalog-main .catalog-layout .products-side .products-grid .product-card .hit-badge {
   position: absolute;

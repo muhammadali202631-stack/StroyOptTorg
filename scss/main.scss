@@ -2236,11 +2236,10 @@ body {
 
     .footer-top {
       min-height: 135px;
-      display: grid;
-      grid-template-columns: 220px 170px 170px 170px 210px 200px;
+      display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
+      gap: 10px;
 
       .footer-logo {
         width: 210px;

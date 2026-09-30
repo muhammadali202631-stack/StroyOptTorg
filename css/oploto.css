@@ -432,10 +432,12 @@ body .section .right-elements .text4 p span {
   font-weight: 600;
 }
 body .section .left-elements {
+  width: 40%;
   margin-bottom: 50px;
 }
 body .section .left-elements .img1,
 body .section .left-elements .img2 {
+  width: 100%;
   margin-bottom: 35px;
 }
 body .section .left-elements .rassilku {
