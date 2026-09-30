@@ -5,6 +5,12 @@
   border: none;
 }
 
+a{
+  font-size: 12px;
+  text-decoration: none;
+  color: #838383;
+}
+
 body {
   font-family: Arial, sans-serif;
 }

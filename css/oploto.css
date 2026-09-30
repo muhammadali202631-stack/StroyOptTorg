@@ -18,6 +18,12 @@
   padding: 0;
 }
 
+a{
+  font-size: 12px;
+  text-decoration: none;
+  color: #838383;
+}
+
 .mob-badge {
   display: none;
 }

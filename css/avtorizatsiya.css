@@ -310,8 +310,9 @@ body .stroy .container p span {
 }
 
 a{
+  font-size: 12px;
   text-decoration: none;
-  color: black;
+  color: #838383;
 }
 
 .avtorization_parts_buttons button{

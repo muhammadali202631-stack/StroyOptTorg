@@ -12,6 +12,12 @@ button{
     cursor: pointer;
 }
 
+a{
+  font-size: 12px;
+  text-decoration: none;
+  color: #838383;
+}
+
 .red_star{
     color: red;
 }

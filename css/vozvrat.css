@@ -9,6 +9,12 @@
   margin: 0 auto;
 }
 
+a{
+  font-size: 12px;
+  text-decoration: none;
+  color: #838383;
+}
+
 .burger-btn {
   display: none;
   background: none;

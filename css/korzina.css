@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 body {
   font-family: Arial, sans-serif;
 }
@@ -276,7 +281,6 @@ body .total .container .promo_box input {
   padding: 15px 20px;
   border: 1px solid #EBEEF0;
   font-size: 15px;
-  color: #EBEEF0;
 }
 body .total .container .promo_box button {
   cursor: pointer;
@@ -296,147 +300,6 @@ body .total .container button {
   background-color: #186FD4;
   color: white;
   border-radius: 8px;
-}
-body .towar_card {
-  padding-top: 20px;
-  background: #FFFFFF;
-  border: 1px solid #EDF0F2;
-  border-radius: 8px;
-  width: 700px;
-}
-body .towar_card .container .towars_names {
-  max-width: 1400px;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  background: #F8FAFC;
-  border-bottom: 1px solid #EDF0F2;
-  padding: 14px 24px;
-}
-body .towar_card .container .towars_names h3 {
-  font-size: 12px;
-  font-weight: 700;
-  color: #A3B4C4;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin: 0;
-}
-body .towar_card .container .purchases_cards {
-  display: flex;
-  align-items: center;
-  padding: 20px 24px;
-  border-bottom: 1px solid #EDF0F2;
-}
-body .towar_card .container .purchases_cards:last-child {
-  border-bottom: none;
-}
-body .towar_card .container .towars_names h3:nth-child(1),
-body .towar_card .container .info {
-  flex: 2.5;
-  display: flex;
-  align-items: center;
-}
-body .towar_card .container .towars_names h3:nth-child(2),
-body .towar_card .container .prices {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-body .towar_card .container .towars_names h3:nth-child(3),
-body .towar_card .container .how_much {
-  flex: 1.2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .towar_card .container .towars_names h3:nth-child(4),
-body .towar_card .container .card_total_price {
-  flex: 1.2;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-body .towar_card .container .info img {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-  margin-right: 18px;
-}
-body .towar_card .container .info .card_info {
-  display: flex;
-  flex-direction: column;
-}
-body .towar_card .container .info .card_info p {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.4;
-  color: #2B2F33;
-  margin: 0 0 4px 0;
-}
-body .towar_card .container .info .card_info h5 {
-  font-size: 12px;
-  color: #A3B4C4;
-  font-weight: 400;
-  margin: 0;
-}
-body .towar_card .container .prices h2 {
-  font-size: 15px;
-  font-weight: 700;
-  color: #0066CC;
-  margin: 0;
-}
-body .towar_card .container .prices h2.cars_discounts {
-  font-size: 12px;
-  color: #A3B4C4;
-  text-decoration: line-through;
-  margin-top: 2px;
-  font-weight: 400;
-}
-body .towar_card .container .how_much {
-  display: flex;
-  align-items: center;
-  background: #F0F2F5;
-  border-radius: 20px;
-  padding: 3px;
-}
-body .towar_card .container .how_much p {
-  margin: 0;
-  width: 32px;
-  height: 32px;
-  font-size: 15px;
-  font-weight: 600;
-  color: #2B2F33;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-body .towar_card .container .how_much p:nth-child(1), body .towar_card .container .how_much p:nth-child(3) {
-  font-size: 18px;
-  cursor: pointer;
-  color: #7A8A99;
-  border-radius: 50%;
-}
-body .towar_card .container .how_much p:nth-child(1):hover, body .towar_card .container .how_much p:nth-child(3):hover {
-  background: #E1E4E8;
-}
-body .towar_card .container .how_much p:nth-child(2) {
-  width: 36px;
-}
-body .towar_card .container .card_total_price h2 {
-  font-size: 16px;
-  font-weight: 700;
-  color: #2B2F33;
-  margin: 0;
-}
-body .towar_card .container .card_total_price img {
-  cursor: pointer;
-  padding: 8px;
-  border-radius: 6px;
-  transition: background 0.2s;
-}
-body .towar_card .container .card_total_price img:hover {
-  background: #FFF0F0;
 }
 body .interest {
   margin-top: 300px;
@@ -716,4 +579,590 @@ body .footer .footer-bottom a {
   text-align: right;
 }
 
-/*# sourceMappingURL=korzina.css.map */
+a{
+  font-size: 12px;
+  text-decoration: none;
+  color: #838383;
+}
+
+.stroy_tovar {
+    display: none;
+}
+
+.parrent_div {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    font-family: "Roboto", sans-serif;
+}
+
+.left_card {
+    flex: 1;
+    min-width: 0;
+}
+
+.towars .container {
+    padding-bottom: 10px;
+}
+
+.towars h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin: 0 0 16px 0;
+}
+
+.price h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #62676F;
+    margin: 0 0 10px 0;
+}
+
+.price h4 span {
+    color: #186FD4;
+    font-weight: 600;
+}
+
+.blu_line {
+    margin-bottom: 16px;
+}
+
+.blu_line .line {
+    width: 100%;
+    height: 6px;
+    background: #E1E4E8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.blu_line .fill {
+    height: 100%;
+    background: #186FD4;
+    border-radius: 10px;
+}
+
+.blu_line .text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+.blu_line .text .price {
+    font-size: 13px;
+    color: #1A1A1A;
+    font-weight: 500;
+}
+
+.blu_line .text .max_price {
+    color: #A6ACB4;
+}
+
+.price h2 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #1A1A1A;
+    margin: 0;
+    position: relative;
+}
+
+.price h2 span {
+    font-weight: 700;
+}
+
+.info-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.info-toggle {
+    display: none;
+}
+
+.info-wrapper .info {
+    color: #186FD4;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 8px;
+    text-decoration: underline;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    top: 130%;
+    left: 0;
+    background: #FFFFFF;
+    border: 1px solid #E1E4E8;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    padding: 14px 18px;
+    z-index: 10;
+    white-space: nowrap;
+}
+
+.info-toggle:checked ~ .tooltip,
+.info-wrapper:hover .tooltip {
+    display: block;
+}
+
+.tooltip-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1A1A1A;
+    margin: 0 0 10px 0;
+}
+
+.tooltip-list {
+    display: flex;
+    gap: 14px;
+}
+
+.tooltip-list .item {
+    font-size: 13px;
+    color: #1A1A1A;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.badge {
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 20px;
+}
+
+.badge.green {
+    background: #2ECC71;
+}
+
+.badge.orange {
+    background: #F5A623;
+}
+
+.badge.red {
+    background: #E74C3C;
+}
+
+.towar_card {
+    padding-top: 20px;
+    background: #FFFFFF;
+    border: 1px solid #EBEEF0;
+    border-radius: 8px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.towar_card .towars_names {
+    display: flex;
+    align-items: center;
+    background: #F8F9FA;
+    border-bottom: 1px solid #EBEEF0;
+    padding: 14px 24px;
+}
+
+.towar_card .towars_names h3 {
+    font-size: 12px;
+    font-weight: 700;
+    color: #8A94A6;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0;
+}
+
+.towar_card .purchases_cards {
+    display: flex;
+    align-items: center;
+    padding: 20px 24px;
+    border-bottom: 1px solid #EBEEF0;
+}
+
+.towar_card .purchases_cards:last-child {
+    border-bottom: none;
+}
+
+.towars_names h3:nth-child(1), .info {
+    flex: 2.5;
+    display: flex;
+    align-items: center;
+}
+
+.towars_names h3:nth-child(2), .prices {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.towars_names h3:nth-child(3), .how_much {
+    flex: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.towars_names h3:nth-child(4), .card_total_price {
+    flex: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    margin-right: 18px;
+}
+
+.info .card_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info .card_info p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #1A1A1A;
+    margin: 0 0 4px 0;
+}
+
+.info .card_info h5 {
+    font-size: 12px;
+    color: #8A94A6;
+    font-weight: 400;
+    margin: 0;
+}
+
+.prices h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #186FD4;
+    margin: 0;
+}
+
+.prices h2.cars_discounts {
+    font-size: 12px;
+    color: #8A94A6;
+    text-decoration: line-through;
+    margin-top: 2px;
+    font-weight: 400;
+}
+
+.how_much {
+    background: #F0F2F5;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+.how_much p {
+    margin: 0;
+    width: 32px;
+    height: 32px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1A1A1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.how_much p:nth-child(1),
+.how_much p:nth-child(3) {
+    font-size: 18px;
+    cursor: pointer;
+    color: #7A8A99;
+    border-radius: 50%;
+}
+
+.how_much p:nth-child(1):hover,
+.how_much p:nth-child(3):hover {
+    background: #E1E4E8;
+}
+
+.how_much p:nth-child(2) {
+    width: 36px;
+}
+
+.card_total_price h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin: 0;
+}
+
+.card_total_price img {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.card_total_price img:hover {
+    background: #FFF0F0;
+}
+
+.total {
+    width: 320px;
+    flex-shrink: 0;
+    background: #FFFFFF;
+    border: 1px solid #EBEEF0;
+    border-radius: 10px;
+    align-self: flex-start;
+}
+
+.total .container {
+    padding: 24px;
+}
+
+.total h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin: 0 0 20px 0;
+}
+
+.total .promokode {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 10px 0;
+}
+
+.total .promokode .skidka {
+    font-size: 14px;
+    color: #62676F;
+    margin: 0;
+}
+
+.total .promokode h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1A1A1A;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.total .promokode .summa {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin: 0;
+}
+
+.total .promokode h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #186FD4;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.promo_box {
+    margin: 16px 0;
+}
+
+.promo_input_wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.promo_input_wrap input {
+    width: 100%;
+    border: 1px solid #2ECC71;
+    border-radius: 6px;
+    padding: 12px 36px 12px 14px;
+    font-size: 13px;
+    color: #1A1A1A;
+    outline: none;
+    background: #FFFFFF;
+}
+
+.promo_check {
+    position: absolute;
+    right: 12px;
+    color: #2ECC71;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.promo_applied {
+    text-align: center;
+    color: #186FD4;
+    font-size: 13px;
+    margin: 10px 0 0 0;
+}
+
+.total button {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: #186FD4;
+    padding: 16px;
+    margin-top: 16px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    transition: background 0.2s;
+}
+
+.total button:hover {
+    background-color: #135BB0;
+}
+
+
+body .towar_card {
+  padding-top: 20px;
+  background: #FFFFFF;
+  border: 1px solid #EDF0F2;
+  border-radius: 8px;
+  width: 100%;
+}
+body .towar_card .container .towars_names {
+  max-width: 1400px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  background: #F8FAFC;
+  border-bottom: 1px solid #EDF0F2;
+  padding: 14px 24px;
+}
+body .towar_card .container .towars_names h3 {
+  font-size: 12px;
+  font-weight: 700;
+  color: #A3B4C4;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+body .towar_card .container .purchases_cards {
+  display: flex;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #EDF0F2;
+}
+body .towar_card .container .purchases_cards:last-child {
+  border-bottom: none;
+}
+body .towar_card .container .towars_names h3:nth-child(1),
+body .towar_card .container .info {
+  flex: 2.5;
+  display: flex;
+  align-items: center;
+}
+body .towar_card .container .towars_names h3:nth-child(2),
+body .towar_card .container .prices {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .towar_card .container .towars_names h3:nth-child(3),
+body .towar_card .container .how_much {
+  flex: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .towar_card .container .towars_names h3:nth-child(4),
+body .towar_card .container .card_total_price {
+  flex: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .towar_card .container .info img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-right: 18px;
+}
+body .towar_card .container .info .card_info {
+  display: flex;
+  flex-direction: column;
+}
+.info .card_info p {
+  font-size: 14px;
+  font-weight: 500;
+  max-width: 250px;
+  line-height: 1.4;
+  color: #2B2F33;
+  margin: 0 0 4px 0;
+}
+body .towar_card .container .info .card_info h5 {
+  font-size: 12px;
+  color: #A3B4C4;
+  font-weight: 400;
+  margin: 0;
+}
+body .towar_card .container .prices h2 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0066CC;
+  margin: 0;
+}
+body .towar_card .container .prices h2.cars_discounts {
+  font-size: 12px;
+  color: #A3B4C4;
+  text-decoration: line-through;
+  margin-top: 2px;
+  font-weight: 400;
+}
+ .how_much {
+  display: flex;
+  align-items: center;
+  background: #F0F2F5;
+  border-radius: 20px;
+  padding: 3px;
+}
+ .how_much p {
+  margin: 0;
+  width: 32px;
+  height: 32px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2B2F33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .towar_card .container .how_much p:nth-child(1),
+body .towar_card .container .how_much p:nth-child(3) {
+  font-size: 18px;
+  cursor: pointer;
+  color: #7A8A99;
+  border-radius: 50%;
+}
+body .towar_card .container .how_much p:nth-child(1):hover,
+body .towar_card .container .how_much p:nth-child(3):hover {
+  background: #E1E4E8;
+}
+body .towar_card .container .how_much p:nth-child(2) {
+  width: 36px;
+}
+body .towar_card .container .card_total_price h2 {
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2B2F33;
+  margin: 0;
+}
+body .towar_card .container .card_total_price img {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+body .towar_card .container .card_total_price img:hover {
+  background: #FFF0F0;
+}
+   
+

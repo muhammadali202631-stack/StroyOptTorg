@@ -15,6 +15,12 @@ body {
   font-size: 14px;
 }
 
+a{
+  font-size: 12px;
+  text-decoration: none;
+  color: #838383;
+}
+
 .container {
   width: min(1180px, 100% - 48px);
   margin: auto;
