@@ -274,6 +274,9 @@ body .total .container .promo_box {
   flex-direction: column;
   gap: 15px;
 }
+.total .container button a{
+  color: white;
+}
 body .total .container .promo_box input {
   cursor: pointer;
   border-radius: 8px;
