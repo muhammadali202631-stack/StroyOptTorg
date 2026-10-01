@@ -2548,3 +2548,957 @@ body {
     max-width: 100%;
   }
 }
+
+
+
+/* =====================================================
+   TABLET 481px – 820px  (Figma 768 ga mos)
+   style.css ning ENG OXIRIGA qo'ying (body {...} dan keyin)
+   ===================================================== */
+@media (min-width: 481px) and (max-width: 820px) {
+  .mobile-menu {
+    display: flex;
+  }
+ 
+  body {
+    overflow-x: hidden;
+ 
+    /* ================= HEADER ================= */
+    .header {
+      height: auto;
+ 
+      .container {
+        padding: 8px 24px;
+ 
+        .header-text {
+          .text1 {
+            gap: 0;
+ 
+            a {
+              display: none;
+            }
+ 
+            .burger-btn {
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              width: auto;
+              height: 34px;
+              font-family: inherit;
+              font-size: 16px;
+              font-weight: 600;
+ 
+              &::after {
+                content: "Меню";
+              }
+            }
+          }
+ 
+          .text2 {
+            gap: 18px;
+            padding: 0;
+ 
+            p {
+              font-size: 13px;
+            }
+ 
+            h2 {
+              font-size: 17px;
+              font-weight: 700;
+            }
+ 
+            button {
+              width: 134px;
+              height: 34px;
+              font-size: 11px;
+            }
+          }
+        }
+      }
+ 
+      .chiziq {
+        margin-top: 0;
+      }
+    }
+ 
+    /* ================= NAVBAR ================= */
+    .navbar {
+      height: auto;
+ 
+      .container {
+        padding: 14px 24px 18px;
+      }
+ 
+      .logo {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 16px;
+ 
+        &::after {
+          content: "";
+          order: 25;
+          flex-basis: 100%;
+          height: 0;
+        }
+ 
+        .main-logo {
+          order: 10;
+          width: auto;
+          min-width: 0;
+          margin-right: 0;
+ 
+          img {
+            width: 200px;
+          }
+        }
+ 
+        .navbar-actions {
+          order: 20;
+          height: auto;
+          gap: 26px;
+ 
+          .nav-action {
+            height: auto;
+ 
+            .icon-box {
+              position: relative;
+              height: 30px;
+ 
+              img {
+                max-width: 28px;
+                max-height: 28px;
+              }
+            }
+ 
+            > span {
+              margin-top: 6px;
+              font-size: 13px;
+              color: #40464c;
+            }
+          }
+ 
+          .yurakcha .icon-box .mob-badge,
+          .korzinka .icon-box .mob-badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: -7px;
+            right: -9px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #ff3b30;
+            color: #fff;
+            font-size: 9px;
+            font-weight: 600;
+          }
+        }
+ 
+        .catalog-btn {
+          order: 30;
+          width: 154px;
+          min-width: 154px;
+          height: 48px;
+          margin-right: 14px;
+          font-size: 13px;
+        }
+ 
+        .search-box {
+          order: 40;
+          flex: 1;
+          height: 48px;
+          margin-right: 0;
+ 
+          input {
+            padding: 0 16px;
+            font-size: 14px;
+          }
+ 
+          .search-btn {
+            width: 56px;
+            min-width: 56px;
+            height: 100%;
+          }
+        }
+      }
+    }
+ 
+    /* ================= HERO ================= */
+    .section-rasm {
+      padding: 0 24px 20px;
+ 
+      .hero {
+        height: 360px;
+ 
+        .hero-text {
+          top: 60px;
+          left: 30px;
+ 
+          h1 {
+            max-width: 420px;
+            font-size: 36px;
+          }
+ 
+          p {
+            max-width: 440px;
+            margin-top: 14px;
+            font-size: 14px;
+            line-height: 22px;
+          }
+ 
+          .hero-btn {
+            width: 250px;
+            height: 58px;
+            margin-top: 20px;
+            padding: 0 26px 0 44px;
+            font-size: 13px;
+          }
+        }
+ 
+        .slider-arrow {
+          width: 32px;
+          height: 32px;
+          font-size: 20px;
+        }
+ 
+        .slider-prev {
+          left: -10px;
+        }
+ 
+        .slider-next {
+          right: -10px;
+        }
+      }
+    }
+ 
+    /* ================= ADVANTAGES (4 ta bir qatorda) ================= */
+    .advantages-section {
+      height: auto;
+ 
+      .container {
+        padding: 14px 24px 20px;
+ 
+        .benefits {
+          height: auto;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          align-items: start;
+          gap: 16px;
+ 
+          .dev1 {
+            height: auto;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 8px;
+            padding: 0;
+ 
+            img {
+              width: 20px;
+              height: 20px;
+              flex-shrink: 0;
+            }
+ 
+            p {
+              white-space: normal;
+              font-size: 15px;
+              line-height: 20px;
+            }
+ 
+            &:not(:last-child)::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+ 
+    /* ================= REKLAMA (scroll) ================= */
+    .reklama-section {
+      height: auto;
+ 
+      .container {
+        padding: 10px 24px 0;
+ 
+        .reklama-card {
+          display: flex;
+          overflow-x: auto;
+          gap: 14px;
+          scroll-snap-type: x mandatory;
+          scrollbar-width: none;
+ 
+          &::-webkit-scrollbar {
+            display: none;
+          }
+ 
+          .card,
+          .card1 {
+            flex: 0 0 156px;
+            width: 156px;
+            height: 165px;
+            padding: 0 12px;
+            scroll-snap-align: start;
+ 
+            p {
+              font-size: 15px;
+              line-height: 18px;
+            }
+          }
+ 
+          .card img {
+            width: 100px;
+            height: 76px;
+          }
+ 
+          .card1 img {
+            width: 44px;
+            height: 44px;
+          }
+        }
+      }
+    }
+ 
+    /* ================= CATEGORIES (3 ta ko'rinadi) ================= */
+    .categories-section {
+      height: auto;
+      margin-top: 28px;
+ 
+      .container {
+        padding: 0 24px;
+ 
+        .categories-card {
+          overflow-x: auto;
+          gap: 14px;
+          scroll-snap-type: x mandatory;
+          scrollbar-width: none;
+ 
+          &::-webkit-scrollbar {
+            display: none;
+          }
+ 
+          .flex {
+            flex: 0 0 calc((100% - 28px) / 3);
+            width: calc((100% - 28px) / 3);
+            height: 104px;
+            scroll-snap-align: start;
+ 
+            h2 {
+              width: 140px;
+              margin-top: 20px;
+              margin-left: 14px;
+              font-size: 17px;
+              line-height: 22px;
+            }
+ 
+            button {
+              width: 62px;
+              height: 27px;
+              margin-left: 14px;
+              margin-top: 6px;
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+ 
+    /* ================= HITS ================= */
+    .hits-section {
+      padding: 40px 0 50px;
+ 
+      .container {
+        padding: 0 24px;
+ 
+        .hits-title {
+          margin-bottom: 18px;
+          font-size: 28px;
+        }
+ 
+        .hits-tabs {
+          overflow-x: auto;
+          margin-bottom: 28px;
+          scrollbar-width: none;
+ 
+          .tab {
+            flex: 0 0 auto;
+            white-space: nowrap;
+            height: 40px;
+            padding: 0 20px;
+            font-size: 14px;
+          }
+        }
+ 
+        .hits-content {
+          gap: 0;
+        }
+ 
+        .products {
+          flex: 1 1 auto;
+          min-width: 0;
+          display: flex;
+          overflow-x: auto;
+          gap: 24px;
+          scroll-snap-type: x mandatory;
+          scrollbar-width: none;
+ 
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
+ 
+        .product-card {
+          flex: 0 0 calc((100% - 48px) / 3);
+          width: calc((100% - 48px) / 3);
+          scroll-snap-align: start;
+ 
+          .hit-badge {
+            height: 26px;
+            padding: 0 9px;
+            font-size: 11px;
+          }
+ 
+          .product-img {
+            height: 180px;
+ 
+            img {
+              max-width: 200px;
+              height: 165px;
+            }
+          }
+ 
+          .article {
+            margin: 0 0 12px;
+            font-size: 13px;
+          }
+ 
+          h3 {
+            display: flex;
+            align-items: center;
+            min-height: 66px;
+            font-size: 16px;
+            line-height: 22px;
+          }
+ 
+          .price-row {
+            gap: 10px;
+            margin-bottom: 10px;
+ 
+            del {
+              font-size: 13px;
+            }
+ 
+            strong {
+              font-size: 18px;
+            }
+ 
+            .discount {
+              height: 22px;
+              font-size: 11px;
+            }
+          }
+ 
+          .card-bottom {
+            gap: 8px;
+ 
+            .buy-btn,
+            .added-btn {
+              height: 38px;
+              padding: 0 14px;
+              font-size: 14px;
+            }
+ 
+            .card-icons {
+              gap: 7px;
+ 
+              button {
+                width: 38px;
+                height: 38px;
+              }
+            }
+          }
+        }
+ 
+        .sale-card {
+          display: none;
+        }
+ 
+        .slider-arrow {
+          top: 175px;
+        }
+ 
+        .arrow-left {
+          left: -11px;
+        }
+ 
+        .arrow-right {
+          right: -11px;
+        }
+      }
+    }
+ 
+    /* ================= BRENDLAR ================= */
+    .hamkorliklar-section {
+      height: auto;
+      padding: 10px 0 40px;
+ 
+      .container {
+        padding: 0 24px;
+ 
+        h2 {
+          margin-top: 0;
+          padding-top: 30px;
+          margin-bottom: 20px;
+          font-size: 28px;
+        }
+ 
+        .hamkorliklar {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 14px;
+ 
+          img {
+            width: 100%;
+            height: 70px;
+            padding: 10px;
+            border: 1px solid #e8ebee;
+            border-radius: 8px;
+            background-color: #fff;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+ 
+    /* ================= OFFERS ================= */
+    .offers-section {
+      height: auto;
+ 
+      .container {
+        position: relative;
+        padding: 40px 24px 40px;
+      }
+ 
+      .offers-title {
+        margin-bottom: 20px;
+        font-size: 28px;
+      }
+ 
+      .offers-tabs {
+        overflow-x: auto;
+        margin-bottom: 30px;
+        scrollbar-width: none;
+ 
+        button {
+          flex: 0 0 auto;
+          white-space: nowrap;
+          height: 40px;
+          padding: 0 18px;
+          font-size: 13px;
+        }
+      }
+ 
+      .offers-products {
+        display: flex;
+        overflow-x: auto;
+        gap: 24px;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+ 
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+ 
+      .offer-card {
+        flex: 0 0 calc((100% - 48px) / 3);
+        width: calc((100% - 48px) / 3);
+        scroll-snap-align: start;
+ 
+        .offer-image {
+          height: 190px;
+ 
+          img {
+            max-width: 200px;
+            height: 180px;
+          }
+        }
+ 
+        .article {
+          margin: 14px 0;
+          font-size: 12px;
+        }
+ 
+        h3 {
+          display: flex;
+          align-items: center;
+          min-height: 66px;
+          margin-bottom: 12px;
+          font-size: 15px;
+          line-height: 22px;
+        }
+ 
+        .price {
+          strong {
+            font-size: 18px;
+          }
+        }
+ 
+        .offer-bottom {
+          .buy-btn {
+            height: 40px;
+            padding: 0 14px;
+            font-size: 14px;
+          }
+ 
+          .actions {
+            gap: 7px;
+ 
+            .action-btn {
+              width: 40px;
+              height: 40px;
+            }
+          }
+        }
+      }
+ 
+      .offers-nav {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 330px;
+        left: 14px;
+        right: 14px;
+        margin: 0;
+        pointer-events: none;
+ 
+        .slider-arrow {
+          pointer-events: auto;
+          width: 30px;
+          height: 30px;
+          border: none;
+          border-radius: 50%;
+          background: #fff;
+          color: #66717a;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 20px;
+          cursor: pointer;
+          box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
+        }
+      }
+    }
+ 
+    /* ================= ABOUT ================= */
+    .about-section {
+      height: auto;
+      min-height: 540px;
+      background-position: center, right bottom;
+      background-size: 100% 100%, 56% auto;
+ 
+      .container {
+        padding: 40px 24px;
+      }
+ 
+      .about-text {
+        width: 100%;
+ 
+        h2 {
+          font-size: 26px;
+        }
+ 
+        p {
+          font-size: 15px;
+          line-height: 22px;
+        }
+ 
+        .about-info {
+          gap: 0;
+          margin: 24px 0 28px;
+ 
+          div {
+            flex: 1;
+            min-width: 0;
+ 
+            h3 {
+              margin-bottom: 8px;
+              font-size: 22px;
+            }
+ 
+            span {
+              font-size: 13px;
+              line-height: 17px;
+            }
+          }
+        }
+ 
+        .about-bottom {
+          width: 52%;
+          font-size: 14px;
+          line-height: 26px;
+          margin-bottom: 20px;
+        }
+ 
+        button {
+          width: 225px;
+          height: 52px;
+          font-size: 11px;
+        }
+      }
+    }
+ 
+    /* ================= NEWS ================= */
+    .news-section {
+      padding: 50px 0 60px;
+ 
+      .container {
+        padding: 0 24px;
+      }
+ 
+      .news-top {
+        margin-bottom: 24px;
+ 
+        h2 {
+          font-size: 28px;
+        }
+ 
+        button {
+          height: 46px;
+          font-size: 14px;
+        }
+      }
+ 
+      .news-cards {
+        display: flex;
+        overflow-x: auto;
+        gap: 15px;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+ 
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+ 
+      .news-card {
+        flex: 0 0 280px;
+        width: 280px;
+        scroll-snap-align: start;
+ 
+        img {
+          height: 150px;
+        }
+ 
+        h3 {
+          margin: 14px 0 10px;
+          font-size: 16px;
+          line-height: 21px;
+          font-weight: 500;
+        }
+ 
+        p {
+          font-size: 14px;
+          line-height: 19px;
+          margin-bottom: 8px;
+        }
+ 
+        span {
+          font-size: 13px;
+        }
+      }
+ 
+      .mob-news-nav {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin: 22px 0 0;
+ 
+        .slider-arrow {
+          width: 40px;
+          height: 40px;
+          border: none;
+          border-radius: 50%;
+          background: #fff;
+          color: #26313b;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 22px;
+          cursor: pointer;
+          box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
+        }
+      }
+    }
+ 
+    /* ================= FOOTER ================= */
+    .footer {
+      .container {
+        padding: 0 24px;
+      }
+ 
+      .footer-top {
+        display: grid;
+        grid-template-columns: auto 1fr auto auto;
+        grid-template-rows: auto auto;
+        column-gap: 24px;
+        align-items: center;
+        min-height: 0;
+        padding: 22px 0;
+ 
+        .footer-logo {
+          grid-column: 1;
+          grid-row: 1 / span 2;
+          width: 158px;
+        }
+ 
+        a:nth-child(2),
+        p:nth-child(3),
+        p:nth-child(6) {
+          display: none;
+        }
+ 
+        p:nth-child(4) {
+          grid-column: 2;
+          grid-row: 1;
+          align-self: end;
+          justify-self: center;
+        }
+ 
+        p:nth-child(5) {
+          grid-column: 2;
+          grid-row: 2;
+          align-self: start;
+          justify-self: center;
+        }
+ 
+        a {
+          font-size: 14px;
+        }
+ 
+        .phone {
+          grid-column: 3;
+          grid-row: 1 / span 2;
+ 
+          b {
+            font-size: 17px;
+          }
+        }
+ 
+        button {
+          grid-column: 4;
+          grid-row: 1 / span 2;
+          width: 150px;
+          height: 42px;
+          font-size: 11px;
+        }
+      }
+ 
+      .footer-main {
+        grid-template-columns: 280px 1fr;
+        gap: 30px;
+        padding: 32px 0 20px;
+ 
+        h3 {
+          margin-bottom: 22px;
+          font-size: 17px;
+        }
+ 
+        a {
+          margin-bottom: 12px;
+          font-size: 14px;
+          line-height: 16px;
+        }
+ 
+        .info-links {
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+        }
+ 
+        .catalog-links {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto auto;
+          gap: 0 24px;
+          max-width: 380px;
+ 
+          > div:nth-child(1) {
+            grid-column: 1;
+            grid-row: 1;
+          }
+ 
+          > div:nth-child(2) {
+            grid-column: 2;
+            grid-row: 1 / span 2;
+          }
+ 
+          > div:nth-child(3) {
+            grid-column: 1;
+            grid-row: 2;
+          }
+        }
+      }
+ 
+      .footer-pay {
+        grid-template-columns: 260px 1fr;
+        column-gap: 24px;
+        row-gap: 24px;
+        padding: 24px 0;
+ 
+        p {
+          display: none;
+        }
+ 
+        .pay-logos {
+          grid-column: 1 / -1;
+          width: 100%;
+          justify-content: space-between;
+          gap: 0;
+ 
+          img {
+            width: 72px;
+            height: 26px;
+          }
+        }
+ 
+        h3 {
+          font-size: 17px;
+          line-height: 22px;
+        }
+ 
+        .email-box {
+          height: 54px;
+ 
+          input {
+            font-size: 14px;
+          }
+        }
+      }
+ 
+      .footer-bottom {
+        grid-template-columns: 1fr auto;
+        gap: 14px 24px;
+        padding: 20px 0;
+ 
+        p {
+          grid-column: 1 / -1;
+          font-size: 11px;
+          line-height: 21px;
+        }
+ 
+        img {
+          grid-column: 2;
+          grid-row: 2;
+          justify-self: end;
+          width: 130px;
+        }
+ 
+        a {
+          grid-column: 1;
+          grid-row: 2;
+          text-align: left;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+ 

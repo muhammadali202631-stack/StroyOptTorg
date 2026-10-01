@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СтройОптТорг</title>
+    <title>Document</title>
+    <link rel="icon" href="../assets/svg/figma (1).svg">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fixed.css">
+    <link rel="stylesheet" href="../css/aksiya.css">
+    <style>
+        .favorite-btn {
+            width: 40px;
+            height: 40px;
+            border: none;
+            background: transparent;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .favorite-heart {
+            width: 24px;
+            height: 24px;
+            fill: transparent;
+            stroke: #333;
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            transition: 0.25s ease;
+        }
+
+        .favorite-btn:hover .favorite-heart {
+            transform: scale(1.1);
+        }
+
+        .favorite-btn.active .favorite-heart {
+            fill: #ff0000;
+            stroke: #ff0000;
+        }
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #2d3540;
+            background: #fff;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1410px;
+            margin: 0 auto;
+        }
+
+        /* breadcrumb */
+        .crumbs {
+            padding: 18px 0 0;
+            font-size: 12px;
+            color: #6c6f71;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .crumbs a {
+            text-decoration: none;
+            color: #40464c;
+        }
+
+        .crumbs span {
+            color: #9aa0a6;
+        }
+
+        /* title */
+        .page-title {
+            margin: 14px 0 26px;
+            font-size: 36px;
+            line-height: 40px;
+            font-weight: 700;
+            color: #2d3540;
+        }
+
+        /* grid */
+        .promo-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 24px 14px;
+        }
+
+        .promo-card {
+            min-width: 0;
+        }
+
+        .promo-img {
+            position: relative;
+            height: 165px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #e9ecef;
+        }
+
+        .promo-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .promo-overlay {
+            position: absolute;
+            left: 24px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+            max-width: calc(100% - 48px);
+        }
+
+        .promo-overlay h3 {
+            font-size: 17px;
+            line-height: 21px;
+            font-weight: 500;
+            color: #2d3540;
+            margin-bottom: 8px;
+            max-width: 150px;
+        }
+
+        .promo-badge {
+            display: inline-block;
+            padding: 5px 7px;
+            border-radius: 4px;
+            background: #00182b;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .promo-title {
+            margin: 8px 0 6px;
+            font-size: 15px;
+            line-height: 20px;
+            font-weight: 500;
+            color: #2d3540;
+        }
+
+        .promo-link {
+            font-size: 12.5px;
+            color: #0b6fd6;
+        }
+
+        /* pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin: 48px 0 44px;
+        }
+
+        .pagination button {
+            height: 44px;
+            min-width: 46px;
+            padding: 0 16px;
+            border: 1px solid #e6e9ed;
+            border-radius: 4px;
+            background: #fff;
+            color: #2d3540;
+            font-size: 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .pagination button:hover {
+            border-color: #1570d8;
+        }
+
+        .pagination button.active {
+            background: #00182b;
+            border-color: #00182b;
+            color: #fff;
+        }
+
+        .pagination button:disabled {
+            opacity: .5;
+            cursor: default;
+        }
+
+        /* newsletter */
+        .newsletter {
+            display: grid;
+            grid-template-columns: 290px minmax(0, 1fr) 162px 260px;
+            align-items: center;
+            gap: 12px 12px;
+            padding: 26px 20px;
+            margin-bottom: 70px;
+            background: #f8f9fb;
+            border-radius: 8px;
+        }
+
+        .nl-text h4 {
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #101820;
+        }
+
+        .nl-text p {
+            font-size: 11px;
+            line-height: 16px;
+            color: #6c6f71;
+        }
+
+        .newsletter input[type="email"] {
+            height: 48px;
+            width: 100%;
+            padding: 0 16px;
+            border: 1px solid #eceff2;
+            border-radius: 4px;
+            background: #fff;
+            font-size: 12px;
+            outline: none;
+        }
+
+        .newsletter input[type="email"]:focus {
+            border-color: #1570d8;
+        }
+
+        .nl-btn {
+            height: 48px;
+            border: 0;
+            border-radius: 4px;
+            background: #1570d8;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .nl-agree {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            font-size: 10px;
+            line-height: 17px;
+            color: #6c6f71;
+        }
+
+        .nl-agree input {
+            flex: 0 0 20px;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #dfe2e5;
+            border-radius: 3px;
+        }
+
+        /* ===== 820px ===== */
+        @media (max-width: 820px) {
+            .container {
+                padding: 0 24px;
+            }
+
+            .page-title {
+                font-size: 30px;
+                line-height: 34px;
+                margin-bottom: 20px;
+            }
+
+            .promo-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 24px 16px;
+            }
+
+            .promo-img {
+                height: 190px;
+            }
+
+            .promo-title {
+                font-size: 15px;
+            }
+
+            .newsletter {
+                grid-template-columns: minmax(0, 1fr) 162px;
+                padding: 22px 20px;
+            }
+
+            .nl-text {
+                grid-column: 1 / -1;
+            }
+
+            .nl-agree {
+                grid-column: 1 / -1;
+            }
+
+            .pagination {
+                margin: 36px 0;
+            }
+        }
+
+        /* ===== 576px ===== */
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .page-title {
+                font-size: 26px;
+                line-height: 30px;
+                margin: 10px 0 16px;
+            }
+
+            .promo-grid {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 22px;
+            }
+
+            .promo-img {
+                height: 180px;
+            }
+
+            .pagination {
+                gap: 4px;
+            }
+
+            .pagination button {
+                height: 38px;
+                min-width: 36px;
+                padding: 0 10px;
+            }
+
+            .pagination .p-label {
+                display: none;
+            }
+
+            .newsletter {
+                grid-template-columns: minmax(0, 1fr);
+                margin-bottom: 40px;
+            }
+
+            .nl-btn {
+                width: 100%;
+            }
+        }
+
+        /* ===== 400px ===== */
+        @media (max-width: 400px) {
+            .promo-img {
+                height: 160px;
+            }
+
+            .promo-overlay {
+                left: 18px;
+            }
+
+            .promo-overlay h3 {
+                font-size: 15px;
+                line-height: 19px;
+            }
+
+            .pagination button {
+                min-width: 32px;
+                padding: 0 8px;
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-text">
+                <div class="text1">
+                    <button class="burger-btn" aria-label="Меню">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+
+                    <a href="../pages/about-company.html">
+                        <p>О компании</p>
+                    </a>
+
+                    <a href="../pages/oploto.html">
+                        <p>Оплата</p>
+                    </a>
+
+                    <a href="../pages/about.html">
+                        <p>Доставка</p>
+                    </a>
+
+                    <a href="../pages/vozvrat.html">
+                        <p>Возврат</p>
+                    </a>
+
+                    <a href="./pages/vopros-otvet.html">
+                        <p>Отзывы</p>
+                    </a>
+
+                    <a href="../pages/vopros-otvet.html">
+                        <p>Вопрос-ответ</p>
+                    </a>
+
+                    <a href="../pages/catalog.html">
+                        <p>Новости</p>
+                    </a>
+
+                    <a href="../pages/personal_account.html">
+                        <p>Контакты</p>
+                    </a>
+                </div>
+
+                <div class="text2">
+                    <p>Ежедневно, с 8:00 до 18:00</p>
+                    <h2>8 800 444 00 65</h2>
+                    <button>Заказать звонок</button>
+                </div>
+            </div>
+        </div>
+        <div class="chiziq"></div>
+    </header>
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <aside class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-top">
+            <img src="../assets/svg/logo 1.svg" alt="Стройоптторг">
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Закрыть меню">✕</button>
+        </div>
+
+        <nav class="mobile-menu-links">
+            <a href="../pages/about-company.html">О компании</a>
+            <a href="../pages/oploto.html">Оплата</a>
+            <a href="../pages/about.html">Доставка</a>
+            <a href="../pages/vozvrat.html">Возврат</a>
+            <a href="../pages/vopros-otvet.html">Отзывы</a>
+            <a href="../pages/vopros-otvet.html">Вопрос-ответ</a>
+            <a href="../pages/catalog.html">Новости</a>
+            <a href="../pages/personal_account.html">Контакты</a>
+        </nav>
+
+        <div class="mobile-menu-bottom">
+            <span>Ежедневно, с 8:00 до 18:00</span>
+            <h2>8 800 444 00 65</h2>
+            <button>Заказать звонок</button>
+        </div>
+    </aside>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html" class="main-logo">
+                    <img src="../assets/svg/navbar logo.svg" alt="Стройоптторг">
+                </a>
+
+                <a href="../pages/catalog.html" class="catalog-btn">
+                    <span class="catalog-menu">
+                        <span>----</span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    КАТАЛОГ
+                </a>
+
+                <div class="search-box">
+                    <input type="text" placeholder="Найти среди 50000 товаров. Например: Дрель Bosch">
+                    <button class="search-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                            fill="currentColor">
+                            <path
+                                d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="navbar-actions">
+                    <a href="../pages/custom-order.html" class="nav-action tabrik">
+                        <div class="icon-box">
+                            <img src="../assets/svg/sovg'a navbar.svg" alt="">
+                        </div>
+                        <span>Все акции</span>
+                    </a>
+
+                    <a href="../pages/login.html" class="nav-action user">
+                        <div class="icon-box">
+                            <img src="../assets/svg/profil navbar.svg" alt="">
+                        </div>
+                        <span>Войти</span>
+                    </a>
+
+                    <a href="../pages/kartochka_fixed.html" class="nav-action rating">
+                        <div class="icon-box">
+                            <img src="../assets/svg/tartib navbar .svg" alt="">
+                            <span class="mob-badge">3</span>
+                        </div>
+                        <span>Сравнение</span>
+                    </a>
+
+                    <a href="../pages/favorites.html" class="nav-action yurakcha">
+                        <div class="icon-box">
+                            <img src="../assets/svg/like navbar .svg" alt="">
+                            <span class="mob-badge">3</span>
+                        </div>
+                        <span>Избранное</span>
+                    </a>
+
+                    <a href="../pages/cart.html" class="nav-action korzinka">
+                        <div class="icon-box">
+                            <img src="../assets/svg/savat navbar.svg" alt="">
+                            <span class="mob-badge">3</span>
+                        </div>
+                        <span>Корзина</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="container">
+        <nav class="crumbs" aria-label="breadcrumb">
+            <a href="../index.html">Стройоптторг</a><span>/</span><a href="#">Акции</a>
+        </nav>
+
+        <h1 class="page-title">Акции</h1>
+
+        <section class="promo-grid" id="promoGrid"></section>
+
+        <div class="pagination" id="pagination"></div>
+
+        <form class="newsletter" id="newsletter">
+            <div class="nl-text">
+                <h4>Подпишитесь на рассылку</h4>
+                <p>Регулярные скидки и спецпредложения, а так же новости компании.</p>
+            </div>
+            <input type="email" placeholder="Email" required>
+            <button type="submit" class="nl-btn">ПОДПИСАТЬСЯ</button>
+            <label class="nl-agree">
+                <input type="checkbox" required>
+                <span>Согласен с обработкой персональных данных в соответствии с политикой конфиденциальности</span>
+            </label>
+        </form>
+    </main>
+
+    <script>
+        // Rasmlar: 1–4 loyihadagi mavjud fayllar, 5–16 ni Figma'dan export qilib assets/img/ ga qo'ying
+        var IMG = '../assets/img/';
+        var IMAGES = [
+            IMG + 'Rectangle 31.png',
+            IMG + 'Rectangle 31 (1).png',
+            IMG + 'Rectangle 31 (2).png',
+            IMG + 'Rectangle 31 (3).png'
+        ];
+
+        var heat = {
+            overlayTitle: 'Все для отопления', discount: 'до -30%',
+            title: 'Подготовьтесь к отопительному сезону и сэкономьте до 30%'
+        };
+        var promotions = [
+            { overlayTitle: 'Метизные изделия', discount: 'до -15%', title: 'Делаем скидки на все метизные изделия до 15%' },
+            { overlayTitle: 'Лакокрасочные материалы', discount: 'до -30%', title: 'Акция на все лакокрасочные материалы. Скидки до 30%' },
+            { overlayTitle: 'Напольные покрытия', discount: 'до -25%', title: 'Делаем скидки до 25% на напольные покрытия в каталоге' },
+            heat, heat, heat, heat, heat, heat, heat, heat, heat, heat, heat, heat,
+            { overlayTitle: 'Лакокрасочные материалы', discount: 'до -30%', title: 'Акция на все лакокрасочные материалы. Скидки до 30%' }
+        ];
+        // 4-12 kartalar uchun overlay matn: "Все для отопления"; 16-karta Лакокрасочные (yuqoridagi massivda berilgan)
+        promotions[15] = promotions[1];
+        promotions[1].image = undefined;
+
+        var grid = document.getElementById('promoGrid');
+        promotions.forEach(function (p, i) {
+            var card = document.createElement('article');
+            card.className = 'promo-card';
+            card.innerHTML =
+                '<div class="promo-img">' +
+                '<img src="' + IMAGES[i % IMAGES.length] + '" alt="" loading="lazy" onerror="this.style.display=\'none\'">' +
+                '<div class="promo-overlay"><h3>' + p.overlayTitle + '</h3><span class="promo-badge">' + p.discount + '</span></div>' +
+                '</div>' +
+                '<h2 class="promo-title">' + p.title + '</h2>' +
+                '<a class="promo-link" href="#">Подробнее об акции</a>';
+            grid.appendChild(card);
+        });
+        // 16-karta: Лакокрасочные rasmi 2-kartanikidek
+        grid.lastChild.querySelector('img').src = IMAGES[1];
+
+        // Pagination
+        var pag = document.getElementById('pagination');
+        var current = 1, total = 231;
+        var arrowL = '<svg width="22" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor"><path d="M21 5H1M5 1L1 5l4 4"/></svg>';
+        var arrowR = '<svg width="22" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor"><path d="M1 5h20M17 1l4 4-4 4"/></svg>';
+
+        function renderPag() {
+            var pages = [1, 2, 3, 4, 5, '...', total];
+            var html = '<button data-go="prev"' + (current === 1 ? ' disabled' : '') + '>' + arrowL + '<span class="p-label">Назад</span></button>';
+            pages.forEach(function (p) {
+                if (p === '...') html += '<button disabled>...</button>';
+                else html += '<button data-go="' + p + '" class="' + (p === current ? 'active' : '') + '">' + p + '</button>';
+            });
+            html += '<button data-go="next"' + (current === total ? ' disabled' : '') + '><span class="p-label">Далее</span>' + arrowR + '</button>';
+            pag.innerHTML = html;
+        }
+        pag.addEventListener('click', function (e) {
+            var b = e.target.closest('button[data-go]');
+            if (!b) return;
+            var g = b.dataset.go;
+            if (g === 'prev') current = Math.max(1, current - 1);
+            else if (g === 'next') current = Math.min(total, current + 1);
+            else current = Number(g);
+            renderPag();
+        });
+        renderPag();
+
+        document.getElementById('newsletter').addEventListener('submit', function (e) { e.preventDefault(); });
+    </script>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <img class="footer-logo" src="../assets/svg/navbar logo.svg" alt="">
+
+                <a href="../pages/about-company.html">
+                    <p>ООО «Стройоптторг»</p>
+                </a>
+
+                <p>ИНН: 0901051787<br>КПП 090101001</p>
+
+                <p>Email:<br>
+                    <a href="mailto:info@stroiopttorg.ru">
+                        <p>info@stroiopttorg.ru</p>
+                    </a>
+                </p>
+
+                <div class="phone"><b>8 800 444 00 65</b><span>Ежедневно, с 8:00 до 18:00</span></div>
+
+                <button>ЗАКАЗАТЬ ЗВОНОК</button>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="footer-main">
+                <div class="info">
+                    <h3>Информация <span class="acc-chevron">⌄</span></h3>
+
+                    <div class="info-links">
+                        <div>
+                            <a href="../pages/about-company.html">
+                                <p>О компании</p>
+                            </a>
+
+                            <a href="../pages/oploto.html">
+                                <p>Оплата</p>
+                            </a>
+
+                            <a href="../pages/about.html">
+                                <p>Доставка</p>
+                            </a>
+
+                            <a href="../pages/returns.html">
+                                <p>Возврат</p>
+                            </a>
+
+                            <a href="../pages/vopros-otvet.html">
+                                <p>Отзывы</p>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="../pages/vopros-otvet.html">
+                                <p>Вопрос-ответ</p>
+                            </a>
+
+                            <a href="../pages/catalog.html">
+                                <p>Новости</p>
+                            </a>
+
+                            <a href="../pages/personal_account.html">
+                                <p>Контакты</p>
+                            </a>
+
+                            <a href="../pages/login.html">
+                                <p>Вход Регистрация</p>
+                            </a>
+
+                            <a href="../pages/custom-order.html">
+                                <p>Все акции</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog">
+                    <h3>Каталог <span class="acc-chevron">⌄</span></h3>
+
+                    <div class="catalog-links">
+                        <div>
+                            <a href="../pages/catalog.html">
+                                <p>Общестроительные материалы</p>
+                            </a>
+
+                            <a href="../pages/catalog.html">
+                                <p>Все для сауны и бани</p>
+                            </a>
+
+                            <a href="../pages/catalog.html">
+                                <p>Инструмент</p>
+                            </a>
+
+                            <a href="../pages/catalog.html">
+                                <p>Отделочные материалы</p>
+                            </a>
+
+                            <a href="../pages/catalog.html">
+                                <p>Товары для дома, сада и огорода</p>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="../pages/catalog.html">
+                                <p>Электротовары</p>
+                            </a>
+
+                            <a href="../pages/catalog.html">
+                                <p>Сантехника</p>
+                            </a>
+
+                            <a href="../pages/catalog.html">
+                                <p>Столярные изделия</p>
+                            </a>
+
+                            <a href="../pages/catalog.html">
+                                <p>Спецодежда и средства индивидуальной пожарной защиты</p>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="../pages/catalog.html">
+                                <p>Водо-газоснабжение, отопление, вентиляция</p>
+                            </a>
+
+                            <a href="../pages/catalog.html">
+                                <p>Метизные, такелажные и скобяные изделия</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="footer-pay">
+                <p>Мы принимаем<br>к оплате:</p>
+
+                <div class="pay-logos">
+                    <img src="../assets/img/Group 49.png" alt="">
+                    <img src="../assets/img/Group 46 (2).png" alt="">
+                    <img src="../assets/img/Group 47.png" alt="">
+                    <img src="../assets/img/Group 48.png" alt="">
+                    <img src="../assets/img/Vector.png" alt="">
+                    <img src="../assets/img/Vector (3).png" alt="">
+                </div>
+
+                <h3>Подпишитесь на рассылку<br>и будьте в курсе!</h3>
+
+                <div class="email-box">
+                    <input type="email" placeholder="Ваш email">
+                    <button>➤</button>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="footer-bottom">
+                <p>© 2003-2023 Интернет-магазин ООО «Стройоптторг» р/с 40702810360000102415<br>в Ставропольское
+                    отделение №5230 ПАО Сбербанк, БИК 040702615</p>
+
+                <img src="../assets/img/readycode_logo_3 1.png" alt="">
+
+                <a href="../pages/privacy-policy.html">
+                    <p>Политика конфиденциальности</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        // Mobil burger-menyu (chapdan chiqadigan panel)
+
+        var burgerBtn = document.querySelector('.burger-btn');
+
+        var mobileMenu = document.getElementById('mobileMenu');
+
+        var mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+
+        var mobileMenuClose = document.getElementById('mobileMenuClose');
+
+        function openMobileMenu() {
+
+            mobileMenu.classList.add('active');
+
+            mobileMenuOverlay.classList.add('active');
+
+            document.body.style.overflow = 'hidden';
+
+        }
+
+        function closeMobileMenu() {
+
+            mobileMenu.classList.remove('active');
+
+            mobileMenuOverlay.classList.remove('active');
+
+            document.body.style.overflow = '';
+
+        }
+
+        if (burgerBtn) burgerBtn.addEventListener('click', openMobileMenu);
+
+        if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
+
+        if (mobileMenuOverlay) mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+
+        // Footer akkordeon (Информация / Каталог) — faqat mobil kenglikda ishlaydi
+
+        document.querySelectorAll('.footer-main h3').forEach(function (heading) {
+
+            heading.addEventListener('click', function () {
+
+                var linksBlock = heading.nextElementSibling;
+
+                if (window.innerWidth > 480 || !linksBlock) return;
+
+                var isOpen = linksBlock.classList.toggle('open');
+
+                heading.classList.toggle('open', isOpen);
+
+            });
+
+        });
+
+        // Hero banner slayderi (avto-almashish + strelka/nuqta boshqaruvi + svayp)
+
+        (function () {
+
+            var slider = document.getElementById('heroSlider');
+
+            if (!slider) return;
+
+            var slides = slider.querySelectorAll('.hero-slide');
+
+            var dots = slider.querySelectorAll('.dot');
+
+            var prevBtn = slider.querySelector('.slider-prev');
+
+            var nextBtn = slider.querySelector('.slider-next');
+
+            var current = 0;
+
+            var total = slides.length;
+
+            var autoplayDelay = 5000;
+
+            var timer = null;
+
+            function goTo(index) {
+
+                index = (index + total) % total;
+
+                slides[current].classList.remove('active');
+
+                dots[current].classList.remove('active');
+
+                current = index;
+
+                slides[current].classList.add('active');
+
+                dots[current].classList.add('active');
+
+            }
+
+            function next() { goTo(current + 1); }
+
+            function prev() { goTo(current - 1); }
+
+            function startAutoplay() {
+
+                stopAutoplay();
+
+                timer = setInterval(next, autoplayDelay);
+
+            }
+
+            function stopAutoplay() {
+
+                if (timer) clearInterval(timer);
+
+            }
+
+            if (nextBtn) nextBtn.addEventListener('click', function () { next(); startAutoplay(); });
+
+            if (prevBtn) prevBtn.addEventListener('click', function () { prev(); startAutoplay(); });
+
+            dots.forEach(function (dot, i) {
+
+                dot.addEventListener('click', function () {
+
+                    goTo(i);
+
+                    startAutoplay();
+
+                });
+
+            });
+
+            // Sichqoncha ustida to'xtatish (desktop)
+
+            slider.addEventListener('mouseenter', stopAutoplay);
+
+            slider.addEventListener('mouseleave', startAutoplay);
+
+            // Mobil uchun barmoq bilan surish (swipe)
+
+            var touchStartX = 0;
+
+            slider.addEventListener('touchstart', function (e) {
+
+                touchStartX = e.changedTouches[0].screenX;
+
+                stopAutoplay();
+
+            }, { passive: true });
+
+            slider.addEventListener('touchend', function (e) {
+
+                var touchEndX = e.changedTouches[0].screenX;
+
+                var diff = touchEndX - touchStartX;
+
+                if (Math.abs(diff) > 40) {
+
+                    diff < 0 ? next() : prev();
+
+                }
+
+                startAutoplay();
+
+            }, { passive: true });
+
+            startAutoplay();
+
+        })();
+
+        // Barcha cardlardagi yuraklar
+        const favoriteButtons = document.querySelectorAll('.favorite-btn');
+        let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+        favoriteButtons.forEach((button, index) => {
+            if (favorites.includes(index)) button.classList.add('active');
+            button.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                button.classList.toggle('active');
+                if (button.classList.contains('active')) {
+                    if (!favorites.includes(index)) favorites.push(index);
+                } else {
+                    favorites = favorites.filter(item => item !== index);
+                }
+                localStorage.setItem('favorites', JSON.stringify(favorites));
+            });
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>
