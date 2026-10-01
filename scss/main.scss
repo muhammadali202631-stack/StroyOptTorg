@@ -2550,12 +2550,11 @@ body {
 }
 
 
-
 /* =====================================================
    TABLET 481px – 820px  (Figma 768 ga mos)
    style.css ning ENG OXIRIGA qo'ying (body {...} dan keyin)
    ===================================================== */
-@media (min-width: 481px) and (max-width: 820px) {
+@media (min-width: 481px) and (max-width: 900px) {
   .mobile-menu {
     display: flex;
   }
@@ -3501,4 +3500,5 @@ body {
     }
   }
 }
+ 
  
