@@ -51,6 +51,7 @@ body .header .container .header-text .text2 h2 {
   cursor: pointer;
   font-size: 14px;
   font-weight: 600px;
+  white-space: nowrap;
 }
 body .header .container .header-text .text2 button {
   cursor: pointer;
@@ -582,8 +583,12 @@ body .footer .footer-bottom a {
   text-align: right;
 }
 
+.burger-btn{
+  display: none;
+}
+
 a{
-  font-size: 12px;
+  font-size: 16px;
   text-decoration: none;
   color: #838383;
 }
@@ -1169,3 +1174,756 @@ body .towar_card .container .card_total_price img:hover {
 }
    
 
+ @media (max-width: 1000px) and (min-width: 769px) {
+    
+  .search-btn{
+    display: block;
+  }
+
+  section, nav{
+    padding: 10px 20px;
+  }
+  
+  .header-text{
+    padding: 0 20px ;
+  }
+
+  .text1 p{
+    display: none;
+  }
+  .text1{
+    margin-left: 20px;
+
+  }
+  .burger-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 600;
+  }
+  .text1 svg{
+    display: block;
+    background-color: white;
+  }
+  .text2 {
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+  }
+  .text2  h2{
+    padding-right: 20px;
+    font-size: 19px;
+  }
+  .hidd_it{
+    display: none;
+  }
+
+  .stroy p{
+    font-size: 30px;
+  }
+  .three_hundred input, .three_hundred button{
+    width: 290px;
+    padding: 20px 25px;
+  }
+  .input_eye {
+    width: 290px;
+    border-radius: 7px;
+  }
+  .avtorization{
+    padding: 25px 10px;
+  }
+  .email p, .account{
+    padding: 0;
+  }
+  .registration_in_sayt{
+    border: none;
+  }
+  .registration_in_sayt_text_part{
+    padding-left: 20px;
+  }
+   body .navbar .logo {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 12px;
+  }
+  body .navbar .logo::after {
+    content: "";
+    order: 25;
+    flex-basis: 100%;
+    height: 0;
+  }
+  body .navbar .logo .main-logo {
+    order: 10;
+    width: auto;
+    min-width: 0;
+    margin-right: 0;
+  }
+  body .navbar .logo .main-logo img {
+    width: 128px;
+  }
+  body .navbar .logo .navbar-actions {
+    order: 20;
+    height: auto;
+    gap: 18px;
+  }
+  body .navbar .logo .navbar-actions .tabrik {
+    display: none;
+  }
+  body .navbar .logo .navbar-actions .nav-action {
+    height: auto;
+    min-width: 0 !important;
+  }
+  body .navbar .logo .navbar-actions .nav-action p {
+    display: none;
+  }
+  body .navbar .logo .navbar-actions .nav-action .icon-box {
+    position: relative;
+    height: 24px;
+  }
+  body .navbar .logo .navbar-actions .nav-action .icon-box img {
+    max-width: 22px;
+    max-height: 20px;
+  }
+  body .navbar .logo .navbar-actions .rating .mob-badge,
+  body .navbar .logo .navbar-actions .yurakcha .mob-badge,
+  body .navbar .logo .navbar-actions .korzinka .mob-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ff3b30;
+    color: #fff;
+    font-size: 9px;
+    font-weight: 600;
+  }
+  body .navbar .logo .catalog-btn {
+    order: 30;
+    width: auto;
+    min-width: 0;
+    flex: 0 0 auto;
+    height: 44px;
+    margin-right: 10px;
+    padding: 0 16px;
+    font-size: 11px;
+  }
+  body .navbar .logo .search-box {
+    order: 40;
+    flex: 1;
+    width: auto;
+    height: 44px;
+    margin-right: 0;
+    border-width: 2px;
+  }
+   body .navbar {
+    height: auto;
+  }
+  body .navbar .container {
+    padding: 10px 16px 14px;
+}
+.stroy, .h1{
+  padding: 0 20px;
+}
+
+.avtorization_part .h1{
+  padding-bottom: 30px;
+}
+
+.avtorization{
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  margin-top: 0px;
+}
+
+.email p, .parol p {
+  padding-top: 0px;
+} 
+
+.avtorizetion_left_part{
+  margin-top: 30px;
+  border: 1px solid #EDF0F2;
+  border-radius: 7px;
+  padding: 15px;
+  width: 330px;
+}
+
+.parol{
+  padding: 7px 0;
+}
+
+.three_hundred input, .three_hundred button{
+  width: 300px;
+  padding: 20px 25px;
+}
+.input_eye {
+  width: 300px;
+  border-radius: 7px;
+}
+
+.remember_me{
+  padding-right: 130px;
+}
+.avtorizetion_rigt_part, p span{
+  border: none;
+}
+.account, .registration_in_sayt{
+  padding: 0;
+}
+.account img{
+  width: 30px;
+}
+
+.account h1{
+  font-size: 24px;
+}
+
+.registration_in_sayt p, .registration_in_sayt p span {
+  font-size: 15px;
+}
+.registration_in_sayt_text_part{
+  padding: 20px 30px;
+}
+
+.registration_in_sayt p {
+  padding-left: 20px;
+}
+.registration_in_sayt button{
+  margin-left: 45px;
+}
+
+  .mobile-menu {
+    display: flex;
+  }
+  .footer .footer-main .info-links.open,
+  .footer .footer-main .catalog-links.open {
+    display: grid;
+  }
+  .footer .footer-main h3.open .acc-chevron {
+    transform: rotate(180deg);
+  }
+  
+  body .footer .footer-top .footer-logo {
+    order: 1;
+    width: 140px;
+  }
+  body .footer .footer-top .phone b {
+    font-size: 16px;
+    line-height: 20px;
+  }
+   body .footer .footer-top .phone {
+    order: 3;
+  }
+  body .footer .footer-top button {
+    order: 4;
+    justify-self: end;
+    width: 100%;
+    max-width: 170px;
+    height: 40px;
+    font-size: 10px;
+  }
+
+  body .footer .footer-top p:nth-child(2),
+  body .footer .footer-top p:nth-child(3) {
+    display: none;
+  }
+
+  body .footer .footer-top p:nth-child(4) {
+    order: 2;
+    justify-self: end;
+    text-align: right;
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  body .footer .footer-top {
+    grid-template-columns: 1fr 1fr;
+    min-height: 0;
+    height: auto;
+    padding: 20px 0;
+    row-gap: 16px;
+  }
+
+  body .footer .footer-main h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 16px 0;
+    border-bottom: 1px solid #dfe2e5;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  body .footer .footer-main h3 .acc-chevron {
+    display: inline;
+    font-size: 16px;
+    color: #8a9099;
+    font-weight: 400;
+  }
+
+  body .footer .footer-main .info-links {
+    display: none;
+  }
+
+  body .footer .footer-main .catalog-links {
+    display: none;
+  }
+
+  body .footer .footer-main {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 6px 0 6px;
+  }
+
+  body .footer .footer-pay .pay-logos img {
+    width: 46px;
+    height: 20px;
+  }
+
+  body .footer .footer-pay .pay-logos {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  body .footer .footer-pay h3 {
+    font-size: 13px;
+  }
+
+  body .footer .footer-pay .email-box {
+    height: 46px;
+  }
+
+  body .footer .footer-pay {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    gap: 16px;
+    padding: 20px 0;
+  }
+
+  body .footer .footer-bottom p {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  body .footer .footer-bottom a {
+    text-align: left;
+  }
+
+  body .footer .footer-bottom {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    gap: 12px;
+    padding: 18px 0;
+  }
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  .vostanovlenie{
+    padding: 10px;
+  }
+
+    .parol_card_inners_p{
+    
+     max-width: 390px;
+     line-height: 25px;
+    }
+    .email p{
+        padding: 10px 0;
+    }
+    .email input{
+        width: 480px;
+    }
+    .second_btn{
+        justify-content: center;
+    }
+
+}
+
+ @media screen and (max-width: 500px) {
+
+  body .header .container .header-text {
+    padding: 0;
+  }
+  
+  .burger-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 600;
+  }
+
+  .search-btn{
+    display: block;
+  }
+
+  .header-text{
+    padding: 0 20px ;
+  }
+  .menu{
+    display: none;
+  }
+  .text1 p, .text2 p{
+    display: none;
+  }
+  .text1{
+    margin-left: 20px;
+
+  }
+  .avtorization{
+    border: none;
+  }
+  .burger-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .text1 svg{
+    display: block;
+    background-color: white;
+  }
+  .text2 {
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+  }
+  .text2  h2{
+    padding-right: 20px;
+    font-size: 19px;
+  }
+  .hidd_it{
+    display: none;
+  }
+  body .navbar .logo {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 12px;
+  }
+  body .navbar .logo::after {
+    content: "";
+    order: 25;
+    flex-basis: 100%;
+    height: 0;
+  }
+  body .navbar .logo .main-logo {
+    order: 10;
+    width: auto;
+    min-width: 0;
+    margin-right: 0;
+  }
+  body .navbar .logo .main-logo img {
+    width: 128px;
+  }
+  body .navbar .logo .navbar-actions {
+    order: 20;
+    height: auto;
+    gap: 18px;
+  }
+  body .navbar .logo .navbar-actions .tabrik {
+    display: none;
+  }
+  body .navbar .logo .navbar-actions .nav-action {
+    height: auto;
+    min-width: 0 !important;
+  }
+  body .navbar .logo .navbar-actions .nav-action p {
+    display: none;
+  }
+  body .navbar .logo .navbar-actions .nav-action .icon-box {
+    position: relative;
+    height: 24px;
+  }
+  body .navbar .logo .navbar-actions .nav-action .icon-box img {
+    max-width: 22px;
+    max-height: 20px;
+  }
+  body .navbar .logo .navbar-actions .rating .mob-badge,
+  body .navbar .logo .navbar-actions .yurakcha .mob-badge,
+  body .navbar .logo .navbar-actions .korzinka .mob-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ff3b30;
+    color: #fff;
+    font-size: 9px;
+    font-weight: 600;
+  }
+  body .navbar .logo .catalog-btn {
+    order: 30;
+    width: auto;
+    min-width: 0;
+    flex: 0 0 auto;
+    height: 44px;
+    margin-right: 10px;
+    padding: 0 16px;
+    font-size: 11px;
+  }
+  body .navbar .logo .search-box {
+    order: 40;
+    flex: 1;
+    width: auto;
+    height: 44px;
+    margin-right: 0;
+    border-width: 2px;
+  }
+   body .navbar {
+    height: auto;
+  }
+  body .navbar .container {
+    padding: 10px 16px 14px;
+}
+.stroy, .h1{
+  padding: 0 20px;
+}
+
+.avtorization_part .h1{
+  padding-bottom: 0px;
+}
+
+.avtorization{
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  margin-top: 0px;
+}
+
+.email p, .parol p {
+  padding-top: 0px;
+} 
+
+.avtorizetion_left_part{
+  margin-top: 5px;
+  border: 1px solid #EDF0F2;
+  border-radius: 7px;
+  padding: 15px;
+  width: 330px;
+}
+
+.parol{
+  padding: 7px 0;
+}
+
+.three_hundred input, .three_hundred button{
+  width: 300px;
+  padding: 20px 25px;
+}
+.input_eye {
+  width: 300px;
+  border-radius: 7px;
+}
+
+.remember_me{
+  padding-right: 130px;
+}
+.avtorizetion_rigt_part, .avtorizetion_rigt_part{
+  border: none;
+}
+.account, .registration_in_sayt{
+  padding: 0;
+}
+.account img{
+  width: 30px;
+}
+
+.account h1{
+  font-size: 24px;
+}
+
+.registration_in_sayt p, .registration_in_sayt p span {
+  font-size: 15px;
+}
+.registration_in_sayt_text_part{
+  padding: 20px 30px;
+}
+
+.registration_in_sayt p {
+  padding-left: 20px;
+}
+.registration_in_sayt button{
+  margin-left: 45px;
+}
+
+  .mobile-menu {
+    display: flex;
+  }
+  .footer .footer-main .info-links.open,
+  .footer .footer-main .catalog-links.open {
+    display: grid;
+  }
+  .footer .footer-main h3.open .acc-chevron {
+    transform: rotate(180deg);
+  }
+  
+  body .footer .footer-top .footer-logo {
+    order: 1;
+    width: 140px;
+  }
+  body .footer .footer-top .phone b {
+    font-size: 16px;
+    line-height: 20px;
+  }
+   body .footer .footer-top .phone {
+    order: 3;
+  }
+  body .footer .footer-top button {
+    order: 4;
+    justify-self: end;
+    width: 100%;
+    max-width: 170px;
+    height: 40px;
+    font-size: 10px;
+  }
+
+  body .footer .footer-top p:nth-child(2),
+  body .footer .footer-top p:nth-child(3) {
+    display: none;
+  }
+
+  body .footer .footer-top p:nth-child(4) {
+    order: 2;
+    justify-self: end;
+    text-align: right;
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  body .footer .footer-top {
+    grid-template-columns: 1fr 1fr;
+    min-height: 0;
+    height: auto;
+    padding: 20px 0;
+    row-gap: 16px;
+  }
+
+  body .footer .footer-main h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 16px 0;
+    border-bottom: 1px solid #dfe2e5;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  body .footer .footer-main h3 .acc-chevron {
+    display: inline;
+    font-size: 16px;
+    color: #8a9099;
+    font-weight: 400;
+  }
+
+  body .footer .footer-main .info-links {
+    display: none;
+  }
+
+  body .footer .footer-main .catalog-links {
+    display: none;
+  }
+
+  body .footer .footer-main {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 6px 0 6px;
+  }
+
+  body .footer .footer-pay .pay-logos img {
+    width: 46px;
+    height: 20px;
+  }
+
+  body .footer .footer-pay .pay-logos {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  body .footer .footer-pay h3 {
+    font-size: 13px;
+  }
+
+  body .footer .footer-pay .email-box {
+    height: 46px;
+  }
+
+  body .footer .footer-pay {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    gap: 16px;
+    padding: 20px 0;
+  }
+
+  body .footer .footer-bottom p {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  body .footer .footer-bottom a {
+    text-align: left;
+  }
+
+  body .footer .footer-bottom {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    gap: 12px;
+    padding: 18px 0;
+  }
+
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+    .vostanovlenie{
+     padding: 10px;
+    }
+
+    .parol_card {
+        padding-top: 30px;
+    }
+
+    .parol_card_inners_p{
+     max-width: 390px;
+     line-height: 25px;
+    }
+    .email p{
+        padding: 10px 0;
+    }
+    .email input {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .second_btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .second_btn a {
+        width: 100%;
+        text-align: center;
+    }
+
+}

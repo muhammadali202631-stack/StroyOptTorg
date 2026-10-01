@@ -465,9 +465,6 @@ body .section .right-elements .accordion-icon {
   background-color: #eaf3ff;
   flex-shrink: 0;
 }
-body .section .right-elements {
-  /* Gorizontal chiziq (Ikkalasida ham turadi) */
-}
 body .section .right-elements .accordion-icon::before {
   content: "";
   position: absolute;
@@ -477,9 +474,6 @@ body .section .right-elements .accordion-icon::before {
   height: 2px;
   background-color: #3b82f6;
   transform: translate(-50%, -50%);
-}
-body .section .right-elements {
-  /* Vertikal chiziq ('+' belgisini beradi) */
 }
 body .section .right-elements .accordion-icon::after {
   content: "";
@@ -493,9 +487,6 @@ body .section .right-elements .accordion-icon::after {
   transition-property: transform;
   transition-duration: 0.3s;
   transition-timing-function: ease;
-}
-body .section .right-elements {
-  /* Bosilganda vertikal chiziq aylanib '-' belgisiga aylanadi */
 }
 body .section .right-elements .accordion-item.active .accordion-icon::after {
   transform: translate(-50%, -50%) rotate(0deg);

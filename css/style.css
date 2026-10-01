@@ -2390,7 +2390,7 @@ body .footer .footer-bottom a {
   }
   body .navbar .logo .navbar-actions .nav-action > span {
     margin-top: 6px;
-    font-size: 13px;
+    font-size: 16px;
     color: #40464c;
   }
   body .navbar .logo .navbar-actions .yurakcha .icon-box .mob-badge,
@@ -2431,9 +2431,6 @@ body .footer .footer-bottom a {
     width: 56px;
     min-width: 56px;
     height: 100%;
-  }
-  body {
-    /* ================= HERO ================= */
   }
   body .section-rasm {
     padding: 0 24px 20px;

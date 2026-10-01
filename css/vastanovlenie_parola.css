@@ -67,6 +67,7 @@ body .header .container .header-text .text2 h2 {
   cursor: pointer;
   font-size: 14px;
   font-weight: 600px;
+  white-space: nowrap;  
 }
 body .header .container .header-text .text2 button {
   cursor: pointer;
@@ -252,6 +253,10 @@ body .stroy .container p span {
   word-spacing: 8px;
 }
 
+.sroy_torg{
+  font-size: 16px;
+}
+
 .text1 p a{
     text-decoration: none;
     color: rgb(108, 111, 113);
@@ -318,12 +323,11 @@ body .stroy .container p span {
 }
 
 a{
-  a{
   font-size: 12px;
   text-decoration: none;
   color: #838383;
 }
-}
+
 
 .avtorization_parts_buttons button{
   margin-top: 10px;
@@ -421,6 +425,11 @@ a{
   border-radius: 8px;
   margin-left: 65px;
   margin-top: 20px;
+}
+
+.second_btn{
+  color: white;
+  font-weight: 600;
 }
 
 .registration_in_sayt button a{
@@ -1062,6 +1071,10 @@ body .footer .footer-bottom a {
     border: none;
     background: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 600;
   }
   .text1 svg{
     display: block;
