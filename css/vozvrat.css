@@ -9,12 +9,6 @@
   margin: 0 auto;
 }
 
-a{
-  font-size: 12px;
-  text-decoration: none;
-  color: #838383;
-}
-
 .burger-btn {
   display: none;
   background: none;
@@ -397,7 +391,6 @@ body .frame {
   display: flex;
   margin-bottom: 30px;
   gap: 25px;
-  color: #91969D;
 }
 body .frame a {
   text-decoration: none;
@@ -405,7 +398,7 @@ body .frame a {
 }
 body .frame a:last-child {
   text-decoration: none;
-  color: #91969D;
+  color: #000;
 }
 body .section {
   width: 100%;
