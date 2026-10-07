@@ -10,6 +10,10 @@ a{
   color: #838383;
 }
 
+.burger-btn{
+  display: none;
+}
+
 body {
   font-family: Arial, sans-serif;
 }

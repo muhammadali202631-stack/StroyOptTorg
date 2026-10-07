@@ -4,45 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Addres-page</title>
-    <link rel="stylesheet" href="../css/personal_address.css">
+    <link rel="stylesheet" href="../css/error_pages.css">
     <link rel="icon" href="../assets/svg/figma (1).svg">
+    <title>СтройОптТорг</title>
 </head>
 
 <body>
-
-
-    <div class="overlay" id="overlay"></div>
-    <div class="mobile-drawer" id="mobileDrawer">
-        <div class="drawer-header">
-            <h3>Меню</h3>
-            <button class="close-btn" id="closeDrawer">&times;</button>
-        </div>
-
-        <div class="drawer-body">
-            <ul class="drawer-menu">
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Оплата</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Возврат</a></li>
-                <li><a href="#">MОтзывы</a></li>
-                <li><a href="#">Вопрос-ответ</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-            <hr class="drawer-divider" />
-            <div class="drawer-contact">
-                <p class="phone">+8 800 444 00 65</p>
-                <button class="call-btn">Заказать звонок</button>
-            </div>
-        </div>
-    </div>
 
     <header class="header">
         <div class="container">
             <div class="header-text">
                 <div class="text1">
-                    <button class="burger-btn" aria-label="Меню">
+                    <button class="burger-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round">
                             <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -194,124 +167,39 @@
             </div>
 
         </div>
-
     </nav>
 
-    <section class="stroyopttorg-section">
-        <div class="stroyopttorg-text stroyopttorg-container">
-            <p>Стройоптторг</p>
-            <h5>/</h5>
-            <span> Личный кабинет</span>
-        </div>
-    </section>
+    <!-- =================================================
+                      STROY TEXT 
+    ================================================= -->
 
-
-    <section class="personal-section">
-        <div class="personal-container">
-            <h1>Личный кабинет</h1>
-        </div>
-    </section>
-
-    <section class="account-page">
+    <section class="stroy">
         <div class="container">
-            <div class="layout">
-                <section class="sidebar">
-                    <a href="../pages/personal_account.html" class="sidebar__item ">
-                        <span class="icon"><img src="../assets/img/Vector (19).png" alt=""></span>
-                        <span>Мой аккаунт</span>
-                    </a>
-                    <a href="../pages/profile-edit.html" class="sidebar__item">
-                        <span class="icon"><img src="../assets/img/Vector (11).png" alt=""></span>
-                        <span>Изменить профиль</span>
-                    </a>
-                    <a href="../pages/custom-order.html" class="sidebar__item ">
-                        <span class="icon"><img src="../assets/img/Vector (12).png" alt=""></span>
-                        <span>Мои заказы</span>
-                    </a>
-                    <a href="../pages/personal_address.html" class="sidebar__item sidebar__item--active">
-                        <span class="icon"><img src="../assets/img/Vector (14).png" alt=""></span>
-                        <span>Адрес доставки</span>
-                    </a>
-                    <a href="../pages/saved_products.html" class="sidebar__item">
-                        <span class="icon"><img src="../assets/img/Vector (16).png" alt=""></span>
-                        <span>Избранные товары</span>
-                        <span class="badge">7</span>
-                    </a>
-                    <a href="../pages/profile-password.html" class="sidebar__item">
-                        <span class="icon"><img src="../assets/img/Vector (17).png" alt=""></span>
-                        <span>Сменить пароль</span>
-                    </a>
-                    <div class="sidebar__item">
-                        <span class="icon"><img src="../assets/img/Vector (18).png" alt=""></span>
-                        <span>Выйти из аккаунта</span>
-                    </div>
-                </section>
-                <section class="content">
-                    <div class="account-container">
-                        <main class="address">
-                            <div class="btn-flex" id="sidebarOpen">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                                </svg>
-                                <p>Меню профиля</p>
-                            </div>
+            <p><a class="sroy_torg" href="../index.html">Стройоптторг</a><span> / Страница_не_найдена</span></p>
+        </div>
+    </section>
 
-                            <h1 class="address-title">Мой адрес доставки</h1>
+    <!-- =================================================
+                      VASTANAVLENIE PAROLA 
+    ================================================= -->
 
-                            <div class="address-card">
-                                <div class="address-card-badge">
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                                        <circle cx="12" cy="10" r="3" />
-                                    </svg>
-                                    <span>АДРЕС ДОСТАВКИ</span>
-                                </div>
-                                <h2 class="address-card-name">Евгений Иванов</h2>
-                                <div class="address-card-details">
-                                    <div class="address-card-col address-card-col-address">
-                                        <p>056734, Москва, Россия, улица Варшавская, 37/5, кв.574</p>
-                                    </div>
-                                    <div class="address-card-col">
-                                        <span class="address-card-label">Телефон</span>
-                                        <p class="address-card-value">+7 (956) 373-46-33</p>
-                                    </div>
-                                    <div class="address-card-col">
-                                        <span class="address-card-label">Email</span>
-                                        <p class="address-card-value">exampleofemail@gmail.com</p>
-                                    </div>
-                                </div>
-                                <div class="address-card-actions">
-                                    <button class="address-card-btn">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2">
-                                            <path d="M12 20h9" />
-                                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
-                                        </svg>
-                                        <span>РЕДАКТИРОВАТЬ</span>
-                                    </button>
-                                    <span class="address-card-divider"></span>
-                                    <button class="address-card-btn">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2">
-                                            <polyline points="3 6 5 6 21 6" />
-                                            <path
-                                                d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
-                                        </svg>
-                                        <span>УДАЛИТЬ</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </main>
-                    </div>
-                </section>
+    <section class="vostanovlenie">
+        <div class="container">
+            <h1 class="page">Страница не найдена</h1>
+            <div class="eror">
+                <h1>404</h1>
+                <p>Запрашиваемая страница не найдена. Возможно она была удалена, либо её адрес был изменен. Попробуйте воспользоваться поиском.</p>
+                <div class="buttons">
+                    <a href="#"><button class="white_btn">Вернуться назад</button></a>
+                    <button class="blue_btn">НА ГЛАВНУЮ</button>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- =================================================
+                      FOOTER
+    ================================================= -->
 
     <footer class="footer">
         <div class="container">
@@ -327,7 +215,7 @@
 
             <div class="footer-main">
                 <div class="info">
-                    <h3>Информация</h3>
+                    <h3>Информация <span class="acc-chevron">⌄</span></h3>
                     <div class="info-links">
                         <div>
                             <a href="#">О компании</a>
@@ -347,7 +235,7 @@
                 </div>
 
                 <div class="catalog">
-                    <h3>Каталог</h3>
+                    <h3>Каталог <span class="acc-chevron">⌄</span></h3>
                     <div class="catalog-links">
                         <div>
                             <a href="#">Общестроительные материалы</a>
@@ -375,10 +263,12 @@
             <div class="footer-pay">
                 <p>Мы принимаем<br>к оплате:</p>
                 <div class="pay-logos">
-                    <img src="../assets/img/Vector.png" alt="">
-                    <img src="../assets/img/Group 48.png" alt="">
                     <img src="../assets/img/Group 49.png" alt="">
+                    <img src="../assets/img/Group 46 (2).png" alt="">
                     <img src="../assets/img/Group 47.png" alt="">
+                    <img src="../assets/img/Group 48.png" alt="">
+                    <img src="../assets/img/Vector.png" alt="">
+                    <img src="../assets/img/Vector (3).png" alt="">
                 </div>
                 <h3>Подпишитесь на рассылку<br>и будьте в курсе!</h3>
                 <div class="email-box"><input type="email" placeholder="Ваш email"><button>➤</button></div>
@@ -395,10 +285,6 @@
         </div>
     </footer>
 
-
-
-    <script src="../js/address.js"></script>
-    <script src="../js/main.js"></script>
 </body>
 
 </html>
